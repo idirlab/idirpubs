@@ -1,0 +1,443 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	Reviews For Paper
+</title>
+<style>
+body
+{
+	font-family:verdana,arial,helvetica;
+}
+#header
+{
+    width: 100%;
+    font-size: small;
+    background-color:#F7F7F7;
+}
+.headerSeparator
+{
+    background-color: #105586;
+}
+.printThemeText
+{
+    font-size:small;
+}
+.printThemeTable td
+{
+    vertical-align:top;
+}
+.printThemeGrid th
+{
+    color:white;
+    background:#5D7B9D;
+    font-weight:bold;
+}
+.printThemeGrid
+{
+    border-collapse:collapse;
+}
+.printThemeGrid td, .printThemeGrid th
+{
+    border:solid 1px #D6D3CE;
+    padding:4px 4px 4px 4px;
+}
+.printThemeGrid .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+.printThemeGrid .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+.cellprompt
+{
+	font-weight:bold;
+	white-space:nowrap;
+    width:100px;	
+}
+.paperHeader
+{
+    background-color:#dee3e7;
+    margin:5px 5px 15px 0px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.sectionHeader
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 0px;
+    width:99%;
+    text-decoration:underline;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+}
+.underlineheader
+{
+    text-decoration:underline;
+    font-weight:bold;
+    padding:5px 0px;
+}
+.response
+{
+    padding:5px 0px;
+}
+.reviewerlabel
+{
+    padding-right:20px;
+}
+.pageTitle
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    margin-top:10px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.submissionDetailsView
+{
+}
+.submissionDetailsView tr
+{
+    vertical-align:top;
+}
+.submissionDetailsView td.prompt
+{
+    font-weight:bold;
+}
+.submissionDetailsView tr.sectionSeparator
+{
+
+}
+.submissionDetailsView tr.sectionSeparator td
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+    color:Navy;
+}
+/*CSS Grid View General Definitions*/
+.CssGridView
+{
+    font-size:small; 
+}
+
+.CssGridView td, .CssGridView th
+{
+    padding:4px 4px 4px 4px;
+}
+
+/*CSS Compact Grid View General Definitions*/
+.CssGridViewCompact img
+{
+    border-style:none;
+    border-width:0px;
+}
+
+.CssGridViewCompact
+{
+    font-size:1em;
+    border-style:solid;
+    border-color:#D6D3CE;
+    border-width:1px;
+}
+
+.CssGridViewCompact .hrow a
+{
+    font-size:1em;
+}
+
+.CssGridViewCompact .row a, .CssGridViewCompact .altrow a
+{
+    font-size:0.8em;
+}
+
+.CssGridViewCompact .row .normal a, .CssGridViewCompact .row .normal, .CssGridViewCompact .altrow .normal a, .CssGridViewCompact .altrow .normal
+{
+    font-size:1em;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridView .hrow, .CssGridViewCompact .hrow
+{ 
+    background-color:#5D7B9D;
+    font-weight:bold;
+    color:White;
+}
+
+
+.CssGridViewCompact .hrow td
+{ 
+    border-bottom-width:0px;
+}
+
+.CssGridViewCompact .hrow th
+{ 
+    border-top-width:0px;
+    font-size:0.8em;
+    vertical-align:top;
+    border-left-width:0px;
+    border-right-width:0px;
+}
+
+.CssGridViewCompact .smaller
+{
+    font-size:0.8em;
+}
+
+/*CSS Grid View Row Styles*/
+.CssGridViewCompact .row, .CssGridViewCompact .altrow
+{
+    border-top-style:solid;
+    border-top-color:#D6D3CE;
+    border-top-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#D6D3CE;
+    border-bottom-width:1px;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridViewCompact .hrow .leftborder, .CssGridViewCompact .row .leftborder, .CssGridViewCompact .altrow .leftborder
+{
+    border-left-width:1px;
+    border-left-color:#D6D3CE;
+    border-left-style:solid;
+}
+
+.CssGridViewCompact .hrow .rightborder, .CssGridViewCompact .row .rightborder, .CssGridViewCompact .altrow .rightborder
+{
+    border-right-width:1px;
+    border-right-color:#D6D3CE;
+    border-right-style:solid;
+}
+
+.CssGridView .hrow a, .CssGridViewCompact .hrow a
+{ 
+    color:White;
+}
+ 
+.CssGridView .row, .CssGridViewCompact .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+
+.CssGridView .altrow, .CssGridViewCompact .altrow
+{ 
+    vertical-align:top;
+}
+
+.CssGridViewCompact .row td
+{ 
+    border-left-width:0px;
+    border-right-width:0px;
+}
+ 
+.CssGridViewCompact .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+
+.CssGridView .altrow tr, .CssGridViewCompact .altrow tr, .CssGridView .row tr, .CssGridViewCompact .row tr
+{ 
+    vertical-align:top;
+}
+</style>
+</head>
+<body>
+<form name="aspnetForm" method="post" action="ViewReviewsForPaper.aspx?paperId=94" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTAxNDM4ODU3Ng9kFgJmD2QWAgIDD2QWAmYPZBYCAgUPDxYCHgdWaXNpYmxlZ2QWBgIBD2QWAmYPZBYGAgEPFgIfAGcWAgIBD2QWAmYPDxYCHgRUZXh0BQhSZXNlYXJjaGRkAgMPDxYCHwEFAjk0ZGQCBQ8PFgIfAQVDQ3Jvd2Rzb3VyY2luZyBQYXJldG8tT3B0aW1hbCBPYmplY3QgRmluZGluZyBieSBQYWlyd2lzZSBDb21wYXJpc29uc2RkAgMPDxYCHwBoZGQCBQ8WAh4LXyFJdGVtQ291bnQCAxYGZg9kFgYCAw9kFgJmDxUBE0Fzc2lnbmVkX1Jldmlld2VyXzFkAgcPPCsADQEADxYEHgtfIURhdGFCb3VuZGcfAgIEZBYCZg9kFgoCAQ9kFgRmDw8WAh8BBQ5PdmVyYWxsIFJhdGluZ2RkAgEPZBYCZg8VAQlVbmRlY2lkZWRkAgIPZBYEZg8PFgIfAQUuU2hvcnQgZXhwbGFuYXRpb24gZm9yIHRoZSByYXRpbmcgKDEgcGFyYWdyYXBoKWRkAgEPZBYCZg8VAf0HVGhlIHBhcGVyIGNvbnNpZGVycyB0aGUgc2VsZWN0aW9uIG9mIG9iamVjdHMgd2hpY2ggYXJlIOKAnHBhcmV0by1vcHRpbWFs4oCdICAobm90IGRvbWluYXRlZCBieSBhbnkgb3RoZXIgb2JqZWN0KSBhZnRlciBjcm93ZHNvdXJjaW5nIGEgbnVtYmVyIG9mIHJhbmstYmFzZWQgcXVlc3Rpb25zIGFib3V0IHRoZWlyIHByb3BlcnRpZXMgKHNjYWxlZCBhdHRyaWJ1dGVzLCBoaWdoZXIgbnVtYmVycyBjb3JyZXNwb25kIHRvIGhpZ2hlciBxdWFsaXR5KS4gVGhlIG1ldGhvZCB0YXJnZXRzIHRoZSBtaW5pbWl6YXRpb24gb2YgcGFpcndpc2UgY29tcGFyaXNvbnMgYmV0d2VlbiBvYmplY3RzLCB0aHJvdWdoIGFuIGl0ZXJhdGl2ZSBwcm9jZXNzIG9mIHF1ZXN0aW9uIGFuc3dlcmluZzsgZHVyaW5nIHRoZSBjcm93ZHNvdXJjaW5nIHF1ZXJ5IHByb2Nlc3MsIHBvc3NpYmxlIGNvbnRyYWRpY3Rpb25zIGluIHRoZSByYW5raW5nIGFyZSBwcmFnbWF0aWNhbGx5IHNvbHZlZCwgYnkgZWl0aGVyIGlnbm9yaW5nIHNvbWUgcXVlc3Rpb25zIG9yIGJ5IGNvbnZlbmllbnRseSBjaGFuZ2luZyBxdWVyeSBvdXRjb21lcy4gU2V2ZXJhbCBoZXVyaXN0aWNzIGZvciBxdWVyeSBtaWNyby1vcmRlcmluZyBhcmUgcHJlc2VudGVkIGFuZCBldmFsdWF0ZWQgdGhvcm91Z2hseS4gPGJyIC8+VGhlIHBhcGVyIGlzIHdlbGwtd3JpdHRlbiBhbmQgY2xlYXIuIEl0IGhhcyBhIG1haW4gcHJvYmxlbSwgaG93ZXZlci4gVmFsaWRhdGlvbiBoYXMgYmVlbiBvbmx5IGRvbmUgYmFzZWQgb24gc2ltdWxhdGlvbiwgd2l0aG91dCBjcm93c291cmNpbmcgcXVlcmllcy4gQmVpbmcgbXlzZWxmIGEgcmVzZWFyY2hlciBpbiB0aGUgY3Jvd2Rzb3VyY2hpbmcgZmllbGQsIEkgZG9u4oCZdCBiZWxpZXZlIHRoYXQgc2ltdWxhdGlvbiBjYW4gZWZmZWN0aXZlbHkgcmVwb3J0IGNyb3dkLWJhc2VkIGludGVyYWN0aW9ucywgd2hpY2ggYXJlIG1vcmUgY29tcGxleCB0aGFuIHdoYXQgY2FuIGJlIGFjaGlldmVkIHRocm91Z2ggc2ltdWxhdGlvbi4gIDxiciAvPmQCAw9kFgRmDw8WAh8BBWREZXRhaWxlZCBDb21tZW50cyAoZGVzY3JpYmUgdGhlIG1haW4gcmVzdWx0LCBwb3NpdGl2ZSBhbmQgbmVnYXRpdmUgYXNwZWN0cywgY29tbWVudCBvbiBjb250cmlidXRpb24pZGQCAQ9kFgJmDxUBuwRUaGUgcGFwZXIgcHJlc2VudHMgYSBudW1iZXIgb2YgdmFyaWFudCBtZXRob2RzIGFuZCB0aGVuIGNvbXBhcmVzIHRoZW0gZnJvbSB0aGUgdmlld3BvaW50IG9mICJwZXJmb3JtYW5jZSIsIHdoaWNoIGlzIHRoZSBudW1iZXIgb2YgcXVlc3Rpb25zIGZvciBnZXR0aW5nIGFuIG9yZGVyaW5nLiBCdXQgd2hhdCBhYm91dCB0aGUgInF1YWxpdHkiIG9mIHRoZSByZXN1bHQ/IERvZXMgaXQgbWFrZSBzZW5zZSB0byBidWlsZCBhIG5vdGlvbiBvZiBxdWFsaXR5PyBJZiBub3QsIHRoZSBhdXRob3JzIHNob3VsZCBleHBsYWluIHdoeS4gLS0tIE9mIGNvdXJzZSwgZ2l2ZW4gdGhhdCB0aGUgbWV0aG9kIHNpbXVsYXRlcyB0aGUgaHVtYW4gYmVoYXZpb3IsIHRoaXMgaXMgYSBxdWVzdGlvbiB0aGF0IGlzIGhhcmQgdG8gYW5zd2VyIGJhc2VkIG9uIHRoZSBtYXRlcmlhbCB3aGljaCBpcyBwcm92aWRlZCBpbiB0aGUgcGFwZXIsIGJ1dCBJIGRvIGFzc3VtZSB0aGF0IGF1dGhvcnMgc3RhcnRlZCBmcm9tIHNvbWUgcmVhbCBwcm9ibGVtIGFuZCB0ZXN0ZWQgaXRzIHJlbGV2YW5jZSB3aXRoIHJlYWwgZGF0YS4gUmlnaHQ/Pz8gZAIED2QWBGYPDxYCHwEFQUlmIG5vdCBhY2NlcHRlZCwgd2hhdCBzaG91bGQgdGhlIGF1dGhvcnMgZG8gdG8gaW1wcm92ZSB0aGUgcGFwZXI/ZGQCAQ9kFgJmDxUBMEVzc2VudGlhbGx5LCBwcm92aWRlIHJlYWwgY3Jvd2QtYmFzZWQgdmFsaWRhdGlvbmQCBQ8PFgIfAGhkZAIIDxUBAGQCAQ9kFgYCAw9kFgJmDxUBE0Fzc2lnbmVkX1Jldmlld2VyXzJkAgcPPCsADQEADxYEHwNnHwICBGQWAmYPZBYKAgEPZBYEZg8PFgIfAQUOT3ZlcmFsbCBSYXRpbmdkZAIBD2QWAmYPFQEJVW5kZWNpZGVkZAICD2QWBGYPDxYCHwEFLlNob3J0IGV4cGxhbmF0aW9uIGZvciB0aGUgcmF0aW5nICgxIHBhcmFncmFwaClkZAIBD2QWAmYPFQHkAlRoZSBwYXBlciBpcyB3ZWxsIHByZXNlbnRlZCBhbmQgdGhlIGV4cGxhbmF0aW9ucywgdGhvdWdoIGhhcmQgdG8gZm9sbG93IGR1ZSB0byB0aGUgZm9ybWFsIGRlZmluaXRpb25zLCBzZWVtIHNvbGlkIGFuZCBpbnRlcmVzdGluZy4gSG93ZXZlciwgdGhlIHdvcmsgc2VlbXMgb3V0IG9mIGZvY3VzIHdpdGggcmVzcGVjdCB0byBFREJUIHNjb3BlLCBhdXRob3JzIHNob3VsZCBoYXZlIHB1dCBtb3JlIGVmZm9ydCB0byBzaG93IHdoeSB0aGVpciB3b3JrIGlzIGludGVyZXN0aW5nIGZvciBFREJUIGNvbW11bml0eSwgaW5zdGVhZCBvZiBqdXN0IHNheWluZyB0aGF0IGl0IGlzIHJlbGF0ZWQgdG8gY3Jvd2Rzb3VyY2luZyAob25seT8pZAIDD2QWBGYPDxYCHwEFZERldGFpbGVkIENvbW1lbnRzIChkZXNjcmliZSB0aGUgbWFpbiByZXN1bHQsIHBvc2l0aXZlIGFuZCBuZWdhdGl2ZSBhc3BlY3RzLCBjb21tZW50IG9uIGNvbnRyaWJ1dGlvbilkZAIBD2QWAmYPFQHUCFRoZSBwYXBlciBwcmVzZW50cyBhIHNvbHV0aW9uIHRvIGZpbmQgUGFyZXRvLW9wdGltYWwgb2JqZWN0cywgd2hpY2ggaXMgZGVzY3JpYmVkIG1hbnkgdGltZXMgYXMgb2YgZ3JlYXQgaW50ZXJlc3QgZm9yIGNyb3dkc291cmNpbmcgc3lzdGVtcy4gVGhlIHBhcGVyIGlzIGhhcmQgdG8gZm9sbG93LCBldmVuIGludHJvZHVjdGlvbiwgZHVlIHRvIHRoZSBmb3JtYWxpc20gdXNlZCwgYnV0IHRoaXMgaXMgbm90IGJhZCBhdCBhbGw7IHBlcmhhcHMgbW9yZSByZWFsIGV4YW1wbGVzIGNvdWxkIGhlbHAuIDxiciAvPkluc3RlYWQsIHRoZSB3b3JrIHNlZW1zIHZlcnkgc29saWQsIGluY2x1ZGluZyByZWxhdGVkIHdvcmsgc2VjdGlvbiwgZGV0YWlscyBvZiB0aGVpciBhcHByb2FjaCwgYW5kIGV4cGVyaW1lbnRzIHBlcmZvcm1lZC4gSG93ZXZlciwgbXkgbWFpbiBjb25jZXJucyBhcmUgYWJvdXQgd2hldGhlciB0aGlzIHdvcmsgaXMgaW50ZXJlc3RpbmcgZm9yIHRoZSBFREJUIGNvbW11bml0eSBvciBub3QuIE5vIGVmZm9ydCBpcyBzcGVudCBpbiBwcmVzZW50aW5nIGl0cyBpbnRlcmVzdCBmb3IgcGVvcGxlIG5vdCB3b3JraW5nIG9uIGNyb3dkc291cmNpbmcuIEkgZG9udCBiZWxpZXZlIHRoaXMgc29sdXRpb24gYWJvdXQgZmluZGluZyBQYXJldG8tIG9wdGltYWwgb2JqZWN0cyBpcyBvbmx5IHZhbGlkIGZvciBjcm93ZHNvdXJjaW5nLiBIZW5jZSwgSSB3b3VsZCBsaWtlIHRvIGtub3cgd2hhdCBjcm93ZHNvdXJjaW5nIG1lYW5zIGZvciB0aGUgYXV0aG9yczogZGVmaW5pdGVseSB0aGVyZSBleGlzdCBNQU5ZIGtpbmRzIG9mIGNyb3dkc291cmNpbmcgdGhhdCBkbyBub3QgY29uc2lzdCBpbiByZXF1ZXN0aW5nIHBlb3BsZSB0byBjaG9vc2UgYmV0d2VlbiBjaG9pY2VzIGJ1dCB0byBwZXJmb20gY2VydGFpbiB0YXNrcyBpbiBhIGRpc3RyaWJ1dGVkIG1hbm5lciwgZm9yIGV4YW1wbGUgKHNvbWV0aGluZyBvdXQgb2YgdGhlIHNjb3BlIG9mIHRoaXMgd29yaykuIEluIG90aGVyIHdvcmRzLCB0aGUgYXBwbGljYXRpb24gY29udGV4dCBvZiB0aGlzIHdvcmsgaGFzIG5vdCBiZWVuIGRlZmluZWQgYXMgcHJlY2lzZWx5IGFzIHRoZSBzb2x1dGlvbiB0aGV5IHByb3Bvc2VkAgQPZBYEZg8PFgIfAQVBSWYgbm90IGFjY2VwdGVkLCB3aGF0IHNob3VsZCB0aGUgYXV0aG9ycyBkbyB0byBpbXByb3ZlIHRoZSBwYXBlcj9kZAIBD2QWAmYPFQG9BVBlcmhhcHMgaXQgaXMgYSBwZXJmZWN0IHBhcGVyIGZvciBhIGNvbmZlcmVuY2UgZm9jdXNlZCBvbiBjb21wdXRpbmcvYWxnb3JpdGhtcywgSSBzZWUgdGhlaXIgcHJvcG9zYWwgdmVyeSBnZW5lcmFsLCB3aGljaCBpcyB2ZXJ5IGdvb2QuIEluIGdlbmVyYWwgSSB0aGluayB0aGUgYXV0aG9ycyBzaG91bGQgc2hvdyB0aGF0IHRoZWlyIHByb3Bvc2FsIGdvZXMgYmV5b25kIGNyb3dkc291cmNpbmcsIHRoZXkgbmV2ZXIgc2F5IGEgd29yZCBhYm91dCBpdHMgYXBwbGljYXRpb24gdG8gb3RoZXIgYXJlYXMsIGJ1dCB0aGVpciBhcHByb2FjaCBzZWVtcyB0b28gZ2VuZXJhbCBmb3IganVzdCBvbmUgYXBwbGljYXRpb24gY29udGV4dCAoaS5lLiBjcm93ZHNvdXJjaW5nKS4gSWYgZm9jdXNlZCBvbmx5IG9uIGNyb3dkc291cmNpbmcgZm9yIGFueSByZWFzb24sIHRoZSBwYXBlciBzaG91bGQgaW5jbHVkZSBhIGdvb2QgZGVzY3JpcHRpb24gb2Ygd2hhdCB0aGV5IG1lYW4gYnkgY3Jvd2Rzb3VyY2luZywgdGhpcyBpcyBhIG11c3QuIENvbnNpZGVyaW5nIGl0IHdhcyBzdWJtaXR0ZWQgdG8gRURCVCwgdGhleSBkZWZpbml0ZWx5IHNob3VsZCBoYXZlIHNob3duIHRoZSBpbnRlcmVzdCBvZiB0aGVpciB3b3JrIGZvciBwZW9wbGUgZGVhbGluZyB3aXRoIGRhdGFiYXNlIHRlY2hub2xvZ3kgb3IgbWFuYWdlbWVudCBvZiBiaWcgYW1vdW50cyBvZiBkYXRhZAIFDw8WAh8AaGRkAggPFQEAZAICD2QWBgIDD2QWAmYPFQETQXNzaWduZWRfUmV2aWV3ZXJfM2QCBw88KwANAQAPFgQfA2cfAgIEZBYCZg9kFgoCAQ9kFgRmDw8WAh8BBQ5PdmVyYWxsIFJhdGluZ2RkAgEPZBYCZg8VAQlVbmRlY2lkZWRkAgIPZBYEZg8PFgIfAQUuU2hvcnQgZXhwbGFuYXRpb24gZm9yIHRoZSByYXRpbmcgKDEgcGFyYWdyYXBoKWRkAgEPZBYCZg8VAesEVGhpcyBwYXBlciB1c2UgY3Jvd2Rzb3VyY2luZyB0byBmaW5kIFBhcmV0by1vcHRpbWFsIG9iamVjdHMgYnkgYnVpbGRpbmcgdXA8YnIgLz50aGUgcmVsYXRpb25zaGlwIGJldHdlZW4gb2JqZWN0cyBvbiBkaWZmZXJlbnQgY3JpdGVyaWEgYXMgYSBwYXJ0aWFsIG9yZGVyLjxiciAvPlRoZSBzdHJlbmd0aCBpcyBpbiByZWR1Y2luZyB0aGUgbnVtYmVyIG9mIHF1ZXN0aW9ucyBhc2tlZCBhbmQgdGh1cyByZWR1Y2luZzxiciAvPmNvc3QsIG1ha2luZyB1c2Ugb2YgdGhlIGRvbWluYXRpbmcgYXNwZWN0IG9mIHBhcnRpYWxseSBjbGFzc2lmaWVkIG9iamVjdHMuPGJyIC8+VGhlIHdlYWtuZXNzIGlzIG9uIHRoZSBzaW1wbGUgdHJlYXRtZW50IG9mIGNvbmZsaWN0cywgYW5kIHRoZSBkaWZmaWN1bHR5PGJyIC8+dG8gbWFrZSB0aGUgY3Jvd2Rzb3VyY2luZyByZWFsbHkgZGlzdHJpYnV0ZWQsIGFzIHRoZXJlIGlzIHRoZSBhc3N1bXB0aW9uIG9mPGJyIC8+Y29tcGxldGlvbiBvZiB0aGUgcmx0IGZvciBhIHF1ZXN0aW9uIGJlZm9yZSBzZWxlY3RpbmcgdGhlIG5leHQgb25lIGFuZCB0aGlzPGJyIC8+cmVxdWlyZXMgbW9yZSBvciBsZXNzIGxvY2tzdGVwIGFuc3dlcmluZyBieSB3b3JrZXJzLjxiciAvPmQCAw9kFgRmDw8WAh8BBWREZXRhaWxlZCBDb21tZW50cyAoZGVzY3JpYmUgdGhlIG1haW4gcmVzdWx0LCBwb3NpdGl2ZSBhbmQgbmVnYXRpdmUgYXNwZWN0cywgY29tbWVudCBvbiBjb250cmlidXRpb24pZGQCAQ9kFgJmDxUBgxdEb2VzIFBhcmV0by1PcHRpbWFsIE9iamVjdCBmb3JtIHRoZSBza3lsaW5lPyBJcyBpdCBqdXN0IGJlY2F1c2UgeW91IHVzZTxiciAvPnBhcnRpYWwgb3JkZXIgd2hpbGUgc2t5bGluZSByZWxpZXMgb24gdG90YWwgb3JkZXJpbmcgYXR0cmlidXRlcz8gQnV0PGJyIC8+c2t5bGluZSBjYW4gYWxzbyB3b3JrIGluIHBhcnRpYWwgb3JkZXIgWzEwLCAyNiBldGNdLCBzbyB3aGF0IGlzIHRoZTxiciAvPmRpZmZlcmVuY2U/IFRoaXMgc2hvdWxkIGJlIG1hZGUgY2xlYXIuIEJhc2ljYWxseSBJIGNhbiBzZWUgdGhhdCBhIG1ham9yPGJyIC8+ZGlzdGluY3Rpb24gaXMgdGhlIGJlaGF2aW9yIG9mIHRoZSBjcm93ZCBpcyBub3QgZGV0ZXJtaW5pc3RpYywgdW5saWtlPGJyIC8+c2t5bGluZS1iYXNlZCBwcmVjaXNlIHZhbHVlcyBhbmQgaW5jb25zaXN0ZW5jeSBjb3VsZCBhcmlzZSBkdWUgdG8gdm90aW5nLjxiciAvPjxiciAvPkl0IGlzIG5vdCBjbGVhciB3aGV0aGVyIGl0IGlzIHRvbyByZWFsaXN0aWMgdG8gYXNzdW1lIHNlcXVlbnRpYWwgcXVlc3Rpb248YnIgLz5hc2tpbmcuIFdoZW4gaXMgcmx0KHFpKSBrbm93bj8gSXMgaXQgYWZ0ZXIgc3VmZmljaWVudCBwZW9wbGUgaGF2ZSBhbnN3ZXJlZDxiciAvPnFpLCBvciBqdXN0IHRoYXQgcGFydGljdWxhciBoZWxwZXIgYW5zd2VyZWQgcWk/IEl0IHJlbGllcyBvbiB0aGUgd2F5IHJsdCBpczxiciAvPmRlZmluZWQuIFRoZSBmb3JtZXIgaXMgbm90IHJlYWxpc3RpYywgYW5kIHRoZSBsYXRlciBpcyBmaW5lLiBGaWcgMyBzZWVtczxiciAvPnRvIHN1Z2dlc3QgdGhlIGZvcm1lciwgYnV0IHdoeSB5b3UgY2Fubm90IGNvbnRpbnVlIGFza2luZyBxdWVzdGlvbnMgZm9yPGJyIC8+ZmFzdCByZXNwb25kZXJzLCBlc3BlY2lhbGx5IGluIHRoZSBpbml0aWFsIHN0YWdlIHRvIHNwZWVkIHVwIHRoZSBwcm9jZXNzLDxiciAvPndpdGggYSBzbWFsbCByaXNrIG9mIG92ZXJzcGVuZGluZz88YnIgLz48YnIgLz5PdmVycmlkaW5nIGNvbmZsaWN0cyBsZWFkcyB0byBlZmZpY2llbmN5LCBidXQgaXQgbWF5IGFsc28gaGlkZSBzb21lIGltcG9ydGFudDxiciAvPmluZm9ybWF0aW9uLiBJZiB4ID4geSBhbmQgeSA+IHogYnV0IHlvdSB0aGVuIGZpbmQgeiA+IHgsIGl0IG1pZ2h0IHdlbGwgYmU8YnIgLz54ID4geSAob3IgeSA+IHopIHRoYXQgaXMgd3JvbmcgKGl0IGNvdWxkIGJlIHkgPiB4KS4gV2l0aG91dCBhZGRpdGlvbmFsIGluZm8sPGJyIC8+dGhlICJwcm9iYWJpbGl0eSIgdGhhdCB6ID4geCBpcyB3cm9uZyBpcyBsb3dlciB0aGFuIHRoZSBjb21iaW5lZCBwcm9iYWJpbGl0eTxiciAvPnRoYXQgb25lIG9mIHRoZSBvdGhlciB0d28gaXMgd3JvbmcuIFdvdWxkIGl0IGJlIHVzZWZ1bCB0byBsb29rIGF0IHRoZSAic3RyZW5ndGgiPGJyIC8+b2YgdGhvc2UgPiByZWxhdGlvbiAodmFsdWUgYmV5b25kIHRoZXRhKT8gQSBkaXNjdXNzaW9uIG9uIHRoaXMgaXNzdWUgKGFuZCBtYXk8YnIgLz5iZSBzb21lIHF1YW50aWZpY2F0aW9uIGluIHRoZSBleHBlcmltZW50cykgd291bGQgYmUgdmVyeSB1c2VmdWwuPGJyIC8+PGJyIC8+SW4gc2VjdGlvbiA1LjEsIHRoZSB3YXkgdGhlIHBlcnR1cmJhdGlvbiBpcyBnZW5lcmF0ZWQgZG9lcyBub3QgY3JlYXRlIGFueTxiciAvPnBvc3NpYmlsaXR5IG9mIGNvbmZsaWN0LiBUaGUgYWN0dWFsIHVuaXQgdXNlZCBpbiB0aGUgZXhwb25lbnQgYWxzbyBhZmZlY3RzPGJyIC8+dGhlIHJlc3VsdC4gQSBkaWZmZXJlbmNlIG9mIDAuNSBwb2ludCBpbiBzY29yaW5nIGlzIG5vdCBtdWNoLCBidXQgMC41IGJsb2NrPGJyIC8+d291bGQgYmUgZmFyIG1vcmUgaW1wYWN0ZnVsLiBIb3cgYXJlIHlvdSBnb2luZyB0byBub3JtYWxpemUgdGhlIHZhbHVlIG9mIHguYzxiciAvPmFuZCB5LmM/IEEgbW9kaWZpY2F0aW9uIHRvIGludHJvZHVjZSBjb25mbGljdCBhbHNvIGFsbG93cyBpdHMgc3R1ZHkgaW4gc29tZTxiciAvPndheS4gVGhlIGxhY2sgb2YgY29uZmxpY3QgYWxzbyBkb2VzIG5vdCBjb3JyZXNwb25kIHRvbyB3ZWxsIHRvIHJlYWwgYXBwbGljYXRpb248YnIgLz5pbiByYW5raW5nIHBpY3R1cmVzIGV0Yy48YnIgLz48YnIgLz5JbiBzZWN0aW9uIDUuMi4yLCBvdXQgb2YgMTUgd29ya2VycywgNSBvZiB0aGVtIGZhaWwgdGhlIHZhbGlkYXRpb24gY2hlY2s8YnIgLz4oZm9yIGp1c3QgMiBxdWVzdGlvbnMsIGFuZCBvbmUgaXMgcHJldHR5IHN0cmFpZ2h0Zm9yd2FyZCBhcyBzdGF0ZWQpIGFuZDxiciAvPnRoaXMgaXMgb24gdGhlIGhpZ2ggc2lkZS4gSXMgdGhlIHNlY29uZCBxdWVzdGlvbiAiaGFyZCI/IElmIG5vdCwgdGhlbiB0aGU8YnIgLz53b3JrZXJzIHRoZW1zZWx2ZXMgbWF5IGRlbWFuZCBhIGNsb3NlciBsb29rLjxiciAvPjxiciAvPkl0IGlzIG5vdCBuZWNlc3NhcnkgdG8gZGVmaW5lIHBhcnRpYWwgb3JkZXIsIHdoaWNoIGlzIGEgZ2VuZXJpYyBjb25jZXB0PGJyIC8+dGhhdCBjb3VsZCBiZSBjaXRlZCB3aXRoIGEgbWF0aHMgdGV4dC48YnIgLz48YnIgLz5Pbmx5IG9uZSBjb3VudGVyLWV4YW1wbGUgaXMgc3VmZmljaWVudCB0byBwcm92ZSBwcm9wZXJ0eSAxLCBpdCBpcyBub3Q8YnIgLz5uZWNlc3NhcnkgdG8gZ2l2ZSB0d28gKHRvIHNhdmUgc3BhY2UpLjxiciAvPjxiciAvPlRoZSBuYW1lcyBvZiBtYWNyby0gYW5kIG1pY3JvLW9yZGVyaW5nIGxvb2sgbGlrZSBhbiBvdmVya2lsbCwgYW5kIG1heSBiZTxiciAvPmNvbmZ1c2luZywgZXNwZWNpYWxseSB3aGVuIGNvbXBhcmVkIHRvIG1hY3JvLSBhbmQgbWljcm8tYXZlcmFnZSBpbiBJUiBhbmQ8YnIgLz5QUiBhcmVhcy4gWW91cnMgaXMganVzdCB0d28tbGV2ZWwgb3JkZXJpbmcgKGxpa2UgcHJpbWFyeSB2ZXJzdXMgc2Vjb25kYXJ5PGJyIC8+c29ydGluZyBrZXkgaW4gRXhjZWwpLjxiciAvPjxiciAvPlNvbWUgdHlwb3MsIGUuZy4gImxlc3MgY29tcGFyaXNvbnMiIC0+ICJmZXdlciBjb21wYXJpc29ucyIuZAIED2QWBGYPDxYCHwEFQUlmIG5vdCBhY2NlcHRlZCwgd2hhdCBzaG91bGQgdGhlIGF1dGhvcnMgZG8gdG8gaW1wcm92ZSB0aGUgcGFwZXI/ZGQCAQ9kFgJmDxUBsgFDbGFyaWZ5IHJlbGF0aW9uc2hpcCB3aXRoIHNreWxpbmUgd2l0aCBwYXJ0aWFsIG9yZGVyLCBhbmQgcHV0IGluIG1vcmU8YnIgLz5lZmZvcnQgaW4gaW5jb25zaXN0ZW5jeSByZXNvbHV0aW9uIGFuZCBwbGFuIGZvciBkZXBsb3ltZW50IHRvIGFjdHVhbCBjcm93ZHMuPGJyIC8+UGxlYXNlIHNlZSAoMykgYWJvdmUuZAIFDw8WAh8AaGRkAggPFQEAZBgDBR9jdGwwMCRjcGgkZ3ZSZXZpZXdzJGN0bDAyJGN0bDAwDzwrAAoBCAIBZAUfY3RsMDAkY3BoJGd2UmV2aWV3cyRjdGwwMSRjdGwwMA88KwAKAQgCAWQFH2N0bDAwJGNwaCRndlJldmlld3MkY3RsMDAkY3RsMDAPPCsACgEIAgFksUfvVV6m7+BQve1ykjnWslEH0oM=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="18D4B2FE" />
+</div>
+<table id="header">
+<tr>
+<td width="100%"><a href='http&#58;&#47;&#47;edbticdt2015.be&#47;' target='_blank'>EDBT 2015</a><br /><b>International Conference on Extending Database Technology 2015</b><br />23-27 March, 2015, Brussels, Belgium</td>
+</tr>
+<tr class='headerSeparator'>
+    <td style='height:5px'></td>
+</tr>
+</table>
+<table id="content"><tr><td class='contentBorder'>&nbsp;</td><td class="contentContainer">
+<span id="ctl00_cph_Label4" style="font-size:Small;font-weight:bold;">Reviews For Paper</span>
+<span id="ctl00_cph_lblErrorMessage" class="error" style="font-size:Small;"></span>
+<div id="ctl00_cph_pnlReviews">
+	
+    <span style="font-size:Small;">
+<table class="nicetable2" style="text-align:left; width: 100%;">
+    <tr id="ctl00_cph_infoSubmission_trTrack">
+		<td><b>Track</b></td>
+		<td><span id="ctl00_cph_infoSubmission_lblTrack" style="font-size:Small;">Research</span></td>
+	</tr>
+	
+    <tr>
+        <td width="100px"><b>Paper ID</b></td>
+        <td><span id="ctl00_cph_infoSubmission_lblPaperId" style="font-size:Small;">94</span></td>
+    </tr>
+    <tr>
+        <td><b>Title</b></td>
+        <td><span id="ctl00_cph_infoSubmission_lblPaperTitle" style="font-size:Small;">Crowdsourcing Pareto-Optimal Object Finding by Pairwise Comparisons</span></td>
+    </tr>
+    
+    
+    
+    
+    
+</table></span>
+    
+    
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label1" style="font-size:Small;">Assigned_Reviewer_1</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Undecided
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Short explanation for the rating (1 paragraph)</td><td style="width:80%;">
+                            The paper considers the selection of objects which are “pareto-optimal”  (not dominated by any other object) after crowdsourcing a number of rank-based questions about their properties (scaled attributes, higher numbers correspond to higher quality). The method targets the minimization of pairwise comparisons between objects, through an iterative process of question answering; during the crowdsourcing query process, possible contradictions in the ranking are pragmatically solved, by either ignoring some questions or by conveniently changing query outcomes. Several heuristics for query micro-ordering are presented and evaluated thoroughly. <br />The paper is well-written and clear. It has a main problem, however. Validation has been only done based on simulation, without crowsourcing queries. Being myself a researcher in the crowdsourching field, I don’t believe that simulation can effectively report crowd-based interactions, which are more complex than what can be achieved through simulation.  <br />
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Detailed Comments (describe the main result, positive and negative aspects, comment on contribution)</td><td style="width:80%;">
+                            The paper presents a number of variant methods and then compares them from the viewpoint of "performance", which is the number of questions for getting an ordering. But what about the "quality" of the result? Does it make sense to build a notion of quality? If not, the authors should explain why. --- Of course, given that the method simulates the human behavior, this is a question that is hard to answer based on the material which is provided in the paper, but I do assume that authors started from some real problem and tested its relevance with real data. Right??? 
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">If not accepted, what should the authors do to improve the paper?</td><td style="width:80%;">
+                            Essentially, provide real crowd-based validation
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label1" style="font-size:Small;">Assigned_Reviewer_2</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Undecided
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Short explanation for the rating (1 paragraph)</td><td style="width:80%;">
+                            The paper is well presented and the explanations, though hard to follow due to the formal definitions, seem solid and interesting. However, the work seems out of focus with respect to EDBT scope, authors should have put more effort to show why their work is interesting for EDBT community, instead of just saying that it is related to crowdsourcing (only?)
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Detailed Comments (describe the main result, positive and negative aspects, comment on contribution)</td><td style="width:80%;">
+                            The paper presents a solution to find Pareto-optimal objects, which is described many times as of great interest for crowdsourcing systems. The paper is hard to follow, even introduction, due to the formalism used, but this is not bad at all; perhaps more real examples could help. <br />Instead, the work seems very solid, including related work section, details of their approach, and experiments performed. However, my main concerns are about whether this work is interesting for the EDBT community or not. No effort is spent in presenting its interest for people not working on crowdsourcing. I dont believe this solution about finding Pareto- optimal objects is only valid for crowdsourcing. Hence, I would like to know what crowdsourcing means for the authors: definitely there exist MANY kinds of crowdsourcing that do not consist in requesting people to choose between choices but to perfom certain tasks in a distributed manner, for example (something out of the scope of this work). In other words, the application context of this work has not been defined as precisely as the solution they propose
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">If not accepted, what should the authors do to improve the paper?</td><td style="width:80%;">
+                            Perhaps it is a perfect paper for a conference focused on computing/algorithms, I see their proposal very general, which is very good. In general I think the authors should show that their proposal goes beyond crowdsourcing, they never say a word about its application to other areas, but their approach seems too general for just one application context (i.e. crowdsourcing). If focused only on crowdsourcing for any reason, the paper should include a good description of what they mean by crowdsourcing, this is a must. Considering it was submitted to EDBT, they definitely should have shown the interest of their work for people dealing with database technology or management of big amounts of data
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label1" style="font-size:Small;">Assigned_Reviewer_3</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Undecided
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Short explanation for the rating (1 paragraph)</td><td style="width:80%;">
+                            This paper use crowdsourcing to find Pareto-optimal objects by building up<br />the relationship between objects on different criteria as a partial order.<br />The strength is in reducing the number of questions asked and thus reducing<br />cost, making use of the dominating aspect of partially classified objects.<br />The weakness is on the simple treatment of conflicts, and the difficulty<br />to make the crowdsourcing really distributed, as there is the assumption of<br />completion of the rlt for a question before selecting the next one and this<br />requires more or less lockstep answering by workers.<br />
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Detailed Comments (describe the main result, positive and negative aspects, comment on contribution)</td><td style="width:80%;">
+                            Does Pareto-Optimal Object form the skyline? Is it just because you use<br />partial order while skyline relies on total ordering attributes? But<br />skyline can also work in partial order [10, 26 etc], so what is the<br />difference? This should be made clear. Basically I can see that a major<br />distinction is the behavior of the crowd is not deterministic, unlike<br />skyline-based precise values and inconsistency could arise due to voting.<br /><br />It is not clear whether it is too realistic to assume sequential question<br />asking. When is rlt(qi) known? Is it after sufficient people have answered<br />qi, or just that particular helper answered qi? It relies on the way rlt is<br />defined. The former is not realistic, and the later is fine. Fig 3 seems<br />to suggest the former, but why you cannot continue asking questions for<br />fast responders, especially in the initial stage to speed up the process,<br />with a small risk of overspending?<br /><br />Overriding conflicts leads to efficiency, but it may also hide some important<br />information. If x > y and y > z but you then find z > x, it might well be<br />x > y (or y > z) that is wrong (it could be y > x). Without additional info,<br />the "probability" that z > x is wrong is lower than the combined probability<br />that one of the other two is wrong. Would it be useful to look at the "strength"<br />of those > relation (value beyond theta)? A discussion on this issue (and may<br />be some quantification in the experiments) would be very useful.<br /><br />In section 5.1, the way the perturbation is generated does not create any<br />possibility of conflict. The actual unit used in the exponent also affects<br />the result. A difference of 0.5 point in scoring is not much, but 0.5 block<br />would be far more impactful. How are you going to normalize the value of x.c<br />and y.c? A modification to introduce conflict also allows its study in some<br />way. The lack of conflict also does not correspond too well to real application<br />in ranking pictures etc.<br /><br />In section 5.2.2, out of 15 workers, 5 of them fail the validation check<br />(for just 2 questions, and one is pretty straightforward as stated) and<br />this is on the high side. Is the second question "hard"? If not, then the<br />workers themselves may demand a closer look.<br /><br />It is not necessary to define partial order, which is a generic concept<br />that could be cited with a maths text.<br /><br />Only one counter-example is sufficient to prove property 1, it is not<br />necessary to give two (to save space).<br /><br />The names of macro- and micro-ordering look like an overkill, and may be<br />confusing, especially when compared to macro- and micro-average in IR and<br />PR areas. Yours is just two-level ordering (like primary versus secondary<br />sorting key in Excel).<br /><br />Some typos, e.g. "less comparisons" -> "fewer comparisons".
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">If not accepted, what should the authors do to improve the paper?</td><td style="width:80%;">
+                            Clarify relationship with skyline with partial order, and put in more<br />effort in inconsistency resolution and plan for deployment to actual crowds.<br />Please see (3) above.
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+    <br />
+    <br />
+
+</div>
+</td><td class='contentBorder'>&nbsp;</td></tr></table>
+</form>
+</body>
+</html>

@@ -1,0 +1,467 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	Reviews For Paper
+</title>
+<style>
+body
+{
+	font-family:verdana,arial,helvetica;
+}
+#header
+{
+    width: 100%;
+    font-size: small;
+    background-color:#F7F7F7;
+}
+.headerSeparator
+{
+    background-color: #105586;
+}
+.printThemeText
+{
+    font-size:small;
+}
+.printThemeTable td
+{
+    vertical-align:top;
+}
+.printThemeGrid th
+{
+    color:white;
+    background:#5D7B9D;
+    font-weight:bold;
+}
+.printThemeGrid
+{
+    border-collapse:collapse;
+}
+.printThemeGrid td, .printThemeGrid th
+{
+    border:solid 1px #D6D3CE;
+    padding:4px 4px 4px 4px;
+}
+.printThemeGrid .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+.printThemeGrid .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+.cellprompt
+{
+	font-weight:bold;
+	white-space:nowrap;
+    width:100px;	
+}
+.paperHeader
+{
+    background-color:#dee3e7;
+    margin:5px 5px 15px 0px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.sectionHeader
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 0px;
+    width:99%;
+    text-decoration:underline;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+}
+.underlineheader
+{
+    text-decoration:underline;
+    font-weight:bold;
+    padding:5px 0px;
+}
+.response
+{
+    padding:5px 0px;
+}
+.reviewerlabel
+{
+    padding-right:20px;
+}
+.pageTitle
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    margin-top:10px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.submissionDetailsView
+{
+}
+.submissionDetailsView tr
+{
+    vertical-align:top;
+}
+.submissionDetailsView td.prompt
+{
+    font-weight:bold;
+}
+.submissionDetailsView tr.sectionSeparator
+{
+
+}
+.submissionDetailsView tr.sectionSeparator td
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+    color:Navy;
+}
+/*CSS Grid View General Definitions*/
+.CssGridView
+{
+    font-size:small; 
+}
+
+.CssGridView td, .CssGridView th
+{
+    padding:4px 4px 4px 4px;
+}
+
+/*CSS Compact Grid View General Definitions*/
+.CssGridViewCompact img
+{
+    border-style:none;
+    border-width:0px;
+}
+
+.CssGridViewCompact
+{
+    font-size:1em;
+    border-style:solid;
+    border-color:#D6D3CE;
+    border-width:1px;
+}
+
+.CssGridViewCompact .hrow a
+{
+    font-size:1em;
+}
+
+.CssGridViewCompact .row a, .CssGridViewCompact .altrow a
+{
+    font-size:0.8em;
+}
+
+.CssGridViewCompact .row .normal a, .CssGridViewCompact .row .normal, .CssGridViewCompact .altrow .normal a, .CssGridViewCompact .altrow .normal
+{
+    font-size:1em;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridView .hrow, .CssGridViewCompact .hrow
+{ 
+    background-color:#5D7B9D;
+    font-weight:bold;
+    color:White;
+}
+
+
+.CssGridViewCompact .hrow td
+{ 
+    border-bottom-width:0px;
+}
+
+.CssGridViewCompact .hrow th
+{ 
+    border-top-width:0px;
+    font-size:0.8em;
+    vertical-align:top;
+    border-left-width:0px;
+    border-right-width:0px;
+}
+
+.CssGridViewCompact .smaller
+{
+    font-size:0.8em;
+}
+
+/*CSS Grid View Row Styles*/
+.CssGridViewCompact .row, .CssGridViewCompact .altrow
+{
+    border-top-style:solid;
+    border-top-color:#D6D3CE;
+    border-top-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#D6D3CE;
+    border-bottom-width:1px;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridViewCompact .hrow .leftborder, .CssGridViewCompact .row .leftborder, .CssGridViewCompact .altrow .leftborder
+{
+    border-left-width:1px;
+    border-left-color:#D6D3CE;
+    border-left-style:solid;
+}
+
+.CssGridViewCompact .hrow .rightborder, .CssGridViewCompact .row .rightborder, .CssGridViewCompact .altrow .rightborder
+{
+    border-right-width:1px;
+    border-right-color:#D6D3CE;
+    border-right-style:solid;
+}
+
+.CssGridView .hrow a, .CssGridViewCompact .hrow a
+{ 
+    color:White;
+}
+ 
+.CssGridView .row, .CssGridViewCompact .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+
+.CssGridView .altrow, .CssGridViewCompact .altrow
+{ 
+    vertical-align:top;
+}
+
+.CssGridViewCompact .row td
+{ 
+    border-left-width:0px;
+    border-right-width:0px;
+}
+ 
+.CssGridViewCompact .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+
+.CssGridView .altrow tr, .CssGridViewCompact .altrow tr, .CssGridView .row tr, .CssGridViewCompact .row tr
+{ 
+    vertical-align:top;
+}
+</style>
+</head>
+<body>
+<form name="aspnetForm" method="post" action="ViewReviewsForPaper.aspx?paperId=121" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTAxNDM4ODU3Ng9kFgJmD2QWAgIDD2QWAmYPZBYCAgUPDxYCHgdWaXNpYmxlZ2QWBgIBD2QWAmYPZBYGAgEPFgIfAGcWAgIBD2QWAmYPDxYCHgRUZXh0BQhSZXNlYXJjaGRkAgMPDxYCHwEFAzEyMWRkAgUPDxYCHwEFP0dRQkUmIzU4OyBRdWVyeWluZyBFbnRpdHktUmVsYXRpb25zaGlwIEdyYXBocyBieSBFeGFtcGxlIFR1cGxlc2RkAgMPDxYCHwBoZGQCBQ8WAh4LXyFJdGVtQ291bnQCAxYGZg9kFgYCAw9kFgJmDxUBE0Fzc2lnbmVkX1Jldmlld2VyXzFkAgcPPCsADQEADxYEHgtfIURhdGFCb3VuZGcfAgIGZBYCZg9kFg4CAQ9kFgRmDw8WAh8BBQ5PdmVyYWxsIFJhdGluZ2RkAgEPZBYCZg8VAQtXZWFrIEFjY2VwdGQCAg9kFgRmDw8WAh8BBVVTdW1tYXJ5IG9mIFN1Ym1pc3Npb24gKGUuZy4sIGEgc2hvcnQgZGVzY3JpcHRpb24gb2YgdGhlIHBhcGVyIGFuZCBpdHMgY29udHJpYnV0aW9ucykgZGQCAQ9kFgJmDxUB5QRUaGUgcGFwZXIgdGFyZ2V0cyB2ZXJ5IGludGVyZXN0aW5nIGFuZCBpbXBvcnRhbnQgcHJvYmxlbSBvbiBxdWVyeWluZyBsYXJnZSBlbnRpdHkgcmVsYXRpb25zaGlwIGdyYXBocy4gVGhlIGF1dGhvcnMgYXJndWUgdGhhdCBub24tZXhwZXJ0IHVzZXJzIG1pZ2h0IG5vdCBiZSBhYmxlIHRvIGdlbmVyYXRlIGEgZ29vZCBlbm91Z2ggc3RydWN0dXJlZCBxdWVyeSBmb3IgYSBjb21wbGV4IHJlbGF0aW9uc2hpcCBncmFwaCBpbiBvcmRlciB0byBnZXQgdGhlIHJlc3VsdHMvZGF0YSB0aGV5IHdlcmUgbG9va2luZyBmb3IuIEluc3RlYWQsIHRoZSBhdXRob3JzIHByb3Bvc2UgdGhlaXIgc3lzdGVtIEdRQkUgd2hpY2ggcmVxdWlyZXMgb25seSBhbiDigJxleGFtcGxlIGVudGl0eSB0dXBsZeKAnSBhcyBhbiBlbnRyeSBhbmQgZ2VuZXJhdGVzIHRvcC1rIGFuc3dlcnMgYmFzZWQgb24gaGlkZGVuIHF1ZXJ5IGdyYXBocyBhbmQgcHJvdmlkZSBhIGhldXJpc3RpYyBvbiBwcnVuaW5nIHRoZSBoaWRkZW4gcXVlcnkgZ3JhcGhzIGFuZCByYW5raW5nIHRoZSBhbnN3ZXJzLiBUaGUgYXV0aG9ycyBwZXJmb3JtIGV4cGVyaW1lbnRzIHdpdGggdGhlaXIgc3lzdGVtIG9uIEZyZWViYXNlIGRhdGFzZXQuZAIDD2QWBGYPDxYCHwEFX1N0cm9uZyBQb2ludHMgKGUuZy4sIHRlY2huaWNhbCBkZXB0aCwgbm92ZWx0eSwgcHJhY3RpY2FsaXR5LCBkZWVwIGFuYWx5c2lzLCBzdHJvbmcgZXZhbHVhdGlvbikgZGQCAQ9kFgJmDxUBjAEqIE5pY2UsIHNpbXBsZSBhbmQgbm92ZWwgKGlmIHRvIGJlbGlldmUgdGhlIGF1dGhvcnMpIGlkZWEgb2YgcHJvZHVjaW5nIGEgaGlkZGVuIHF1ZXJ5IGdyYXBoIGFuZCBzaW1wbGUgYnV0IGVmZmVjdGl2ZSBoZXVyaXN0aWNzIHRvIHBydW5lIGl0LmQCBA9kFgRmDw8WAh8BBXNXZWFrIFBvaW50cyAoZS5nLiwgbWlzdGFrZXMsIGluc3VmZmljaWVudCBtb3RpdmF0aW9uLCBvbWlzc2lvbiBvZiBwcmV2aW91cyB3b3JrLCB3ZWFrIHByZXNlbnRhdGlvbiBhbmQgZXhwZXJpbWVudHMpZGQCAQ9kFgJmDxUBhwsqIGl0IGlzIGhhcmQgdG8gZmluZCBpbiB0aGUgcGFwZXIgdGhlIGRpc2N1c3Npb24gYW5kIHRoZSBhbmFseXNpcyBvZiB0aGUgY29tcGxleGl0eSBvZiBmaW5kaW5nIHRoZSBhbnN3ZXIgZ3JhcGhzIGZvciBhIGdpdmVuIHF1ZXJ5LiBIb3cgZG9lcyBpdCBkZXBlbmQgb24gdGhlIHNpemUgb2YgdGhlIHF1ZXJ5IGdyYXBocz8gSG93IGRvZXMgaXQgZGVwZW5kIG9uIHRoZSBuYXR1cmUgb2YgYSBwYXJ0aWN1bGFyIGVudGl0eSAtIHJlbGF0aW9uc2hpcCBncmFwaD8gSW50dWl0aXZlbHkgaXQgbG9va3MgdGhhdCBjZXJ0YWluIHF1ZXJpZXMgY291bGQgYmUgcmVsYXRpdmVseSBpbmV4cGVuc2l2ZSB0byBjb21wdXRlLCB3aGlsZSBvdGhlcnMgY291bGQgcmVxdWlyZSB0byBnbyB0aHJvdWdoIGFsbCB0aGUgZW50aXR5IHJlbGF0aW9uc2hpcCBncmFwaCB3aGljaCBjYW4gYmUgdW5hZmZvcmRhYmxlLiBXaGF0IGlmIHRoZSBlbnRpdHkgcmVsYXRpb25zaGlwIGdyYXBoIGlzIGRpc3RyaWJ1dGVkIGFtb25nIG1hbnkgZGlmZmVyZW50IG1hY2hpbmVzL2dlb2dyYXBoaWNhbCBzaXRlcz8NPGJyIC8+KiBhIGJpdCBtb3JlIGluc2lnaHQgYW5kIGRpc2N1c3Npb24gY291bGQgYmUgdmFsdWFibGUgb24gdGhlIGNvbXBsZXhpdHkgYW5kIGRpZmZpY3VsdHkgb2YgY2FsY3VsYXRpbmcgY2VydGFpbiBwYXJhbWV0ZXIgKGUuZy4sIGxhYmVsIGZyZXF1ZW5jeSkgdGhhdCByZXF1aXJlIGdsb2JhbCBtZWFzdXJlcz8gQ2FuIGl0IGJlIHByZWNvbXB1dGVkIGFuZCB1c2VkIGZvciBhbnkgcXVlcmllcz8gc2hvdWxkIGl0IGJlIGNvbXB1dGVkIG9uIHJ1bnRpbWU/IGRvZXMgaXQgbWFrZSBzZW5zZSBmb3IgY2VydGFpbiDigJxsb2NhbCBxdWVyaWVz4oCdIHRvIGNvbXB1dGUgc2F5IGxhYmVsIGZyZXF1ZW5jaWVzIGZvciBhbGwg4oCcZm91bmRlZOKAnSBlZGdlcz8NPGJyIC8+KiBub3QgY2xlYXIgaG93IHRoZSBpbml0aWFsIHF1ZXJ5IHR1cGxlcyBhcmUgZ2VuZXJhdGVkLiBJdCBpcyBhbHNvIG5vdCBjbGVhciB0aGUgaG93IHRoZSBxdWVyeSBwb3NlZCBpbiB0aGUgaW50cm8g4oCcV2hvIGdyYWR1YXRlZCBmcm9tIHRoZSBzYW1lIHVuaXZlcnNpdHkgYXMgYSBVUyBwcmVzaWRlbnQgYW5kIHdvcmtlZCBhdCBhIGNvbXBhbnkgdGhhdCByZWNlaXZlZCBnb3Zlcm5tZW50IGZ1bmRpbmcgZHVyaW5nIHRoZSBwcmVzaWRlbnTigJlzIHRlcm0/4oCdIHdvdWxkIGJlIHBhcnNlZCB0byBpbml0aWFsIHF1ZXJ5IHR1cGxlcyBhbmQgd2hhdCBhbnN3ZXJzIHdvdWxkIG9uZSBleHBlY3QgZnJvbSBieSBHUUJFLg08YnIgLz4qIG5vdCBjbGVhciB3aGF0IGlzIOKAnGJhc2VsaW5lIG1ldGhvZOKAnS4gSW4gU2VjdGlvbiA1LjQgdGhlcmUgaXMgbm8gbWVudGlvbiBvbiB0aGF0LiBJcyBpdCBhIOKAnGJydXRlLWZvcmNl4oCdIGFwcHJvYWNoP2QCBQ9kFgRmDw8WAh8BBR9KdXN0aWZpY2F0aW9uIG9mIFJlY29tbWVuZGF0aW9uZGQCAQ9kFgJmDxUB6QFJbiBwcmluY2lwbGUgdGhlIHBhcGVyIGlzIHdlbGwgb3JnYW5pemVkLCBhbmQgcXVpdGUgZWFzeSB0byByZWFkLCBidXQgaW4gb3JkZXIgdGhlIHBhcGVyIHRvIGJlIHB1Ymxpc2hlZCBhbmQgdG8gZnVsbHkgY29udmluY2UgdGhlIHJlYWRlciBpdCB3b3VsZCBiZSBuaWNlIGlmIHRoZSBhdXRob3JzIGFkZHJlc3MgYW5kIGRpc2N1c3MgdGhlIGlzc3VlcyByYWlzZWQgaW4gdGhlIOKAnHdlYWsgcG9pbnRz4oCdLmQCBg9kFgRmDw8WAh8BBXFDYW5kaWRhdGUgZm9yIE1ham9yIFJldmlzaW9uPyAoYW5zd2VyIFlFUywgaWYgdGhlIHBhcGVyIGNhbiBiZSBhY2NlcHRhYmxlIGFmdGVyIHJldmlzaW9ucyB3aXRoaW4gYSAxLW1vbnRoIGZyYW1lKWRkAgEPZBYCZg8VAQJOT2QCBw8PFgIfAGhkZAIIDxUBAGQCAQ9kFgYCAw9kFgJmDxUBE0Fzc2lnbmVkX1Jldmlld2VyXzJkAgcPPCsADQEADxYEHwNnHwICB2QWAmYPZBYQAgEPZBYEZg8PFgIfAQUOT3ZlcmFsbCBSYXRpbmdkZAIBD2QWAmYPFQEGUmVqZWN0ZAICD2QWBGYPDxYCHwEFVVN1bW1hcnkgb2YgU3VibWlzc2lvbiAoZS5nLiwgYSBzaG9ydCBkZXNjcmlwdGlvbiBvZiB0aGUgcGFwZXIgYW5kIGl0cyBjb250cmlidXRpb25zKSBkZAIBD2QWAmYPFQG+AlRoZSBhdXRob3JzIHByb3Bvc2UgYSBzeXN0ZW0gdG8gcXVlcnkgZW50aXR5IHJlbGF0aW9uc2hpcCBncmFwaHMgYmFzZWQgb24gZXhhbXBsZSBpbnB1dCBncmFwaHMuIFRoYXQgaXMsIGdpdmVuIGEgc3BlY2lmaWMgaW5wdXQgZXhhbXBsZSwgdGhleSB0cnkgdG8gZmluZCB0aGUgdG9wLWsgbW9zdCAic2ltaWxhciIgc3ViZ3JhcGhzLiBTaW5jZSBjb21wdXRpbmcgYW4gb3B0aW1hbCBzb2x1dGlvbiB0byB0aGlzIHByb2JsZW0gaXMgaW50cmFjdGFibGUsIHRoZXkgcHJvcG9zZSBoZXVyaXN0aWNzIHRvIGFjaGlldmUgYW4gZWZmaWNpZW50IGNvbXB1dGF0aW9uLmQCAw9kFgRmDw8WAh8BBV9TdHJvbmcgUG9pbnRzIChlLmcuLCB0ZWNobmljYWwgZGVwdGgsIG5vdmVsdHksIHByYWN0aWNhbGl0eSwgZGVlcCBhbmFseXNpcywgc3Ryb25nIGV2YWx1YXRpb24pIGRkAgEPZBYCZg8VAVdUaGUgcGFwZXIgaXMgd2VsbCB3cml0dGVuLCB0aGUgbW90aXZhdGlvbiBpcyBjbGVhciwgYW5kIHRoZSBwcm9wb3NlZCBjb25jZXB0cyBhcmUgZ29vZC5kAgQPZBYEZg8PFgIfAQVzV2VhayBQb2ludHMgKGUuZy4sIG1pc3Rha2VzLCBpbnN1ZmZpY2llbnQgbW90aXZhdGlvbiwgb21pc3Npb24gb2YgcHJldmlvdXMgd29yaywgd2VhayBwcmVzZW50YXRpb24gYW5kIGV4cGVyaW1lbnRzKWRkAgEPZBYCZg8VAf8FVGhlIGF1dGhvcnMnIHN0YXRlbWVudCB0aGF0IHRoZXJlIGlzIG5vIHN5c3RlbSB3aGljaCBxdWVyaWVzIGVudGl0eS1yZWxhdGlvbnNoaXAgZ3JhcGhzIGJ5IGV4YW1wbGVzIGlzIHdyb25nLiBUaGUgc2FtZSBwcm9ibGVtIGhhcyBhbHJlYWR5IGJlZW4gdGFja2xlZCBieSB0aGUgd29yayAiWGlhbyBZdSwgWWl6aG91IFN1biwgUGVpeGlhbmcgWmhhbywgSmlhd2VpIEhhbjogUXVlcnktZHJpdmVuIGRpc2NvdmVyeSBvZiBzZW1hbnRpY2FsbHkgc2ltaWxhciBzdWJzdHJ1Y3R1cmVzIGluIGhldGVyb2dlbmVvdXMgbmV0d29ya3MuIEtERCAyMDEyIi4gU2luY2UsIHVuZm9ydHVuYXRlbHksIHRoZSBhdXRob3JzIHNlZW0gbm90IHRvIGJlIGF3YXJlIG9mIHRoaXMgd29yaywgbm8gY29tcGFyaXNvbiBpcyBpbmNsdWRlZC4gVGh1cywgb3ZlcmFsbCBpdCBpcyBpbXBvc3NpYmxlIHRvIGp1ZGdlIHRoZSBxdWFsaXR5IG9mIHRoZSBwcm9wb3NlZCBtZXRob2QuDTxiciAvPg08YnIgLz5BZGRpdGlvbmFsbHksIHRoZSBjb25jZXB0IG9mIG1ldGEgcGF0aHMgKCJZaXpob3UgU3VuLCBKaWF3ZWkgSGFuLCBYaWZlbmcgWWFuLCBQaGlsaXAgUy4gWXUsIFRpYW55aSBXdTogUGF0aFNpbTogTWV0YSBQYXRoLUJhc2VkIFRvcC1LIFNpbWlsYXJpdHkgU2VhcmNoIGluIEhldGVyb2dlbmVvdXMgSW5mb3JtYXRpb24gTmV0d29ya3MuIFBWTERCIDQoMTEpOjk5Mi0xMDAzICgyMDExKSIpLCB3aGljaCBpcyBoaWdobHkgcmVsYXRlZCwgaXMgbm90IGluY2x1ZGVkLg08YnIgLz5kAgUPZBYEZg8PFgIfAQUfSnVzdGlmaWNhdGlvbiBvZiBSZWNvbW1lbmRhdGlvbmRkAgEPZBYCZg8VAY8BRXZlbiB0aG91Z2ggdGhlIHBhcGVyIGlzIGdvb2QsIGl0IGNhbm5vdCBiZSBhY2NlcHRlZCBkdWUgdG8gdGhlIG1pc3NpbmcgcHJldmlvdXMgd29ya3MuIEEgY29tcGFyaXNvbiB3aXRoIHRoZSBleGlzdGluZyB0ZWNobmlxdWVzIGlzIG1hbmRhdG9yeS5kAgYPZBYEZg8PFgIfAQVxQ2FuZGlkYXRlIGZvciBNYWpvciBSZXZpc2lvbj8gKGFuc3dlciBZRVMsIGlmIHRoZSBwYXBlciBjYW4gYmUgYWNjZXB0YWJsZSBhZnRlciByZXZpc2lvbnMgd2l0aGluIGEgMS1tb250aCBmcmFtZSlkZAIBD2QWAmYPFQECTk9kAgcPZBYEZg8PFgIfAQVyQ29uY3JldGUgUmV2aXNpb25zIChpZiB5b3UgYW5zd2VyZWQgWUVTIHRvIHRoZSBwcmV2aW91cyBxdWVzdGlvbiwgcGxlYXNlIHN0YXRlIGNsZWFybHkgdGhlIHBvaW50cyB0byBiZSBhZGRyZXNzZWQpZGQCAQ9kFgJmDxUBAi0tZAIIDw8WAh8AaGRkAggPFQEAZAICD2QWBgIDD2QWAmYPFQETQXNzaWduZWRfUmV2aWV3ZXJfM2QCBw88KwANAQAPFgQfA2cfAgIGZBYCZg9kFg4CAQ9kFgRmDw8WAh8BBQ5PdmVyYWxsIFJhdGluZ2RkAgEPZBYCZg8VAQtXZWFrIFJlamVjdGQCAg9kFgRmDw8WAh8BBVVTdW1tYXJ5IG9mIFN1Ym1pc3Npb24gKGUuZy4sIGEgc2hvcnQgZGVzY3JpcHRpb24gb2YgdGhlIHBhcGVyIGFuZCBpdHMgY29udHJpYnV0aW9ucykgZGQCAQ9kFgJmDxUB8gFUaGUgcGFwZXIgcHJvdmlkZXMgYSBub3ZlbCBtZWNoYW5pc20gdG8gcXVlcnkgbGFiZWxlZCBncmFwaHMuIEl0IGlzIHVuY2xlYXIgd2h5IHRoZSBhdXRob3JzIGxhYmVsIHRoaXMgYXMgYW4gRVIgZ3JhcGguIFRoZSBpbnB1dCBpcyBhbiBleGFtcGxlIHR1cGxlLiBBIG5laWdoYm9yaG9vZCBncmFwaCBpcyBkZWZpbmVkIGFuZCB0aGVuIGFuc3dlcnMgYXJlIG9idGFpbmVkIHdpdGhpbiB0aGUgbmVpZ2hib3Job29kIGdyYXBoLmQCAw9kFgRmDw8WAh8BBV9TdHJvbmcgUG9pbnRzIChlLmcuLCB0ZWNobmljYWwgZGVwdGgsIG5vdmVsdHksIHByYWN0aWNhbGl0eSwgZGVlcCBhbmFseXNpcywgc3Ryb25nIGV2YWx1YXRpb24pIGRkAgEPZBYCZg8VAW0xLiBJbnRlcmVzdGluZyBwcm9ibGVtLg08YnIgLz4yLiBRdWVyeSBwcm9jZXNzaW5nIGFwcGVhcnMgdG8gYmUgd2VsbCBkZWZpbmVkLg08YnIgLz4yLiBFeHRlbnNpdmUgZXhwZXJpbWVudHMuZAIED2QWBGYPDxYCHwEFc1dlYWsgUG9pbnRzIChlLmcuLCBtaXN0YWtlcywgaW5zdWZmaWNpZW50IG1vdGl2YXRpb24sIG9taXNzaW9uIG9mIHByZXZpb3VzIHdvcmssIHdlYWsgcHJlc2VudGF0aW9uIGFuZCBleHBlcmltZW50cylkZAIBD2QWAmYPFQFuMS4gRGVmaW5pdGlvbiBvZiB0aGUgcHJvYmxlbSB3YXMgZmxhd2VkIHNvIGl0IHdhcyBkaWZmaWN1bHQgdG8gZm9sbG93IHRoZSByZXN1bHRzLg08YnIgLz4yLiBQb29yIHByZXNlbnRhdGlvbi5kAgUPZBYEZg8PFgIfAQUfSnVzdGlmaWNhdGlvbiBvZiBSZWNvbW1lbmRhdGlvbmRkAgEPZBYCZg8VAZQISSByZWFsbHkgbGlrZWQgdGhpcyBwYXBlci4gVW5mb3J0dW5hdGVseSwgaXQgaGFkIHRvbyBtYW55IGZsYXdzIHRvIG1ha2UgaXQgY29tcHJlaGVuc2libGUgdG8gYSBub24tZXhwZXJ0IG9uIHRoZSB0b3BpYy4NPGJyIC8+DTxiciAvPlRoZXJlIHNlZW1zIHRvIGJlIGFuIGVycm9yIGluIHRoZSBleGFtcGxlOyBMYXJyeSBQYWdlIGFuZCBTZXJnZXkgQnJpbiBzZWVtIHRvIGJlIHRyYW5zcG9zZWQ/DTxiciAvPg08YnIgLz5Qcm92aWRlIGEgbW9yZSBkZXRhaWxlZCBleGFtcGxlIG9mIG11bHRpcGxlIHBhdGhzIGFuZCB0aGUgbmVlZCB0byByYW5rIHRoZSByZXN1bHRzLg08YnIgLz4NPGJyIC8+VGhlIGludHJvZHVjdGlvbiBwcm92aWRlZCBhIExPVCBvZiBkZXRhaWwgYWJvdXQgcXVlcnkgcHJvY2Vzc2luZy4gVW5mb3J0dW5hdGVseSwgdGhlIHByb2JsZW0gaGFkIG5vdCBiZWVuIGNsZWFybHkgZGVmaW5lZCBzbyB0aGlzIGxldmVsIG9mIGRldGFpbCB3YXMgbm90IGFwcHJvcHJpYXRlLg08YnIgLz4NPGJyIC8+UHJvdmlkZSBhIENMRUFSIGRlZmluaXRpb24gb2YgKDEpIHF1ZXJ5IGdyYXBoOyAoMikgbmVpZ2hib3Job29kIGdyYXBoOyAoMykgc3ViZ3JhcGhzPzsgKDQpIGFuc3dlciBncmFwaCBhbmQgdHVwbGVzOyAoNSkgc2NvcmluZyBmdW5jdGlvbjsgZXRjLiB1c2luZyBjbGVhciBhbmQgc2ltcGxlIGRlZmluaXRpb25zIGFuZCBmaWd1cmVzLiBUaGUgdGVjaG5pY2FsL21hdGhlbWF0aWNhbCBkZWZpbml0aW9ucyBjYW4gZm9sbG93LiANPGJyIC8+DTxiciAvPkdpdmVuIHR3byBuLXR1cGxlcywgaXMgdGhlIHNjb3JpbmcgZnVuY3Rpb24gYXBwbGllZCB0byB0aGUgbiBlbGVtZW50cyBhcyBhIHdob2xlIG9yIGlzIHRoZXJlIGEgcGFpcndpc2UgY29tcGFyaXNvbiBvZiBlYWNoIG9mIHRoZSBuIHBhaXJzPyBDbGVhcmx5IHRoZSBhbnN3ZXJzIGFuZCB0aGUgc2VtYW50aWNzIHdpbGwgYmUgZGlmZmVyZW50LiANPGJyIC8+DTxiciAvPlRoZSBleHBsYW5hdGlvbiBvZiB0aGUgYW5zd2VyIGdyYXBoIGZvciBFeGFtcGxlIDIgd2FzIHVuY2xlYXIuZAIGD2QWBGYPDxYCHwEFcUNhbmRpZGF0ZSBmb3IgTWFqb3IgUmV2aXNpb24/IChhbnN3ZXIgWUVTLCBpZiB0aGUgcGFwZXIgY2FuIGJlIGFjY2VwdGFibGUgYWZ0ZXIgcmV2aXNpb25zIHdpdGhpbiBhIDEtbW9udGggZnJhbWUpZGQCAQ9kFgJmDxUBAk5PZAIHDw8WAh8AaGRkAggPFQEAZBgDBR9jdGwwMCRjcGgkZ3ZSZXZpZXdzJGN0bDAyJGN0bDAwDzwrAAoBCAIBZAUfY3RsMDAkY3BoJGd2UmV2aWV3cyRjdGwwMSRjdGwwMA88KwAKAQgCAWQFH2N0bDAwJGNwaCRndlJldmlld3MkY3RsMDAkY3RsMDAPPCsACgEIAgFkv/nE7JXQamGjm0O1a6zvxOHr528=" />
+</div>
+
+<table id="header">
+<tr>
+<td width="100%"><a href='http&#58;&#47;&#47;www.sigmod.org&#47;2013&#47;' target='_blank'>SIGMOD 2013</a><br /><b>ACM Conference on the Management of Data 2013</b><br />June 23-28, 2013, New York, USA </td>
+</tr>
+<tr class='headerSeparator'>
+    <td style='height:5px'></td>
+</tr>
+</table>
+<table id="content"><tr><td class='contentBorder'>&nbsp;</td><td class="contentContainer">
+<span id="ctl00_cph_Label4" style="font-size:Small;font-weight:bold;">Reviews For Paper</span>
+<span id="ctl00_cph_lblErrorMessage" class="error" style="font-size:Small;"></span>
+<div id="ctl00_cph_pnlReviews">
+	
+    <span style="font-size:Small;">
+<table class="nicetable2" style="text-align:left; width: 100%;">
+    <tr id="ctl00_cph_infoSubmission_trTrack">
+		<td><b>Track</b></td>
+		<td><span id="ctl00_cph_infoSubmission_lblTrack" style="font-size:Small;">Research</span></td>
+	</tr>
+	
+    <tr>
+        <td width="100px"><b>Paper ID</b></td>
+        <td><span id="ctl00_cph_infoSubmission_lblPaperId" style="font-size:Small;">121</span></td>
+    </tr>
+    <tr>
+        <td><b>Title</b></td>
+        <td><span id="ctl00_cph_infoSubmission_lblPaperTitle" style="font-size:Small;">GQBE&#58; Querying Entity-Relationship Graphs by Example Tuples</span></td>
+    </tr>
+    
+    
+    
+    
+    
+</table></span>
+    
+    
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label1" style="font-size:Small;">Assigned_Reviewer_1</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Weak Accept
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Summary of Submission (e.g., a short description of the paper and its contributions) </td><td style="width:80%;">
+                            The paper targets very interesting and important problem on querying large entity relationship graphs. The authors argue that non-expert users might not be able to generate a good enough structured query for a complex relationship graph in order to get the results/data they were looking for. Instead, the authors propose their system GQBE which requires only an “example entity tuple” as an entry and generates top-k answers based on hidden query graphs and provide a heuristic on pruning the hidden query graphs and ranking the answers. The authors perform experiments with their system on Freebase dataset.
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Strong Points (e.g., technical depth, novelty, practicality, deep analysis, strong evaluation) </td><td style="width:80%;">
+                            * Nice, simple and novel (if to believe the authors) idea of producing a hidden query graph and simple but effective heuristics to prune it.
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Weak Points (e.g., mistakes, insufficient motivation, omission of previous work, weak presentation and experiments)</td><td style="width:80%;">
+                            * it is hard to find in the paper the discussion and the analysis of the complexity of finding the answer graphs for a given query. How does it depend on the size of the query graphs? How does it depend on the nature of a particular entity - relationship graph? Intuitively it looks that certain queries could be relatively inexpensive to compute, while others could require to go through all the entity relationship graph which can be unaffordable. What if the entity relationship graph is distributed among many different machines/geographical sites?<br />* a bit more insight and discussion could be valuable on the complexity and difficulty of calculating certain parameter (e.g., label frequency) that require global measures? Can it be precomputed and used for any queries? should it be computed on runtime? does it make sense for certain “local queries” to compute say label frequencies for all “founded” edges?<br />* not clear how the initial query tuples are generated. It is also not clear the how the query posed in the intro “Who graduated from the same university as a US president and worked at a company that received government funding during the president’s term?” would be parsed to initial query tuples and what answers would one expect from by GQBE.<br />* not clear what is “baseline method”. In Section 5.4 there is no mention on that. Is it a “brute-force” approach?
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Justification of Recommendation</td><td style="width:80%;">
+                            In principle the paper is well organized, and quite easy to read, but in order the paper to be published and to fully convince the reader it would be nice if the authors address and discuss the issues raised in the “weak points”.
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Candidate for Major Revision? (answer YES, if the paper can be acceptable after revisions within a 1-month frame)</td><td style="width:80%;">
+                            NO
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label1" style="font-size:Small;">Assigned_Reviewer_2</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Reject
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Summary of Submission (e.g., a short description of the paper and its contributions) </td><td style="width:80%;">
+                            The authors propose a system to query entity relationship graphs based on example input graphs. That is, given a specific input example, they try to find the top-k most "similar" subgraphs. Since computing an optimal solution to this problem is intractable, they propose heuristics to achieve an efficient computation.
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Strong Points (e.g., technical depth, novelty, practicality, deep analysis, strong evaluation) </td><td style="width:80%;">
+                            The paper is well written, the motivation is clear, and the proposed concepts are good.
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Weak Points (e.g., mistakes, insufficient motivation, omission of previous work, weak presentation and experiments)</td><td style="width:80%;">
+                            The authors' statement that there is no system which queries entity-relationship graphs by examples is wrong. The same problem has already been tackled by the work "Xiao Yu, Yizhou Sun, Peixiang Zhao, Jiawei Han: Query-driven discovery of semantically similar substructures in heterogeneous networks. KDD 2012". Since, unfortunately, the authors seem not to be aware of this work, no comparison is included. Thus, overall it is impossible to judge the quality of the proposed method.<br /><br />Additionally, the concept of meta paths ("Yizhou Sun, Jiawei Han, Xifeng Yan, Philip S. Yu, Tianyi Wu: PathSim: Meta Path-Based Top-K Similarity Search in Heterogeneous Information Networks. PVLDB 4(11):992-1003 (2011)"), which is highly related, is not included.<br />
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Justification of Recommendation</td><td style="width:80%;">
+                            Even though the paper is good, it cannot be accepted due to the missing previous works. A comparison with the existing techniques is mandatory.
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Candidate for Major Revision? (answer YES, if the paper can be acceptable after revisions within a 1-month frame)</td><td style="width:80%;">
+                            NO
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Concrete Revisions (if you answered YES to the previous question, please state clearly the points to be addressed)</td><td style="width:80%;">
+                            --
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label1" style="font-size:Small;">Assigned_Reviewer_3</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Weak Reject
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Summary of Submission (e.g., a short description of the paper and its contributions) </td><td style="width:80%;">
+                            The paper provides a novel mechanism to query labeled graphs. It is unclear why the authors label this as an ER graph. The input is an example tuple. A neighborhood graph is defined and then answers are obtained within the neighborhood graph.
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Strong Points (e.g., technical depth, novelty, practicality, deep analysis, strong evaluation) </td><td style="width:80%;">
+                            1. Interesting problem.<br />2. Query processing appears to be well defined.<br />2. Extensive experiments.
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Weak Points (e.g., mistakes, insufficient motivation, omission of previous work, weak presentation and experiments)</td><td style="width:80%;">
+                            1. Definition of the problem was flawed so it was difficult to follow the results.<br />2. Poor presentation.
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Justification of Recommendation</td><td style="width:80%;">
+                            I really liked this paper. Unfortunately, it had too many flaws to make it comprehensible to a non-expert on the topic.<br /><br />There seems to be an error in the example; Larry Page and Sergey Brin seem to be transposed?<br /><br />Provide a more detailed example of multiple paths and the need to rank the results.<br /><br />The introduction provided a LOT of detail about query processing. Unfortunately, the problem had not been clearly defined so this level of detail was not appropriate.<br /><br />Provide a CLEAR definition of (1) query graph; (2) neighborhood graph; (3) subgraphs?; (4) answer graph and tuples; (5) scoring function; etc. using clear and simple definitions and figures. The technical/mathematical definitions can follow. <br /><br />Given two n-tuples, is the scoring function applied to the n elements as a whole or is there a pairwise comparison of each of the n pairs? Clearly the answers and the semantics will be different. <br /><br />The explanation of the answer graph for Example 2 was unclear.
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Candidate for Major Revision? (answer YES, if the paper can be acceptable after revisions within a 1-month frame)</td><td style="width:80%;">
+                            NO
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+    <br />
+    <br />
+
+</div>
+</td><td class='contentBorder'>&nbsp;</td></tr></table>
+</form>
+</body>
+</html>

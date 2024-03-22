@@ -1,0 +1,75 @@
+----------------------- REVIEW 1 ---------------------
+PAPER: 1798
+TITLE: ClaimBuster:  Monitoring Political Discourses and Spotting Factual Claims
+AUTHORS: Naeemul Hassan, Fatma Arslan, Siddhant Gawsane, Damian Jimenez, Minumol Joseph, Aaditya Kulkarni, Vikas Savlaram Sable, Chengkai Li and Mark Tremayne
+
+Significance: 2 (modest or incremental contribution)
+Soundness: 2 (minor inconsistencies or small fixable errors)
+Scholarship: 2 (relevant literature cited but could expand)
+Clarity: 3 (crystal clear)
+Breadth of Interest: 3 (some interest beyond specialty area)
+SUMMARY RATING: -2 (--)
+CONFIDENCE: 3 (certain)
+
+----------- Summarize the Main Contribution of the Paper -----------
+The demo presents the UI for part of a future automated fact-checking system, so far aimed at presidential debates. The presented part identifies claims worth fact-checking in presidential debates and displays them, by highlighting them in the debate transcripts, along with their significance scores.
+
+----------- Comments for the Authors -----------
+Technical comments about the paper and the demo:
+
+-- The claimed recall and precision are 0.74% and 0.79% respectively. Hopefully this is just a typo and they are actually 74% and 79%!
+
+-- It's not clear what precision and recall here means. Claimbuster outputs scores, so any given precision-recall pair probably corresponds to some threshold on these scores, but neither the threshold nor the methodilogy for picking it is specified.
+
+-- The feature set used in the system is quite impoverished. The original CIKM'15 paper doesn't even evaluate n-grams, let alone using more complicated automatically constructed features (e.g., with a neural network).
+
+-- It's hard to believe this system can be a fully automatic fact-checking tool, given that the precision and recall just of its fact-checking-worthy claim identification component is 79% and 74%, and the other components, when they are invented, will further degrade the quality of its output.
+
+-- The "Find factual claims in your own text" section is bound to produce very questionable and unreliable output, because fact-check-worthiness and fact-checkability of most claims depends on the context in which the claim is made, and the system has no means of knowing that context. (Note that for presidential debates the context is known, alleviating this issue.)
+
+-- Overall, it's difficult to see why anyone one trust the scores output by the system. The evaluation done in the CIKM'15 paper says little almost nothing about how "good" the scores are and what they even mean, other than "bigger is better".
+
+
+Typos:
+
+
+Its features include the tokens' in sentences and the tokens part-of-speech (POS) tags.
+-->
+Its features include tokens in sentences and the tokens' part-of-speech (POS) tags.
+
+
+By and large, the vision of this work is compelling, but the completed part of the work and the demo is rather preliminary/lacking in substance. Most of the demo is dedicated to showing integration with debate streams and social media. It gives little intuition as to why the system's judgement about what the claim importance is to be trusted.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 1798
+TITLE: ClaimBuster:  Monitoring Political Discourses and Spotting Factual Claims
+AUTHORS: Naeemul Hassan, Fatma Arslan, Siddhant Gawsane, Damian Jimenez, Minumol Joseph, Aaditya Kulkarni, Vikas Savlaram Sable, Chengkai Li and Mark Tremayne
+
+Significance: 2 (modest or incremental contribution)
+Soundness: 2 (minor inconsistencies or small fixable errors)
+Scholarship: 1 (important related work missing or mischaracterizes prior research)
+Clarity: 3 (crystal clear)
+Breadth of Interest: 3 (some interest beyond specialty area)
+SUMMARY RATING: -1 (- (weak reject))
+CONFIDENCE: 2 (reasonably confident)
+
+----------- Summarize the Main Contribution of the Paper -----------
+This work demos ClaimBuster, a machine learning based system for fact-checking.
+For any fact, ClaimBuster issues queries against its internal knowledge databases to verify its correctness, as well as it's machine learning module (trained on tens of thousands of instances) to assign the correctness/check-worthy scores to the claims.
+The system can also serve as a platform to annotate the factuality scores of claims.
+
+----------- Comments for the Authors -----------
+The graphical interface is nice, and interesting. In general I like the idea, but I am not convinced that it does anything useful.
+It is surprising to see authors use "check-worthy score" and "factuality" scores interchangeably.
+Although the demo is titled "fact-checking", the output of the system is a set of "check-worthy" scores. I think distinguishing these two concepts would be greatly helpful, i.e. having more granularities for predictions:
+A) Something is verifiably correct
+B) Something is verifiably incorrect
+C) Something is clearly controversial but there is not enough evidence to check it. It needs further investigation.
+D) Not controversial, and not worthy of checking.
+ 
+Looking at the results, I see many peculiarities: For example,  " I'm chris wallace of fox news." gets score of 0.21. This should clearly be in class D I mentioned above. 
+
+Another issue that is missing and I think would be great to add to the current system is "explaining" why some claims might be correct or incorrect. No one would ever use any fact-checking system that is not able to tell us why a claim might be correct/incorrect (e.g. citation, reference, reasoning, etc).
+
+In overall I think the current system does not have much practical impact. That being said, I see much space for progress in this project. I wholeheartedly urge the authors to improve the current work to make it better and more useful.

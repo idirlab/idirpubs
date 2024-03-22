@@ -1,0 +1,25 @@
+1472:  Gradient-Based Adversarial Training on Transformer Networks for Detecting Check-Worthy Factual Claims
+
+has not been accepted to KDD 2020.
+
+Mohak Shah & Suju Rajan
+Applied Data Science Track Chairs
+KDD 2020
+
+SUBMISSION: 1472
+TITLE: Gradient-Based Adversarial Training on Transformer Networks for Detecting Check-Worthy Factual Claims
+
+-------------------------  METAREVIEW  ------------------------
+The reviewers found this paper to be relevant and interesting.
+
+The reviewers appreciate the contributions of this paper. They point out a few areas for improvement that I recommend the authors to address in their next version of the manuscript, including:
+
+--Related work [R2]: R2 recommends adding to the related work section the literature highlithing differences between the proposed system and the state-of-the-art
+
+--Deployment [R2, R3]: R2 points out that the deployment challenges and choices are not deeply discussed. Please, explain. R3 expresses his/her disagreement regarding the deployment of the system. Please, clarify
+
+--Evaluation [R3]: R3 makes a few recommendations about the evaluation that I suggest the authors to follow. Also, R3 would like to see a comparison to existing text classification problems
+
+--Discussion [R2]: R2 recommends adding a discussion on limits and weaknesses of the proposed approach. Please, add such a discussion
+
+I strongly recommend the authors to address the feedback above in their next version of the paper. I hope that the authors find the feedback useful and constructive

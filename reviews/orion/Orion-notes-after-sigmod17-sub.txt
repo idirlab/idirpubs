@@ -1,0 +1,56 @@
+﻿1. Update related work. 
+* new projects on visual query interface
+* machine learning. Explain the relevance (or rather irrelvance) of imbalanced classes and enormous training labels. 
+
+2. co-occurring edges
+* The approach of simulating query sessions. 
+[?] The impact of negative edges, which is natural in query log but not so in correlations.
+- combine different types of query logs (Wiki, Data Graph, Real log)
+
+3. Definition and semantics
+* Our definition of Candidate Edges is not rigorous. It is only a list of edge types, not about where are the two ends. Consider the partial query graph has an actor node and a film node. The system may recommend a “starring” relationship between them, or between one of them and a new node. There is no way to differentiate. 
+* Formalize the user interface semantics. expand the User interface section. Explain in detail. 
+
+4. usability of the system
+* Interface very slow when I selected FILM domain and type "act" in "Type Search" box. It is also slow when I tried to select the "Film Actor" type. 
+* Orion doesn't recommend an edge type if it already appears in a query session. (Although the user can manually add such an edge.) 
+* Orion never suggests an edge between two existing nodes in active mode. 
+* connect Orion with query engine. and further enhance interface (e.g., empty result indicator) 
+[?, it seems this will never happen] [From Nandish]  In the GUI, I might add an edge called say education for one node, but might not want that same edge in another node. So I might reject it if shows up a second time. So if an edge was both accepted and rejected, I had considered only the positive edge in the query session, not both positive and negative versions of that edge. 
+
+5. paper writing
+- Explain Definition (3)
+[?] The e \in NE(v) above Definition 4 should be edge type. The same in other places of the paper. 
+* should definition 4 say "edge type" instead of "edge"? We abusively used edge in place of ede type in all places.
+- Section 4. Q (should connect Q with G_p?)
+- Draw an exmaple of random forest (or at least a tree?)
+- Explain the intuition of 4.2.2  support of (Q_i -> e) 
+- Explain the limitations of baseline methods
+- Add examples/diagrams for explaining the differences between general random forests and random forests for specific Q.
+- an example of supp(e, Qi, W)
+- explain implementation detials about how user interface features are supported.
+- screenshot not clear.
+- Section 5 explains negative edge generations in both the 1st and the last paragrphs. They don't seem to be consistent. (This was the case in VLDB submission and verified by Nandish. I might have fixed it in submitting to SIGMOD. But I am not 100% sure what in the paper now is consistent with the real implementation. We need to verify.)
+
+6. Algorithm for finding candidates C
+- Currently we only have dinition of C and how to rank C. Do we need to explain how to fetch C? Is there efficiency-related story that we can tell? 
+
+7. Is it necessary to consider order in Qi?
+
+8. Experiments and Evaluation 
+- Do we study the impact of threshold \tau, and number of paths N?
+- Need to use experiments to verify the following claims in the paper.  (1) "This is why we expect these probabilities to be more accurate compared to the probabilities obtained from a random forest constructed offline, without knowledge of $Q$. This expectation is validated in the experiment results."  (2) At classification time, the input pattern $x$ ends up at the all-no path most of the times, and thus the class probabilities $P_D(y | x)$ do not vary much from the priors $P(y)$ averaged over all training examples.
+ 
+9. More thorough investigation of negative edges
+* Its rationale 
+* Thorough experiments 
+
+10. Training data in RDP is different from those in RF and NB. (the difference can be observed in Section 4.2)
+
+11. The following issue is related to 4.3.2. 
+
+Consider w1=ABC, w2= ABCD, w3=ACE. If the decision path is AB, then w1 and w2 satisfy the path. The distribution of classes is P(C|AB)=2/3, P(D|AB)=1/3, because w2=ABCD can lead to both C and D as the predicted class. Instead of Equation (2), I meant to point at Equation (3) which defines count. W_O = { w|w \in W, O \subseteq w}.  By this definition, the count of AB will be 2, although the above example indicates it is as if there are 3 training instances satisfying the path.
+
+I think that was the intent, of AB=2. P(D|AB)=1/2 and P(C|AB)=2/2. Thats what even Eq. 2 signifies, and it also reflects the scoring in our implementation. Our denominator in the scoring is not |W|.
+
+Now consider w1=AB. The count of AB will be 1. But there is be no classes coming from w1.  This perhaps can be fixed by replacing “O \subseteq w” by “O \subset w”. In this case, P(C|AB)=0/2. 

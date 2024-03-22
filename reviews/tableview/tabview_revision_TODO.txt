@@ -1,0 +1,13 @@
+1. YPS09: explain how to generate tables in this approach
+
+2. more results on execution time comparison
+
+3. use color to highlight.
+
+4. mention user study in introduction
+
+5. z-value: recalculate
+
+6. results for all different domains;
+
+7. explain the results

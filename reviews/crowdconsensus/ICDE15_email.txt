@@ -1,0 +1,14 @@
+Dear Drs. Gehrke, Lehner and Shim,
+
+Our ICDE15 submission #359 (Crowdsourcing Pareto-Optimal Object Finding by Pairwise Comparisons) was dismissed by unacceptably inattentive reviewing process and incorrect review comments. We have attached a formal letter regarding this matter. In summary: 
+
+- We were requested to provide an author feedback. (We spent almost a day on it.) But it appears the feedback was not considered at all. There is no meta-review and not even a single word was changed in the reviews. A large discrepancy exists in the reviews.
+
+- The comments in Review 3 are almost completely incorrect and unsubstantiated. Review 1’s weak reject is largely due to the misbelief that there are inconsistency and confusion in the paper and that our preference model is inappropriate (which is actually widely used). We find it unsubstantiated and too harsh. Details can be found in the attached letter. 
+
+ICDE has been highly regarded for decades by database researchers. It is truly unfortunate our paper was not reviewed in a more professional, competent and objective fashion. We sincerely hope you will correct the mistake. 
+
+Best regards,
+
+Chengkai Li 
+(On behalf of Abolfazl Asudeh, Gensheng Zhang, Naeemul Hassan, and Gergely V. Zaruba)

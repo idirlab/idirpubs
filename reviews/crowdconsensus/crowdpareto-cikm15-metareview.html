@@ -1,0 +1,343 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	Meta-Reviews For Paper
+</title>
+<style>
+body
+{
+	font-family:verdana,arial,helvetica;
+}
+#header
+{
+    width: 100%;
+    font-size: small;
+    background-color:#F7F7F7;
+}
+.headerSeparator
+{
+    background-color: #105586;
+}
+.printThemeText
+{
+    font-size:small;
+}
+.printThemeTable td
+{
+    vertical-align:top;
+}
+.printThemeGrid th
+{
+    color:white;
+    background:#5D7B9D;
+    font-weight:bold;
+}
+.printThemeGrid
+{
+    border-collapse:collapse;
+}
+.printThemeGrid td, .printThemeGrid th
+{
+    border:solid 1px #D6D3CE;
+    padding:4px 4px 4px 4px;
+}
+.printThemeGrid .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+.printThemeGrid .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+.cellprompt
+{
+	font-weight:bold;
+	white-space:nowrap;
+    width:100px;	
+}
+.paperHeader
+{
+    background-color:#dee3e7;
+    margin:5px 5px 15px 0px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.sectionHeader
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 0px;
+    width:99%;
+    text-decoration:underline;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+}
+.underlineheader
+{
+    text-decoration:underline;
+    font-weight:bold;
+    padding:5px 0px;
+}
+.response
+{
+    padding:5px 0px;
+}
+.reviewerlabel
+{
+    padding-right:20px;
+}
+.pageTitle
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    margin-top:10px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.submissionDetailsView
+{
+}
+.submissionDetailsView tr
+{
+    vertical-align:top;
+}
+.submissionDetailsView td.prompt
+{
+    font-weight:bold;
+}
+.submissionDetailsView tr.sectionSeparator
+{
+
+}
+.submissionDetailsView tr.sectionSeparator td
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+    color:Navy;
+}
+/*CSS Grid View General Definitions*/
+.CssGridView
+{
+    font-size:small; 
+}
+
+.CssGridView td, .CssGridView th
+{
+    padding:4px 4px 4px 4px;
+}
+
+/*CSS Compact Grid View General Definitions*/
+.CssGridViewCompact img
+{
+    border-style:none;
+    border-width:0px;
+}
+
+.CssGridViewCompact
+{
+    font-size:1em;
+    border-style:solid;
+    border-color:#D6D3CE;
+    border-width:1px;
+}
+
+.CssGridViewCompact .hrow a
+{
+    font-size:1em;
+}
+
+.CssGridViewCompact .row a, .CssGridViewCompact .altrow a
+{
+    font-size:0.8em;
+}
+
+.CssGridViewCompact .row .normal a, .CssGridViewCompact .row .normal, .CssGridViewCompact .altrow .normal a, .CssGridViewCompact .altrow .normal
+{
+    font-size:1em;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridView .hrow, .CssGridViewCompact .hrow
+{ 
+    background-color:#5D7B9D;
+    font-weight:bold;
+    color:White;
+}
+
+
+.CssGridViewCompact .hrow td
+{ 
+    border-bottom-width:0px;
+}
+
+.CssGridViewCompact .hrow th
+{ 
+    border-top-width:0px;
+    font-size:0.8em;
+    vertical-align:top;
+    border-left-width:0px;
+    border-right-width:0px;
+}
+
+.CssGridViewCompact .smaller
+{
+    font-size:0.8em;
+}
+
+/*CSS Grid View Row Styles*/
+.CssGridViewCompact .row, .CssGridViewCompact .altrow
+{
+    border-top-style:solid;
+    border-top-color:#D6D3CE;
+    border-top-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#D6D3CE;
+    border-bottom-width:1px;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridViewCompact .hrow .leftborder, .CssGridViewCompact .row .leftborder, .CssGridViewCompact .altrow .leftborder
+{
+    border-left-width:1px;
+    border-left-color:#D6D3CE;
+    border-left-style:solid;
+}
+
+.CssGridViewCompact .hrow .rightborder, .CssGridViewCompact .row .rightborder, .CssGridViewCompact .altrow .rightborder
+{
+    border-right-width:1px;
+    border-right-color:#D6D3CE;
+    border-right-style:solid;
+}
+
+.CssGridView .hrow a, .CssGridViewCompact .hrow a
+{ 
+    color:White;
+}
+ 
+.CssGridView .row, .CssGridViewCompact .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+
+.CssGridView .altrow, .CssGridViewCompact .altrow
+{ 
+    vertical-align:top;
+}
+
+.CssGridViewCompact .row td
+{ 
+    border-left-width:0px;
+    border-right-width:0px;
+}
+ 
+.CssGridViewCompact .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+
+.CssGridView .altrow tr, .CssGridViewCompact .altrow tr, .CssGridView .row tr, .CssGridViewCompact .row tr
+{ 
+    vertical-align:top;
+}
+</style>
+</head>
+<body>
+<form name="aspnetForm" method="post" action="ViewMetaReviewsForPaper.aspx?paperId=1015" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTAxNDM4ODU3Ng9kFgJmD2QWAgIDD2QWAmYPZBYCAgUPDxYCHgdWaXNpYmxlZ2QWBgIBD2QWAmYPZBYCZg9kFgZmDxYCHwBnFgICAQ9kFgJmDw8WAh4EVGV4dAUIRGF0YWJhc2VkZAIBD2QWAgIBD2QWAmYPDxYCHwEFBDEwMTVkZAICD2QWAgIBD2QWAmYPDxYCHwEFQ0Nyb3dkc291cmNpbmcgUGFyZXRvLU9wdGltYWwgT2JqZWN0IEZpbmRpbmcgYnkgUGFpcndpc2UgQ29tcGFyaXNvbnNkZAIDDw8WAh8AaGRkAgUPFgIeC18hSXRlbUNvdW50AgEWAmYPZBYGAgMPZBYCZg8VAQ9NZXRhX1Jldmlld2VyXzFkAgcPPCsADQEADxYEHgtfIURhdGFCb3VuZGcfAgICZBYCZg9kFgYCAQ9kFgRmDw8WAh8BBQ5PdmVyYWxsIFJhdGluZ2RkAgEPZBYCZg8VAQZBY2NlcHRkAgIPZBYEZg8PFgIfAQURRGV0YWlsZWQgQ29tbWVudHNkZAIBD2QWAmYPFQGNAkRlYXIgQXV0aG9ycyw8YnIgLz4gIFRoZSByZXZpZXdlcnMgYXJlIHBvc2l0aXZlIGFib3V0IHlvdXIgcGFwZXIuIEhvd2V2ZXIsIHBsZWFzZSBub3RlIHRoYXQgc2VxdWVudGlhbCBleGVjdXRpb24gaXMgYSB3ZWFrbmVzcyBvZiB0aGlzIHNjaGVtZSBpbiBwcmFjdGljZSBhbmQgYXQgbGVhc3QgYSBmZXcgd29yZHMgc3RyZXNzaW5nIHRoZSBsaW1pdGF0aW9uIGFuZCBwZXJoYXBzIHBvaW50aW5nIHRvd2FyZCBwb3RlbnRpYWwgc29sdXRpb25zIHdvdWxkIGJlIHdlbGNvbWUuZAIDDw8WAh8AaGRkAggPFQEAZBgBBR9jdGwwMCRjcGgkZ3ZSZXZpZXdzJGN0bDAwJGN0bDAwDzwrAAoBCAIBZCsqT8lCgO90NCo+BYLvJC/fV9wl" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="725FBCED" />
+</div>
+<table id="header">
+<tr>
+<td width="100%"><a href='http&#58;&#47;&#47;www.cikm-2015.org' target='_blank'>CIKM 2015</a><br /><b>The 24th ACM International Conference on Information and Knowledge Management</b><br />19-23 October 2015, Melbourne, Australia</td>
+</tr>
+<tr class='headerSeparator'>
+    <td style='height:5px'></td>
+</tr>
+</table>
+<table id="content"><tr><td class='contentBorder'>&nbsp;</td><td class="contentContainer">
+<span id="ctl00_cph_Label4" style="font-size:Small;font-weight:bold;">Meta-Reviews For Paper</span>
+<span id="ctl00_cph_lblErrorMessage" class="error" style="font-size:Small;"></span>
+<div id="ctl00_cph_pnlReviews">
+	
+    <span style="font-size:Small;"><table id="ctl00_cph_infoSubmission_tblInfo" class="nicetable2" style="text-align:left; width: 100%;">
+		<tr id="ctl00_cph_infoSubmission_trTrack">
+			<td><b>Track</b></td>
+			<td><span id="ctl00_cph_infoSubmission_lblTrack" style="font-size:Small;">Database</span></td>
+		</tr>
+		<tr>
+			<td width="100px"><b>Paper ID</b></td>
+			<td><span id="ctl00_cph_infoSubmission_lblPaperId" style="font-size:Small;">1015</span></td>
+		</tr>
+		<tr>
+			<td><b>Title</b></td>
+			<td><span id="ctl00_cph_infoSubmission_lblPaperTitle" style="font-size:Small;">Crowdsourcing Pareto-Optimal Object Finding by Pairwise Comparisons</span></td>
+		</tr>
+	</table>
+	</span>
+    
+    
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label2" style="font-size:Small;font-weight:bold;">Masked Meta-Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label1" style="font-size:Small;">Meta_Reviewer_1</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label3" style="font-size:Small;font-weight:bold;">Meta-Reviews:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Accept
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Detailed Comments</td><td style="width:80%;">
+                            Dear Authors,<br />  The reviewers are positive about your paper. However, please note that sequential execution is a weakness of this scheme in practice and at least a few words stressing the limitation and perhaps pointing toward potential solutions would be welcome.
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+    <br />
+    <br />
+
+</div>
+</td><td class='contentBorder'>&nbsp;</td></tr></table>
+</form>
+</body>
+</html>

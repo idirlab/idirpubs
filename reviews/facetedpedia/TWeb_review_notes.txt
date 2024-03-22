@@ -1,0 +1,59 @@
+American_actors_by_state > California actors
+American_actors_by_state > Illinois actors > Actors from chicago 
+American_actors_by_state>Pennsylvania actors >Actors from Pittsburgh
+
+
+American_film_directors>American film directors by ethnic or national origin >Jewish American film directors
+
+American_writers >  
+    American screenwriters
+	American songwriters
+	American non-fiction writers
+	American fiction writers
+	American academics
+	
+    American writers by state
+    American writers by genre
+    American writers by city
+    American writers by ethnic or national origin	
+	
+1. Break down each fact. Convert 1 facet into multiple facets.
+
+-- name. collect all leaf (B1) nodes in the facet.
+
+-- if the any node in the facet has title "NOUN by ...", treat  it as one facet.
+
+-- The remaining nodes will stay in the original facet.
+
+2. use 2-level of facets. level 1 is for B1. group level 1 facets. Show the B1's chosen for each group.
+
+3. GUI: highlight the one facet from which a choice has just been made.
+
+4. Combine very small hierarchy. If a hierarchy only covers a very small number of articles (after various nodes have been chosen), make the hierarchy flat.
+
+American_writers>American writers by ethnic or national origin >African American writers [3] >African American songwriters [3] >African American singer-songwriters [3]
+
+We should just combine the last 3 items and shorten it.
+
+5. 
+
+Academy Awards > Academy Award Winners > all people
+Academy Awards > Academy Honorary Award Recipients  > all companies
+
+If they have different types, should break down.
+
+6. A similar case is :
+
+Film_production_companies_of_the_United_States>20th Century Fox >20th Century Fox films[2]
+
+However, other leaves under the root are companies. The town under 20th Century Fox films are films. We should just seperate them and first remove them, because they are too small.
+
+or even simpler, Given one facet root, only keep the leaves that are of the majority type?
+
+7. 
+
+Film_production_companies_of_the_United_States > DreamWorks[4] >  {DreamWorks} [4]
+
+8. Shorten the names:
+
+20th_century_television_series_endings>1980s television series endings >1989 television series endings

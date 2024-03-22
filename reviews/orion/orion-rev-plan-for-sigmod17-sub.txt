@@ -1,0 +1,62 @@
+GUI ToDo items:
+=====================
+
+1) Node name/type suggestion
+2) After the user adds a new node, suggest an edge to connect the new node to an existing node.
+
+3) warning message when a partial query graph won't return any result (based on data graph)
+
+More generally, does the system make suggestions based on schema graph or data graph?
+
+Techniques ToDo items:
+=====================
+1) include more details about CAR, SVD, RF, NB in the paper.
+
+
+Revision Todo items:
+
+1) Imbalanced classes (R1)
+- literature study
+- compare with methods 
+
+Actions:
+- Sona: discuss with Vassilis; literature study
+
+2) Enormous training labels (R3). 
+- literature study
+- compare with methods 
+- Understand why R3 believes RDP can't be effective. 
+
+Actions:
+- Chengkai: discuss with Vassilis; literature study
+
+3) Motivation of visual query builders (R2) 
+
+- evidence;
+- other systems;
+- keyword search/NLP query: literature study, compare by experiments. 
+
+Actions:
+- Gensheng: identify relevant works
+- Chengkai: reach out to Xifeng
+
+4) Detailed commentsfrom R1: 
+
+- Better explanation and presentation of user study results 
+- Tradeoff between RDP overhead & usability of long sessions
+- Statistics on negative edges in query logs generated
+- Naive bayes 3.9 seconds
+- ordering of edges in session
+
+Actions:
+- Sami: understand the details in the paper and source code
+
+5) query log -> data statistics (R2). 
+
+6) video/demo (R1) 
+
+Actions:
+- Sami: at least make a video, if not releasing the demo.
+
+7) Publication venue (R3)
+

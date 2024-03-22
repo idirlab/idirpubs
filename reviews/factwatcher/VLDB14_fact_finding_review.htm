@@ -1,0 +1,535 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	Reviews For Paper
+</title>
+<style>
+body
+{
+	font-family:verdana,arial,helvetica;
+}
+#header
+{
+    width: 100%;
+    font-size: small;
+    background-color:#F7F7F7;
+}
+.headerSeparator
+{
+    background-color: #105586;
+}
+.printThemeText
+{
+    font-size:small;
+}
+.printThemeTable td
+{
+    vertical-align:top;
+}
+.printThemeGrid th
+{
+    color:white;
+    background:#5D7B9D;
+    font-weight:bold;
+}
+.printThemeGrid
+{
+    border-collapse:collapse;
+}
+.printThemeGrid td, .printThemeGrid th
+{
+    border:solid 1px #D6D3CE;
+    padding:4px 4px 4px 4px;
+}
+.printThemeGrid .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+.printThemeGrid .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+.cellprompt
+{
+	font-weight:bold;
+	white-space:nowrap;
+    width:100px;	
+}
+.paperHeader
+{
+    background-color:#dee3e7;
+    margin:5px 5px 15px 0px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.sectionHeader
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 0px;
+    width:99%;
+    text-decoration:underline;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+}
+.underlineheader
+{
+    text-decoration:underline;
+    font-weight:bold;
+    padding:5px 0px;
+}
+.response
+{
+    padding:5px 0px;
+}
+.reviewerlabel
+{
+    padding-right:20px;
+}
+.pageTitle
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    margin-top:10px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.submissionDetailsView
+{
+}
+.submissionDetailsView tr
+{
+    vertical-align:top;
+}
+.submissionDetailsView td.prompt
+{
+    font-weight:bold;
+}
+.submissionDetailsView tr.sectionSeparator
+{
+
+}
+.submissionDetailsView tr.sectionSeparator td
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+    color:Navy;
+}
+/*CSS Grid View General Definitions*/
+.CssGridView
+{
+    font-size:small; 
+}
+
+.CssGridView td, .CssGridView th
+{
+    padding:4px 4px 4px 4px;
+}
+
+/*CSS Compact Grid View General Definitions*/
+.CssGridViewCompact img
+{
+    border-style:none;
+    border-width:0px;
+}
+
+.CssGridViewCompact
+{
+    font-size:1em;
+    border-style:solid;
+    border-color:#D6D3CE;
+    border-width:1px;
+}
+
+.CssGridViewCompact .hrow a
+{
+    font-size:1em;
+}
+
+.CssGridViewCompact .row a, .CssGridViewCompact .altrow a
+{
+    font-size:0.8em;
+}
+
+.CssGridViewCompact .row .normal a, .CssGridViewCompact .row .normal, .CssGridViewCompact .altrow .normal a, .CssGridViewCompact .altrow .normal
+{
+    font-size:1em;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridView .hrow, .CssGridViewCompact .hrow
+{ 
+    background-color:#5D7B9D;
+    font-weight:bold;
+    color:White;
+}
+
+
+.CssGridViewCompact .hrow td
+{ 
+    border-bottom-width:0px;
+}
+
+.CssGridViewCompact .hrow th
+{ 
+    border-top-width:0px;
+    font-size:0.8em;
+    vertical-align:top;
+    border-left-width:0px;
+    border-right-width:0px;
+}
+
+.CssGridViewCompact .smaller
+{
+    font-size:0.8em;
+}
+
+/*CSS Grid View Row Styles*/
+.CssGridViewCompact .row, .CssGridViewCompact .altrow
+{
+    border-top-style:solid;
+    border-top-color:#D6D3CE;
+    border-top-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#D6D3CE;
+    border-bottom-width:1px;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridViewCompact .hrow .leftborder, .CssGridViewCompact .row .leftborder, .CssGridViewCompact .altrow .leftborder
+{
+    border-left-width:1px;
+    border-left-color:#D6D3CE;
+    border-left-style:solid;
+}
+
+.CssGridViewCompact .hrow .rightborder, .CssGridViewCompact .row .rightborder, .CssGridViewCompact .altrow .rightborder
+{
+    border-right-width:1px;
+    border-right-color:#D6D3CE;
+    border-right-style:solid;
+}
+
+.CssGridView .hrow a, .CssGridViewCompact .hrow a
+{ 
+    color:White;
+}
+ 
+.CssGridView .row, .CssGridViewCompact .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+
+.CssGridView .altrow, .CssGridViewCompact .altrow
+{ 
+    vertical-align:top;
+}
+
+.CssGridViewCompact .row td
+{ 
+    border-left-width:0px;
+    border-right-width:0px;
+}
+ 
+.CssGridViewCompact .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+
+.CssGridView .altrow tr, .CssGridViewCompact .altrow tr, .CssGridView .row tr, .CssGridViewCompact .row tr
+{ 
+    vertical-align:top;
+}
+</style>
+</head>
+<body>
+<form name="aspnetForm" method="post" action="ViewReviewsForPaper.aspx?paperId=133" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTAxNDM4ODU3Ng9kFgJmD2QWAgIDD2QWAmYPZBYCAgUPDxYCHgdWaXNpYmxlZ2QWBgIBD2QWAmYPZBYGAgEPFgIfAGcWAgIBD2QWAmYPDxYCHgRUZXh0BRlSZXNlYXJjaCAtJiM2MjsgSnVuZSAyMDEzZGQCAw8PFgIfAQUDMTMzZGQCBQ8PFgIfAQU0SW5jcmVtZW50YWwgRGlzY292ZXJ5IG9mIFByb21pbmVudCBTaXR1YXRpb25hbCBGYWN0c2RkAgMPDxYCHwBoZGQCBQ8WAh4LXyFJdGVtQ291bnQCAxYGZg9kFgYCAw9kFgJmDxUBE0Fzc2lnbmVkX1Jldmlld2VyXzNkAgcPPCsADQEADxYEHgtfIURhdGFCb3VuZGcfAgIMZBYCZg9kFhoCAQ9kFgRmDw8WAh8BBRZPdmVyYWxsIFJlY29tbWVuZGF0aW9uZGQCAQ9kFgJmDxUBB05ldXRyYWxkAgIPZBYEZg8PFgIfAQVTQXJlIHRoZXJlIHNwZWNpZmljIHJldmlzaW9ucyB0aGF0IGNvdWxkIHJhaXNlIHlvdXIgcmF0aW5nIGluIHRoZSBwcmV2aW91cyBxdWVzdGlvbj9kZAIBD2QWAmYPFQECTm9kAgMPZBYEZg8PFgIfAQWJAVN1bW1hcnkgb2YgdGhlIHBhcGVyICh3aGF0IGlzIGJlaW5nIHByb3Bvc2VkIGFuZCBpbiB3aGF0IGNvbnRleHQpIGFuZCBhIGJyaWVmIGp1c3RpZmljYXRpb24gb2YgeW91ciBvdmVyYWxsIHJlY29tbWVuZGF0aW9uLiBPbmUgcGFyYWdyYXBoZGQCAQ9kFgJmDxUBkwhUaGUgcGFwZXIgc3R1ZGllcyB0aGUgcHJvYmxlbSBvZiBnaXZlbiBhIHR1cGxlLCBmaW5kIG91dCBhIHNldCBvZiBkaW1lbnNpb24gYXR0cmlidXRlLXZhbHVlcyAoY2FsbGVkIGNvbnN0cmFpbnRzKSBhbmQgYSBzZXQgb2YgbWVhc3VyZSBhdHRyaWJ1dGVzIChjYWxsIG1lYXN1cmVzKSBzdWNoIHRoYXQgdGhlIGdpdmVuIHR1cGxlIGlzIGEgc2t5bGluZSBwb2ludCBhbW9uZyBhbGwgZGF0YSBzYXRpc2Z5aW5nIHRoZSBjb25zdHJhaW50cyBhbmQgdW5kZXIgdGhlIHNlbGVjdGVkIG1lYXN1cmVzLiBBIHNvbHV0aW9uIG9mIHRoZSBwcm9ibGVtIGFsbG93cyBvbmUgdG8gZGlzY292ZXIgc2l0dWF0aW9uYWwgZmFjdHMgdW5kZXIgd2hpY2ggdGhlIGdpdmVuIHR1cGxlIHN0YW5kcyBvdXQuIEFsdGhvdWdoIHRoZSBwcm9ibGVtIGlzIHByZXNlbnRlZCBhcyBhICJzaXR1YXRpb25hbC1mYWN0LWZpbmRpbmciIHByb2JsZW0sIHRoZSBzb2x1dGlvbiBwcm9wb3NlZCBpcyBlc3NlbnRpYWxseSBmb3IgZXh0ZW5kZWQgaW5jcmVtZW50YWwgU2t5Q3ViZSBtYWludGVuYW5jZS4gVGhlIHNvbHV0aW9uIGZyYW1ld29yayBiZWFycyBzb21lIHJlc2VtYmxhbmNlIHRvIEogUGVpJ3MgVE9EUyBwYXBlciBvbiBTa3lDdWJlIGNvbnN0cnVjdGlvbiBhbmQgbWFpbnRlbmFuY2UuIFRoZSBwcm9wb3NlZCBhbGdvcml0aG0gc2hvdWxkIHRoZXJlZm9yZSBiZSBjb21wYXJlZCB3aXRoIHRob3NlIHByb3Bvc2VkIGluIFs4XSBhbmQgWzExXSBpbnN0ZWFkIG9mIHRoZSBtb3JlIHN0cmFpZ2h0Zm9yd2FyZCBiYXNlbGluZXMgcHJlc2VudGVkIGluIHRoZSBwYXBlci4gTW9yZW92ZXIsIHRoZSBwcm9wb3NlZCBhbGdvcml0aG1zIGFyZSBxdWl0ZSBzcGFjZSBhbmQgdGltZSBjb25zdW1pbmcuIFRoZXkgdGFrZSBob3VycyB0byBmaW5pc2ggKGluIHNvbWUgbGFyZ2UgY2FzZXMpIGZvciBlYWNoIHR1cGxlIGluc2VydGVkIGludG8gdGhlIGRhdGFiYXNlLiBUaGUgcHJhY3RpY2FsaXR5IG9mIHRoZSBwcm9wb3NlZCBzb2x1dGlvbiBpcyB0aHVzIHlldCB0byBiZSBwcm92ZW4uIGQCBA9kFgRmDw8WAh8BBYkBVGhyZWUgKG9yIG1vcmUpIHN0cm9uZyBwb2ludHMgYWJvdXQgdGhlIHBhcGVyIChQbGVhc2UgYmUgcHJlY2lzZSBhbmQgZXhwbGljaXQ7IGNsZWFybHkgZXhwbGFpbiB0aGUgdmFsdWUgYW5kIG5hdHVyZSBvZiB0aGUgY29udHJpYnV0aW9uKS5kZAIBD2QWAmYPFQGnAVMxOiBUaGUgaWRlYSBvZiBkaXNjb3ZlcmluZyBzaXR1YXRpb25hbCBmYWN0cyB0aGF0IG1ha2UgYSB0dXBsZSBhIHNreWxpbmUgcG9pbnQgaXMgdmVyeSBpbnRlcmVzdGluZy4NPGJyIC8+UzI6IFRoZSBwYXBlciBpcyB3ZWxsIHdyaXR0ZW4uIElkZWFzIGFyZSBjbGVhcmx5IHByZXNlbnRlZC4gZAIFD2QWBGYPDxYCHwEFggJUaHJlZSAob3IgbW9yZSkgd2VhayBwb2ludHMgYWJvdXQgdGhlIHBhcGVyIChQbGVhc2UgaW5kaWNhdGUgY2xlYXJseSB3aGV0aGVyIHRoZSBwYXBlciBoYXMgYW55IG1pc3Rha2VzLCBtaXNzaW5nIHJlbGF0ZWQgd29yaywgb3IgcmVzdWx0cyB0aGF0IGNhbm5vdCBiZSBjb25zaWRlcmVkIGEgY29udHJpYnV0aW9uOyB3cml0ZSBpdCBzbyB0aGF0IHRoZSBhdXRob3JzIGNhbiB1bmRlcnN0YW5kIHdoYXQgYXJlIHNlZW4gYXMgbmVnYXRpdmUgYXNwZWN0cyBkZAIBD2QWAmYPFQG4AlcxOiBUaGUgcHJvcG9zZWQgYWxnb3JpdGhtcyBhcmUgZXNzZW50aWFsbHkgZm9yIGluY3JlbWVudGFsIFNreUN1YmUgbWFpbnRlbmFuY2UuIFRoZSBhdXRob3JzIHNob3VsZCB0aGVyZWZvcmUgY29tcGFyZSB0aGVpciBzb2x1dGlvbnMgYWdhaW5zdCBleGlzdGluZyBpbmNyZW1lbnRhbCBza3ljdWJlIG1haW50ZW5hbmNlIGFsZ29yaXRobXMsIHN1Y2ggYXMgdGhvc2UgcHJlc2VudGVkIGluIFs4XSBhbmQgWzExXS4NPGJyIC8+VzI6IFRoZSBwcm9wb3NlZCBhbGdvcml0aG1zIGFyZSBxdWl0ZSB0aW1lIGFuZCBzcGFjZSBleHBlbnNpdmUuDTxiciAvPmQCBg9kFgRmDw8WAh8BBRJSZWxldmFudCBmb3IgUFZMREJkZAIBD2QWAmYPFQEDWUVTZAIHD2QWBGYPDxYCHwEF6gFOb3ZlbHR5IChQbGVhc2UgZ2l2ZSBhIGhpZ2ggbm92ZWx0eSByYW5raW5nIHRvIHBhcGVycyBvbiBuZXcgdG9waWNzLCBvcGVuaW5nIG5ldyBmaWVsZHMsIG9yIHByb3Bvc2luZyB0cnVseSBuZXcgaWRlYXM7IGFzc2lnbiBtZWRpdW0gcmF0aW5ncyBmb3IgZGVsdGEgcGFwZXJzIGFuZCBwYXBlcnMgb24gd2VsbCBrbm93biB0b3BpY3MgYnV0IHN0aWxsIHdpdGggc29tZSB2YWx1YWJsZSBjb250cmlidXRpb24pLiBkZAIBD2QWAmYPFQEnSWRlYXMgYXJlIG5vdCBuZXcgKHNheSB3aHkgaW4gUTUgb3IgMTIpZAIID2QWBGYPDxYCHwEFDFNpZ25pZmljYW5jZWRkAgEPZBYCZg8VAR5JbXByb3ZlbWVudCBvdmVyIGV4aXN0aW5nIHdvcmtkAgkPZBYEZg8PFgIfAQUmVGVjaG5pY2FsIERlcHRoIGFuZCBRdWFsaXR5IG9mIENvbnRlbnRkZAIBD2QWAmYPFQE0U3ludGFjdGljYWxseSBjb21wbGV0ZSBidXQgd2l0aCBsaW1pdGVkIGNvbnRyaWJ1dGlvbmQCCg9kFgRmDw8WAh8BBQtFeHBlcmltZW50c2RkAgEPZBYCZg8VATlPSywgYnV0IGNlcnRhaW4gY2xhaW1zIGFyZSBub3QgY292ZXJlZCBieSB0aGUgZXhwZXJpbWVudHNkAgsPZBYEZg8PFgIfAQUMUHJlc2VudGF0aW9uZGQCAQ9kFgJmDxUBOEV4Y2VsbGVudDogY2FyZWZ1bCwgbG9naWNhbCwgZWxlZ2FudCwgZWFzeSB0byB1bmRlcnN0YW5kZAIMD2QWBGYPDxYCHwEFT0RldGFpbGVkIEV2YWx1YXRpb24gKENvbnRyaWJ1dGlvbiwgUHJvcy9Db25zLCBFcnJvcnMpOyBwbGVhc2UgbnVtYmVyIGVhY2ggcG9pbnRkZAIBD2QWAmYPFQHQE0Jhc2ljYWxseSBJIGhhdmUgZXhwcmVzc2VkIG15IHZpZXdzIGluIEl0ZW0gMy4gU29tZSBtb3JlIGVsYWJvcmF0aW9uIG9mIG15IHBvaW50czoNPGJyIC8+DTxiciAvPjEuIFRoZSBwcm9wb3NlZCBhbGdvcml0aG1zIGFyZSBlc3NlbnRpYWxseSBtYWludGFpbmluZyAoZXh0ZW5kZWQpIFNreUN1YmUuIFRoaXMgaXMgIGJlY2F1c2UgdGhlIHNreWxpbmUgb2YgZXZlcnkgcG9zc2libGUgY29uc3RyYWludC1tZWFzdXJlIGNvbWJpbmF0aW9ucyBpcyBtYXRlcmlhbGl6ZWQuIEluIHRoZSBSZWxhdGVkIFdvcmsgc2VjdGlvbiwgdGhlIGF1dGhvcnMgbWVudGlvbiBhYm91dCBbOF0gYW5kIFsxMV0gYW5kIGNsYWltIHRoYXQgdGhlIHByb2JsZW0gc3R1ZGllZCBpbiB0aGlzIHN1Ym1pc3Npb24gaXMgZGlmZmVyZW50IGZyb20gdGhvc2Ugb2YgWzhdIGFuZCBbMTFdIGJlY2F1c2UgdGhleSBhcmUgZmluZGluZyAicXVlcmllcyIgKGkuZS4sIGNvbnN0cmFpbnQtbWVhc3VyZSBjb21iaW5hdGlvbnMpIHJhdGhlciB0aGFuICJhbnN3ZXJzIiAoc2t5bGluZSBwb2ludHMpLiBJIGRpc2FncmVlLiBJdCBpcyBiZWNhdXNlIGluY3JlbWVudGFsIFNreUN1YmUgbWFpbnRlbmFuY2UgKHdpdGggc29tZSBzaW1wbGUgZXh0ZW5zaW9uKSBjYW4gYmUgdXNlZCB0byBzb2x2ZSB0aGUgcHJvYmxlbSBiZWluZyBzdHVkaWVkIC0tLSBPbmUgb25seSBoYXMgdG8gcmVmcmVzaCBhbGwgdGhlIHNreWxpbmVzIGFuZCBjaGVjayB3aGljaCBza3lsaW5lcyBhcmUgInVwZGF0ZWQiIGFzIGEgcmVzdWx0IG9mIHRoZSB0dXBsZSBpbnNlcnRpb24uIFRob3NlICJ1cGRhdGVkIHNreWxpbmVzIiBjb25zdGl0dXRlIHRoZSBzZXQgb2Ygc2l0dWF0aW9uYWwgZmFjdHMgdGhhdCBhcmUgYmVpbmcgc291Z2h0LiBJIHVuZGVyc3RhbmQgdGhhdCB0aGUgb3JpZ2luYWwgU2t5Q3ViZSBmb3JtcyBhIGxhdHRpY2Ugb3ZlciBvbmx5IHRoZSBtZWFzdXJlIGF0dHJpYnV0ZXMsIHdoaWNoIG5lZWRzIHRvIGJlIGV4dGVuZGVkIHNvIHRoYXQgdGhlIGxhdHRpY2UgY292ZXIgY29udHJhaW50cyBhcyB3ZWxsLiBCdXQgSSB0aG91Z2h0IHRoZSBleHRlbnNpb24gd291bGQgYmUgc2ltcGxlLiBQZXJoYXBzIHRoZSBhdXRob3JzIGNvdWxkIGFyZ3VlIG90aGVyd2lzZS4gVGhlIHByb3Bvc2VkIGFsZ29yaXRobXMsIGluIGZhY3QsIGJlYXIgc29tZSByZXNlbWJsYW5jZSBvZiB0aG9zZSBnaXZlbiBpbiBbOF0uIA08YnIgLz4NPGJyIC8+Mi4gSXQgaXMgbm90IGNsZWFyIHRvIG1lIHdoYXQgcG9zdHByb2Nlc3NpbmcgbmVlZHMgdG8gYmUgZG9uZSB0byBvYnRhaW4gdGhlIHNpdHVhdGlvbmFsIGZhY3RzIG9yIGZpbmRpbmdzIGFzIGlsbHVzdHJhdGVkIGJ5IHRoZSBleGFtcGxlcyBnaXZlbiBpbiB0aGUgaW50cm9kdWN0aW9uIGFuZCBpbiB0aGUgY2FzZSBzdHVkeS4gSW4gcGFydGljdWxhciwgY2VydGFpbiBzdGF0ZW1lbnRzIG1hZGUsIHN1Y2ggYXMgIlBsYXkgQSBoYWQgdGhlIGhpZ2hlc3Qgc2NvcmUgYW5kIHRoZSBoaWdoZXN0IHJlYm91bmRzIHNpbmNlIEF1Z3VzdCAyMDEwIiwgbG9vayBsaWtlIHJlc3VsdHMgb2YgYWdncmVnYXRpbmcgYSBudW1iZXIgb2YgImNvbnN0cmFpbnQtbWVhc3VyZSIgY29tYmluYXRpb25zLiAoRS5nLiwgIlNpbmNlIEF1Z3VzdCAyMDEwIiBpcyBhIG1lcmdlIG9mICJTZXB0ZW1iZXIgMjAxMCIsICJPY3RvYmVyIDIwMTAiLCAiTm92ZW1iZXIgMjAxMCIgZXRjLiBUaGUgcHJvYmxlbSBvZiBtZXJnaW5nIHNpdHVhdGlvbnMgaW50byBvbmVzIHRoYXQgYXJlIG1vcmUgc3VjY2luY3QgaXMgaW50ZXJlc3RpbmcgYnV0IGlzbid0IG11Y2ggY292ZXJlZCBpbiB0aGUgcGFwZXIuDTxiciAvPg08YnIgLz4zLiBUaGUgZG9tYWluIG9mIHRoZSBkaW1lbnNpb24gYXR0cmlidXRlIHNlZW1zIHRvIGhhdmUgYSBzaWduaWZpY2FudCBlZmZlY3Qgb24gdGhlIGVmZmljaWVuY3kgb2YgdGhlIGFsZ29yaXRobXMuIEZvciBleGFtcGxlLCB0aGUgZGltZW5zaW9uICJkYXRlIiBjb3VsZCBiZSBxdWl0ZSBiaWcgd2l0aCB0aG91c2FuZHMgb2YgdmFsdWVzLiBTb21lIGluZm9ybWF0aW9uIGFib3V0IGRhdGFzZXRzJyBkaW1lbnNpb24gZG9tYWlucyB3b3VsZCBnaXZlIHRoZSByZWFkZXJzIGEgYmV0dGVyIHVuZGVyc3RhbmRpbmcgb2YgdGhlIHBlcmZvcm1hbmNlIG9mIHRoZSBhbGdvcml0aG1zLiANPGJyIC8+DTxiciAvPk90aGVyIGNvbW1lbnRzOg08YnIgLz4NPGJyIC8+NC4gUGFnZSA0LCBQcm9wb3NpdGlvbiAxOiBzaG91bGQgYmUgIi4uLiBcbm90IGV4aXN0cyB0JyBcaW4gXGxhbWJkYV9NKFxzaWdtYV9DKFIgLSB7dH0pKSAuLi4iDTxiciAvPg08YnIgLz41LiBUaGUgZ3JhcGhzIGFyZSB0b28gc21hbGwgdG8gcmVhZC4NPGJyIC8+DTxiciAvPjYuIEN1cnZlcyBpbiBGaWd1cmUgOChhKSBhbmQgRmlndXJlIDkgZG9uJ3QgbG9vayBsaW5lYXIgdG8gbWUsIGFsdGhvdWdoIHRoZSBhdXRob3JzIGNvbW1lbnRlZCB0aGF0IHRob3NlIGluIEZpZ3VyZSA4KGEpIGFyZS4gDTxiciAvPg08YnIgLz5kAg0PDxYCHwBoZGQCCA8VAQBkAgEPZBYGAgMPZBYCZg8VARNBc3NpZ25lZF9SZXZpZXdlcl81ZAIHDzwrAA0BAA8WBB8DZx8CAgxkFgJmD2QWGgIBD2QWBGYPDxYCHwEFFk92ZXJhbGwgUmVjb21tZW5kYXRpb25kZAIBD2QWAmYPFQELV2VhayBSZWplY3RkAgIPZBYEZg8PFgIfAQVTQXJlIHRoZXJlIHNwZWNpZmljIHJldmlzaW9ucyB0aGF0IGNvdWxkIHJhaXNlIHlvdXIgcmF0aW5nIGluIHRoZSBwcmV2aW91cyBxdWVzdGlvbj9kZAIBD2QWAmYPFQECTm9kAgMPZBYEZg8PFgIfAQWJAVN1bW1hcnkgb2YgdGhlIHBhcGVyICh3aGF0IGlzIGJlaW5nIHByb3Bvc2VkIGFuZCBpbiB3aGF0IGNvbnRleHQpIGFuZCBhIGJyaWVmIGp1c3RpZmljYXRpb24gb2YgeW91ciBvdmVyYWxsIHJlY29tbWVuZGF0aW9uLiBPbmUgcGFyYWdyYXBoZGQCAQ9kFgJmDxUBsgRUaGlzIHBhcGVyIGRpc2N1c3NlcyB0aGUgcHJvYmxlbSBvZiBmaW5kaW5nIHN1YnNwYWNlcyBhbmQgY29uc3RyYWludHMgdG8gcHVzaCBhIHBhcnRpY3VsYXIgcG9pbnQgaW50byB0aGUgc2t5bGluZSBzZXQuIFRoZSBwcm9ibGVtIGlzIG1vdGl2YXRlZCBieSBjb21wdXRhdGlvbmFsIGpvdXJuYWxpc20sIHdpdGggYXBwbGljYXRpb25zIHRvIGlkZW50aWZ5IGludGVyZXN0aW5nIHN0b3JpZXMgZnJvbSBudW1iZXJzIGluIHNwb3J0cyBhbmQgZWNvbm9taWNhbCBkb21haW5zLiBUaGUgYXV0aG9ycyBwcmVzZW50IHR3byBiYXNlbGluZSBhcHByb2FjaGVzIHRvIHRhY2tsZSB0aGUgcHJvYmxlbSwgYnkgZ2VuZXJhbGx5IGl0ZXJhdGluZyBhbG1vc3QgYWxsIHBvc3NpYmxlIG1lYXN1cmUgYW5kIGNvbnN0cmFpbnQgc3Vic3BhY2UuIENlcnRhaW4gaW1wcm92ZW1lbnQgbWV0aG9kcyB3ZXJlIHRoZW4gcHJvcG9zZWQgdG8gaW1wcm92ZSB0aGUgZWZmaWNpZW5jeSwgd2hpY2ggYmFzaWNhbGx5IGV4cGxvaXRzIHRoZSBjb250YWlubWVudCByZWxhdGlvbnNoaXAgaW4gdGhlIGxhdHRpY2Ugc3BhY2UuZAIED2QWBGYPDxYCHwEFiQFUaHJlZSAob3IgbW9yZSkgc3Ryb25nIHBvaW50cyBhYm91dCB0aGUgcGFwZXIgKFBsZWFzZSBiZSBwcmVjaXNlIGFuZCBleHBsaWNpdDsgY2xlYXJseSBleHBsYWluIHRoZSB2YWx1ZSBhbmQgbmF0dXJlIG9mIHRoZSBjb250cmlidXRpb24pLmRkAgEPZBYCZg8VAVQxLiBUaGUgbW90aXZhdGlvbiBpcyBpbnRlcmVzdGluZy4gDTxiciAvPjIuIFRoZSBwYXBlciBpcyB3ZWxsIG9yZ2FuaXplZCBhbmQgd3JpdHRlbi5kAgUPZBYEZg8PFgIfAQWCAlRocmVlIChvciBtb3JlKSB3ZWFrIHBvaW50cyBhYm91dCB0aGUgcGFwZXIgKFBsZWFzZSBpbmRpY2F0ZSBjbGVhcmx5IHdoZXRoZXIgdGhlIHBhcGVyIGhhcyBhbnkgbWlzdGFrZXMsIG1pc3NpbmcgcmVsYXRlZCB3b3JrLCBvciByZXN1bHRzIHRoYXQgY2Fubm90IGJlIGNvbnNpZGVyZWQgYSBjb250cmlidXRpb247IHdyaXRlIGl0IHNvIHRoYXQgdGhlIGF1dGhvcnMgY2FuIHVuZGVyc3RhbmQgd2hhdCBhcmUgc2VlbiBhcyBuZWdhdGl2ZSBhc3BlY3RzIGRkAgEPZBYCZg8VAfABMS4gUHJvYmxlbSBjYW4gYmUgcmVmb3JtdWxhdGVkIGFzIGFuIGluY3JlbWVudGFsIHN1YnNwYWNlIHNreWxpbmUgcXVlcnkuDTxiciAvPjIuIFRoZSBzdHJhdGVnaWVzIHVzZWQgaW4gcXVlcnkgb3B0aW1pemF0aW9ucyBhcmUgYWxsIHdlbGwga25vd24gYW5kIHRodXMgbm90IG5vdmVsLiAzLiBUaGUgdGVjaG5pcXVlcyBwcm9wb3NlZCBpbiBUT0RT4oCZMDYgcGFwZXIgY2FuIGJlIGFwcGxpZWQgb24gdGhlIHByb2JsZW0uZAIGD2QWBGYPDxYCHwEFElJlbGV2YW50IGZvciBQVkxEQmRkAgEPZBYCZg8VAQNZRVNkAgcPZBYEZg8PFgIfAQXqAU5vdmVsdHkgKFBsZWFzZSBnaXZlIGEgaGlnaCBub3ZlbHR5IHJhbmtpbmcgdG8gcGFwZXJzIG9uIG5ldyB0b3BpY3MsIG9wZW5pbmcgbmV3IGZpZWxkcywgb3IgcHJvcG9zaW5nIHRydWx5IG5ldyBpZGVhczsgYXNzaWduIG1lZGl1bSByYXRpbmdzIGZvciBkZWx0YSBwYXBlcnMgYW5kIHBhcGVycyBvbiB3ZWxsIGtub3duIHRvcGljcyBidXQgc3RpbGwgd2l0aCBzb21lIHZhbHVhYmxlIGNvbnRyaWJ1dGlvbikuIGRkAgEPZBYCZg8VASpJZGVhcyBhcmUgdG9vIHNpbXBsZSAoc2F5IGhvdyBpbiBRNSBvciAxMilkAggPZBYEZg8PFgIfAQUMU2lnbmlmaWNhbmNlZGQCAQ9kFgJmDxUBHkltcHJvdmVtZW50IG92ZXIgZXhpc3Rpbmcgd29ya2QCCQ9kFgRmDw8WAh8BBSZUZWNobmljYWwgRGVwdGggYW5kIFF1YWxpdHkgb2YgQ29udGVudGRkAgEPZBYCZg8VATRTeW50YWN0aWNhbGx5IGNvbXBsZXRlIGJ1dCB3aXRoIGxpbWl0ZWQgY29udHJpYnV0aW9uZAIKD2QWBGYPDxYCHwEFC0V4cGVyaW1lbnRzZGQCAQ9kFgJmDxUBOU9LLCBidXQgY2VydGFpbiBjbGFpbXMgYXJlIG5vdCBjb3ZlcmVkIGJ5IHRoZSBleHBlcmltZW50c2QCCw9kFgRmDw8WAh8BBQxQcmVzZW50YXRpb25kZAIBD2QWAmYPFQE4RXhjZWxsZW50OiBjYXJlZnVsLCBsb2dpY2FsLCBlbGVnYW50LCBlYXN5IHRvIHVuZGVyc3RhbmRkAgwPZBYEZg8PFgIfAQVPRGV0YWlsZWQgRXZhbHVhdGlvbiAoQ29udHJpYnV0aW9uLCBQcm9zL0NvbnMsIEVycm9ycyk7IHBsZWFzZSBudW1iZXIgZWFjaCBwb2ludGRkAgEPZBYCZg8VAeIPVGhlIG1vdGl2YXRpb24gcGFydCBvZiB0aGUgcGFwZXIgbG9va3MgaW50ZXJlc3RpbmcuIEdlbmVyYWxseSBzcGVha2luZywgaXQgaXMgYSBnb29kIGlkZWEgdG8gYXBwbHkgc3Vic3BhY2Ugc2t5bGluZSBvbiBjb21wdXRhdGlvbmFsIGpvdXJuYWxpc20uIEEgc2xpZ2h0IGNvbmNlcm4gaXMgdGhlIGN1cnNlIG9mIGRpbWVuc2lvbmFsaXR5LiBXaXRoIHRoZSBncm93dGggb2YgdGhlIGRpbWVuc2lvbmFsaXR5IG9uIGNvbnN0cmFpbnRzIGFuZCBtZWFzdXJlcywgZXZlcnkgb3JkaW5hcnkgcG9pbnQgY291bGQgZmluZCBhIHdheSBpbnRvIHRoZSBza3lsaW5lLiBJIHRodXMgYmVsaWV2ZSB0aGUgcHJvYmxlbSBkZWZpbmVkIGluIHRoaXMgcGFwZXIgY2FuIG9ubHkgYmUgYXBwbGllZCBvbiBzcGFjZXMgd2l0aCBtb2RlcmF0ZSBkaW1lbnNpb25hbGl0eSwgc2F5IHdpdGhpbiAxMC4NPGJyIC8+DTxiciAvPkRlc3BpdGUgb2YgdGhlIGludGVyZXN0aW5nIG1vdGl2YXRpb24sIEkgZG9u4oCZdCBhZ3JlZSB3aXRoIHRoZSBhdXRob3JzIHRoYXQgdGhpcyBpcyBhIG5ldyBwcm9ibGVtLiBJbiB0aGUgZm9sbG93aW5nLCBJIHdpbGwgYSBlYXN5IHdheSB0byB0cmFuc2Zvcm0gdGhlaXIgcHJvYmxlbSBkZWZpbml0aW9uIGludG8gc3RhbmRhcmQgbXVsdGlkaW1lbnNpb25hbCBzdWJzcGFjZSBza3lsaW5lIHF1ZXJ5IHByb3Bvc2VkIGluIFRPRFPigJkwNiBwYXBlci4gR2l2ZW4gYSBuZXcgdHVwbGUgdCwgZm9yIGVhY2ggY29uc3RyYWludCBhdHRyaWJ1dGUgZGltZW5zaW9uIGRfaSwgbGV0IHVzIGRlZmluZSBhIGN1c3RvbWl6ZWQgb3JkZXIsIHN1Y2ggdGhhdCB0LmRfaSBpcyBiZXR0ZXIgdGhhbiBhbnkgb3RoZXIgdmFsdWUgb24gdGhlIGF0dHJpYnV0ZS4gVGhlcmVmb3JlLCBhbm90aGVyIHR1cGxlIHTigJkgZG9taW5hdGVzIHQgb24gYSBzdWJzcGFjZSAoQyxNKSwgaWYgYW5kIG9ubHkgaWYgdOKAmS5kaSA9IHQuZGkgb3ZlciBDIGFuZCB04oCZIGRvbWluYXRlcyB0IG92ZXIgTS4gVGhlcmVmb3JlLCB0aGUgcHJvYmxlbSBpcyBhY3R1YWxseSBhbiBpbmNyZW1lbnRhbCB1cGRhdGUgcHJvYmxlbSBvdmVyIG11bHRpZGltZW5zaW9uYWwgc3Vic3BhY2Ugc2t5bGluZSBxdWVyeS4gSeKAmW0gc3VycHJpc2VkIHRoZSBhdXRob3JzIGRpZG7igJl0IG5vdGljZSB0aGlzIHRyYW5zZm9ybWF0aW9uIGFuZCB0cmllZCB0byBzb2x2ZSBpdCBhcyBhIGNvbXBsZXRlbHkgbmV3IHByb2JsZW0uDTxiciAvPg08YnIgLz5UaGUgdHJhbnNmb3JtYXRpb24gaW1wbGllcyB0d28gcG9pbnRzLiBGaXJzdCwgbWV0aG9kcyBwcm9wb3NlZCwgZS5nLiBzdWJzcGFjZSBncm91cHMsIGNvdWxkIGJlIHJldXNlZCBpbiB0aGVpciBhbGdvcml0aG0sIHJlZHVjaW5nIHRoZSBjb21wdXRhdGlvbiBjb3N0IGJ5IHJlbW92aW5nIHJlZHVuZGFudCBzdWJzcGFjZXMuIFNlY29uZCwgdGhlIGNvbnN0cmFpbnRzIHNwYWNlIGZvcm0gYSBsYXR0aWNlIHNwYWNlIHdpdGggc21hbGwgY2FyZGluYWxpdHkuIFRlY2huaXF1ZXMgcHJvcG9zZWQgaW4gdGhlIGZvbGxvd2luZyBwYXBlciBhcmUgYWxzbyBsaWtlbHkgdG8gYmUgcmV1c2VkLg08YnIgLz4NPGJyIC8+TS4gTW9yc2UsIEouIFBhdGVsLCBILiBWLiBKYWdhZGlzaCwgRWZmaWNpZW50IFNreWxpbmUgQ29tcHV0YXRpb24gT3ZlciBMb3ctQ2FyZGluYWxpdHkgRG9tYWlucywgVkxEQiAyMDA3Lg08YnIgLz4NPGJyIC8+VW5mb3J0dW5hdGVseSwgYWZ0ZXIgcmVhZGluZyBhbGwgdGhlIHRlY2huaWNhbCBkZXRhaWxzIGluIHRoZSBjdXJyZW50IGRyYWZ0LCBJIGRpZG7igJl0IGZpbmQgYW55IG5vdmVsIG1ldGhvZHMgbm90IGtub3duIGluIHRoZSBsaXRlcmF0dXJlIG9mIHNreWxpbmUgcXVlcnkgcHJvY2Vzc2luZy4gQWx0aG91Z2ggSeKAmW0gaW1wcmVzc2VkIGJ5IHRoZSB3ZWxsIGRvbmUgZXhwZXJpbWVudHMsIEnigJltIG5vdCBjb252aW5jZWQgdGhlIHBhcGVyIGhhcyBtdWNoIHB1c2hlcyB0aGUgZnJvbnRpZXIgb2Ygc2t5bGluZSBxdWVyeSByZXNlYXJjaC5kAg0PDxYCHwBoZGQCCA8VAQBkAgIPZBYGAgMPZBYCZg8VARNBc3NpZ25lZF9SZXZpZXdlcl82ZAIHDzwrAA0BAA8WBB8DZx8CAgxkFgJmD2QWGgIBD2QWBGYPDxYCHwEFFk92ZXJhbGwgUmVjb21tZW5kYXRpb25kZAIBD2QWAmYPFQEHTmV1dHJhbGQCAg9kFgRmDw8WAh8BBVNBcmUgdGhlcmUgc3BlY2lmaWMgcmV2aXNpb25zIHRoYXQgY291bGQgcmFpc2UgeW91ciByYXRpbmcgaW4gdGhlIHByZXZpb3VzIHF1ZXN0aW9uP2RkAgEPZBYCZg8VAQNZZXNkAgMPZBYEZg8PFgIfAQWJAVN1bW1hcnkgb2YgdGhlIHBhcGVyICh3aGF0IGlzIGJlaW5nIHByb3Bvc2VkIGFuZCBpbiB3aGF0IGNvbnRleHQpIGFuZCBhIGJyaWVmIGp1c3RpZmljYXRpb24gb2YgeW91ciBvdmVyYWxsIHJlY29tbWVuZGF0aW9uLiBPbmUgcGFyYWdyYXBoZGQCAQ9kFgJmDxUB9QhUaGUgcGFwZXIgb3V0bGluZXMgYSBuaWNlIGFwcGxpY2F0aW9uIG9mIHNreWxpbmUgcXVlcmllcyBpbiB0aGUgY29udGV4dCBvZiBjb21wdXRhdGlvbmFsIGpvdXJuYWxpc20gd2hlcmUgdGhlIG1haW4gdGFzayBpcyB0byBmaW5kIGludGVyZXN0aW5nIGZhY3RzIHRoYXQgc3RhbmQgb3V0IGZyb20gb3RoZXJzLCBlLmcsIHRoYXQgc29tZW9uZSB3YXMgdGhlIGZpcnN0IHBlcnNvbiAod2l0aCBzb21lIGNoYXJhY3RlcmlzdGljcykgd2hvIGRpZCBzb21ldGhpbmcgKHdpdGggc29tZSBjaGFyYWN0ZXJpc3RpY3MpLiBJbiBtb3JlIGRldGFpbCwgd2hlbmV2ZXIgYSBuZXcgdHVwbGUgdCBhcnJpdmVzLCBzaXR1YXRpb25hbCBmYWN0cyBhcmUgc2VhcmNoZWQuIEEgc2l0dWF0aW9uYWwgZmFjdCBpcyBhIGNvbWJpbmF0aW9uIG9mIGNvbnN0cmFpbnRzIGFuZCBtZWFzdXJlcyBmb3Igd2hpY2ggdCBpcyBpbiB0aGUgc2t5bGluZS4NPGJyIC8+VGhlIHBhcGVyIGZpcnN0IG5pY2VseSBpbGx1c3RyYXRlcyB0aGUgcHJvYmxlbSBhbmQgdGhlIHJlbGV2YW5jZSBvZiBzdWNoIGNvbXB1dGF0aW9ucyAoZS5nLiwgc3BvcnRzIG5ld3MgbWVkaWEpLCB0aGVuIGRlZmluZXMgdGhlIHByb2JsZW0gZm9ybWFsbHksIHByb3Bvc2VzIGFsZ29yaXRobWljIHNvbHV0aW9ucywgYW5kIGZpbmFsbHkgZGlzY3Vzc2VzIGV4cGVyaW1lbnRhbCByZXN1bHRzIGFuZCByZWxhdGVkIHdvcmsuIFRoZSBhdXRob3JzIHByb3Bvc2Ugc2V2ZXJhbCB2YXJpYXRpb25zIG9mIGFsZ29yaXRobXMgdGhhdCBmb2xsb3cgdG9wLWRvd24gb3IgYm90dG9tLXVwIGNvbXB1dGF0aW9uIGFuZCBtYWtlIHVzZSBvZiBhIGxhdHRpY2UgdG8gZmluZCBzaXR1YXRpb25hbCBmYWN0cy4NPGJyIC8+SG93ZXZlciwgdGhlIGV4cGVyaW1lbnRzIGFsbG93IGZvciB0aGUgY29uY2x1c2lvbiB0aGF0IHRoZSBwcm9wb3NlZCBzb2x1dGlvbnMgbWlnaHQgbm90IGJlIGVmZmljaWVudCBlbm91Z2ggZm9yIGEgcmVhbC13b3JsZCB1c2UgY2FzZSBhbmQgdGhlIGZhY3QgdGhhdCB0aGUgdXNlciBoYXMgdG8gZGVjaWRlIGEtcHJpb3JpIHdoaWNoIGF0dHJpYnV0ZXMgc2hvdWxkIGJlIGRpbWVuc2lvbnMgcmVwcmVzZW50cyBhbm90aGVyIHJlc3RyaWN0aW9uIG9mIGFwcGxpY2FiaWxpdHkuZAIED2QWBGYPDxYCHwEFiQFUaHJlZSAob3IgbW9yZSkgc3Ryb25nIHBvaW50cyBhYm91dCB0aGUgcGFwZXIgKFBsZWFzZSBiZSBwcmVjaXNlIGFuZCBleHBsaWNpdDsgY2xlYXJseSBleHBsYWluIHRoZSB2YWx1ZSBhbmQgbmF0dXJlIG9mIHRoZSBjb250cmlidXRpb24pLmRkAgEPZBYCZg8VAcAEKFMxKSBUaGUgcGFwZXIgY29uc2lkZXJzIGEgdmVyeSBpbnRlcmVzdGluZyBhcHBsaWNhdGlvbiBmb3Igd2hpY2ggbm90IG1hbnkgc29sdXRpb25zIGhhdmUgYmVlbiBwcm9wb3NlZCB5ZXQuIFRoaXMgaXMgYWxzbyBhIG5pY2UgbmV3IGFwcGxpY2F0aW9uIHNjZW5hcmlvIGZvciBza3lsaW5lcyB0aGF0IGdvZXMgYmV5b25kIHRoZSBzdGFuZGFyZCBhcHBsaWNhdGlvbiBzY2VuYXJpbyBvZiBmaW5kaW5nIGNoZWFwIGhvdGVscyB0aGF0IGFyZSBjbG9zZSB0byB0aGUgYmVhY2guDTxiciAvPg08YnIgLz4oUzIpIFRoZSBwYXBlciBpcyBuaWNlbHkgd3JpdHRlbiBhbmQgaGFzIGEgdmVyeSBnb29kIG1peHR1cmUgb2YgZm9ybWFsIGRlZmluaXRpb25zIGFuZCBleGFtcGxlcyB0aGF0IG1ha2UgaXQgZWFzaWVyIGZvciB0aGUgcmVhZGVyIHRvIHVuZGVyc3RhbmQgdGhlIGRlZmluaXRpb25zLg08YnIgLz4NPGJyIC8+KFMzKSBUaGUgcGFwZXIgc2hvd3MgdGhlIHJlc3VsdCBvZiBzZXZlcmFsIGV4cGVyaW1lbnRzIG9uIG11bHRpcGxlIHJlYWwtd29ybGQgZGF0YSBhbmQgaXMgbm90IHJlc3RyaWN0ZWQgdG8ganVzdCBvbmUuZAIFD2QWBGYPDxYCHwEFggJUaHJlZSAob3IgbW9yZSkgd2VhayBwb2ludHMgYWJvdXQgdGhlIHBhcGVyIChQbGVhc2UgaW5kaWNhdGUgY2xlYXJseSB3aGV0aGVyIHRoZSBwYXBlciBoYXMgYW55IG1pc3Rha2VzLCBtaXNzaW5nIHJlbGF0ZWQgd29yaywgb3IgcmVzdWx0cyB0aGF0IGNhbm5vdCBiZSBjb25zaWRlcmVkIGEgY29udHJpYnV0aW9uOyB3cml0ZSBpdCBzbyB0aGF0IHRoZSBhdXRob3JzIGNhbiB1bmRlcnN0YW5kIHdoYXQgYXJlIHNlZW4gYXMgbmVnYXRpdmUgYXNwZWN0cyBkZAIBD2QWAmYPFQHZAyhXMSkgVGhlIGludHJvZHVjZWQgdGVybWlub2xvZ3kgaXMgbm90IGFsaWduZWQgd2l0aCB0aGUgc3RhbmRhcmQgdGVybWlub2xvZ3kgdGhhdCBvdGhlciByZXNlYXJjaCBwYXBlcnMgb24gc2t5bGluZXMgaGF2ZSBpbnRyb2R1Y2VkLiBUaGlzIGNhdXNlcyBzb21lIGNvbmZ1c2lvbiB3aGVuIHJlYWRpbmcgdGhlIHBhcGVyLg08YnIgLz4NPGJyIC8+KFcyKSBJdCBzZWVtcyB0aGF0IHRoZSBwcm9wb3NlZCBzb2x1dGlvbnMgYXJlIG5vdCBzY2FsYWJsZSBlbm91Z2ggdG8gY29wZSB3aXRoIGFyYml0cmFyeSBkYXRhIHNldHMuDTxiciAvPg08YnIgLz4oVzMpIFRoZSBmYWN0IHRoYXQgdGhlIHVzZXIgaGFzIHRvIGRlY2lkZSBiZWZvcmVoYW5kIHdoaWNoIGF0dHJpYnV0ZXMgc2hvdWxkIGJlIGNvbnNpZGVyZWQgZGltZW5zaW9ucyByZWR1Y2VzIHRoZSBnZW5lcmFsIGFwcGxpY2FiaWxpdHkgb2YgdGhlIHByb3Bvc2VkIGFsZ29yaXRobXMuZAIGD2QWBGYPDxYCHwEFElJlbGV2YW50IGZvciBQVkxEQmRkAgEPZBYCZg8VAQNZRVNkAgcPZBYEZg8PFgIfAQXqAU5vdmVsdHkgKFBsZWFzZSBnaXZlIGEgaGlnaCBub3ZlbHR5IHJhbmtpbmcgdG8gcGFwZXJzIG9uIG5ldyB0b3BpY3MsIG9wZW5pbmcgbmV3IGZpZWxkcywgb3IgcHJvcG9zaW5nIHRydWx5IG5ldyBpZGVhczsgYXNzaWduIG1lZGl1bSByYXRpbmdzIGZvciBkZWx0YSBwYXBlcnMgYW5kIHBhcGVycyBvbiB3ZWxsIGtub3duIHRvcGljcyBidXQgc3RpbGwgd2l0aCBzb21lIHZhbHVhYmxlIGNvbnRyaWJ1dGlvbikuIGRkAgEPZBYCZg8VARNXaXRoIHNvbWUgbmV3IGlkZWFzZAIID2QWBGYPDxYCHwEFDFNpZ25pZmljYW5jZWRkAgEPZBYCZg8VAR5JbXByb3ZlbWVudCBvdmVyIGV4aXN0aW5nIHdvcmtkAgkPZBYEZg8PFgIfAQUmVGVjaG5pY2FsIERlcHRoIGFuZCBRdWFsaXR5IG9mIENvbnRlbnRkZAIBD2QWAmYPFQEKU29saWQgd29ya2QCCg9kFgRmDw8WAh8BBQtFeHBlcmltZW50c2RkAgEPZBYCZg8VATlPSywgYnV0IGNlcnRhaW4gY2xhaW1zIGFyZSBub3QgY292ZXJlZCBieSB0aGUgZXhwZXJpbWVudHNkAgsPZBYEZg8PFgIfAQUMUHJlc2VudGF0aW9uZGQCAQ9kFgJmDxUBH1JlYXNvbmFibGU6IGltcHJvdmVtZW50cyBuZWVkZWRkAgwPZBYEZg8PFgIfAQVPRGV0YWlsZWQgRXZhbHVhdGlvbiAoQ29udHJpYnV0aW9uLCBQcm9zL0NvbnMsIEVycm9ycyk7IHBsZWFzZSBudW1iZXIgZWFjaCBwb2ludGRkAgEPZBYCZg8VAeQeKEQxKSBUaGVyZSBpcyBhIHdpZGUgdmFyaWV0eSBvZiBsaXRlcmF0dXJlIHJlZ2FyZGluZyBza3lsaW5lIGNvbXB1dGF0aW9uLiBUaGlzIHBhcGVyLCBob3dldmVyLCBtb3N0bHkgaWdub3JlcyBjb21tb25seSBhY2NlcHRlZCB0ZXJtaW5vbG9neSByZWdhcmRpbmcgcGFydGljdWxhciB0eXBlcyBvZiBza3lsaW5lczoNPGJyIC8+LSBhIHNreWxpbmUgZGVmaW5lZCBvbiBvbmx5IGEgc3Vic2V0IG9mIGF0dHJpYnV0ZSBkaW1lbnNpb25zIGlzIHJlZmVycmVkIHRvIGFzICJzdWJzcGFjZSBza3lsaW5lIg08YnIgLz4tIGEgc2t5bGluZSB0aGF0IGNvbnNpZGVycyBjb25zdHJhaW50cyBvbiBzb21lIG9mIHRoZSBhdHRyaWJ1dGUgZGltZW5zaW9ucyBpcyByZWZlcnJlZCB0byBhcyAiY29uc3RyYWluZWQgc2t5bGluZSIgKHdoaWNoIHVzdWFsbHkgY29uc2lkZXJzIGEgcmFuZ2UgaW5zdGVhZCBvZiBhIHNpbmdsZSBhdHRyaWJ1dGUgdmFsdWUpCQ08YnIgLz4tIHRoZSBwcm9ibGVtIG9mIGRldGVybWluaW5nIHRoZSBzdWJzcGFjZXMgZm9yIHdoaWNoIGEgZ2l2ZW4gdHVwbGUgd291bGQgYmUgcGFydCBvZiB0aGUgc2t5bGluZSBpcyBnZW5lcmFsbHkgcmVmZXJyZWQgdG8gYXMgInJldmVyc2Ugc2t5bGluZSBjb21wdXRhdGlvbiIgDTxiciAvPg08YnIgLz5BbGwgdGhlc2UgY29uY2VwdHMgYXJlIHdlbGwta25vd24gaW4gdGhlIGxpdGVyYXR1cmUgYW5kIGNhbiBiZSBjb21iaW5lZC4gSSBzdWdnZXN0IHRvIGFkanVzdCB0aGUgdGVybWlub2xvZ3kgaW4gdGhlIHBhcGVyIGFjY29yZGluZ2x5DTxiciAvPg08YnIgLz5JbiBnZW5lcmFsLCBza3lsaW5lcyBjYW4gYmUgY29tcHV0ZWQgZGlyZWN0bHkgb24gdGhlIGF0dHJpYnV0ZXMgKGVhY2ggYXR0cmlidXRlIHJlcHJlc2VudHMgYSBkaW1lbnNpb24pIG9yIG9uIG1lYXN1cmVzIChkZXJpdmVkIGJhc2VkIG9uIGEgZm9ybXVsYSB0aGF0IG1pZ2h0IGludm9sdmUgbXVsdGlwbGUgYXR0cmlidXRlcywgdGhpcyBpcyB0aGVuIGFsc28gcmVmZXJyZWQgdG8gYXMgZGltZW5zaW9uKS4gIFRodXMsIGEgc2t5bGluZSBpcyBjb21tb25seSBkZWZpbmVkIG9uIGEgc2V0IG9mIGRpbWVuc2lvbnMsIHRoZXNlIGRpbWVuc2lvbnMgY2FuIGVpdGhlciBjb3JyZXNwb25kIGRpcmVjdGx5IHRvIGF0dHJpYnV0ZXMgb3IgaW52b2x2ZSBjb21wdXRhdGlvbnMgb24gbXVsdGlwbGUgYXR0cmlidXRlcyBvZiB0aGUgaW5wdXQgZGF0YS4gDTxiciAvPg08YnIgLz5SZWdhcmRpbmcgdGhlIHVzZSBjYXNlIG9mIGEgbmV3cyByZXBvcnRlciB3aG8gaXMgaW50ZXJlc3RlZCBpbiBpbnRlcmVzdGluZyBmYWN0cyB0aGF0IGhlIGNvdWxkIHNoYXJlIHdpdGggaGlzIGF1ZGllbmNlLCBoZSBuZWVkcyB0byBkZWNpZGUgd2hlbiBzZXR0aW5nIHVwIHRoZSBzeXN0ZW0gd2hpY2ggYXR0cmlidXRlcyB3aWxsIGJlIGNvbnNpZGVyZWQgYXMgY29uc3RyYWludHMgKGRpbWVuc2lvbnMpIGFuZCB3aGljaCBub3QgKG1lYXN1cmVzKS4gVGhpcyBpcyBhIGRpZmZpY3VsdCBkZWNpc2lvbiB0byBtYWtlIGFuZCBoZSBtaWdodCBtaXNzIHNvbWUgaW50ZXJlc3RpbmcgZmFjdHMganVzdCBiZWNhdXNlIGhlIGNob3NlIHRoZSB3cm9uZyBhdHRyaWJ1dGVzIGFzIGRpbWVuc2lvbnMuDTxiciAvPg08YnIgLz4NPGJyIC8+KEQyKSBTaW5jZSBhIHJlYWQtb25seSBzY2VuYXJpbyBpcyBjb25zaWRlcmVkLCB0aGUgYXBwbGljYXRpb24gaXMgcmVzdHJpY3RlZCB0byBpbmNyZW1lbnRhbCBpbiB0aGUgc2Vuc2UgdGhhdCBvbmx5IGFmdGVyIGEgZ2FtZSBoYXMgZmluaXNoZWQsIG5ldyBmYWN0cyBjYW4gYmUgZGlzY292ZXJlZC4gSW5jcmVtZW50YWxseSBpbiBhIHNlbnNlIHRoYXQgZGlzY292ZXJpbmcgbmV3IGZhY3RzIHdoaWxlIHRoZSBnYW1lIGlzIHN0aWxsIHJ1bm5pbmcgYW5kIHNjb3JlcyBhcmUgc3RpbGwgYmVpbmcgbWFkZSwgaXMgbm90IHBvc3NpYmxlIHRoZW4uIEhvd2V2ZXIsIGl0IHdvdWxkIGJlIG5pY2UgdG8gY29uc2lkZXIgc3VjaCBhbiBleHRlbnNpb24uIA08YnIgLz4NPGJyIC8+DTxiciAvPihEMykgVGhlcmUgaGFzIGJlZW4gd29yayBvbiBlZmZpY2llbnRseSBjb21wdXRpbmcgc2t5Y3ViZXMgKGFzIGFsc28gY2l0ZWQgaW4gdGhpcyBwYXBlcikuIFRoaXMgcGFwZXIgbWFrZXMgdXNlIG9mIHNpbWlsYXIgY29uc2lkZXJhdGlvbnMgZm9yIHBydW5pbmcgY2VydGFpbiBzdWJzcGFjZXMgYW5kIGNvbnN0cmFpbnRzLiBUaGlzIHBhcGVyIGFsc28gbWFrZXMgdXNlIG9mIGEgbGF0dGljZS4gSG93ZXZlciwgaW4gYSBkaWZmZXJlbnQgd2F5LiANPGJyIC8+DTxiciAvPkZvciBlYWNoIGRpc3RpbmN0IHZhbHVlIHRoYXQgb2NjdXJzIGluIGEgZGltZW5zaW9uYWwgYXR0cmlidXRlLCBhbGwgY29tYmluYXRpb25zIHdpdGggdmFsdWVzIG9mIGFsbCBvdGhlciBkaW1lbnNpb25hbCBhdHRyaWJ1dGVzIGhhdmUgdG8gYmUgYnVpbHQgYW5kIGFkZGVkIHRvIHRoZSBsYXR0aWNlLiBUaGlzIG1pZ2h0IGNhdXNlIHNldmVyZSBwcm9ibGVtcyB0aGF0IHNob3VsZCBiZSBkaXNjdXNzZWQgaW4gdGhlIHBhcGVyIGFuZCBjb25zaWRlcmVkIGluIHRoZSBleHBlcmltZW50cy4NPGJyIC8+DTxiciAvPg08YnIgLz4oRDQpIFRoZSBkZXNjcmlwdGlvbiBvZiB0aGUgZGF0YSBzZXRzIGRvZXMgbm90IGludm9sdmUgdGhlIG51bWJlciBvZiBkaXN0aW5jdCB2YWx1ZXMgZm9yIGVhY2ggZGltZW5zaW9uLiBOZWl0aGVyIGRvZXMgaXQgZGlzY3VzcyBhbmQgZXZhbHVhdGUgdGhpcyBpbXBvcnRhbnQgYXNwZWN0IHRoYXQgaGFzIGEgZ3JlYXQgaW5mbHVlbmNlIG9uIHBlcmZvcm1hbmNlIGFuZCBhcHBsaWNhYmlsaXR5Lg08YnIgLz4NPGJyIC8+VGhlIGV4ZWN1dGlvbiB0aW1lcyBzZWVtIHRvIGJlIHJhdGhlciBoaWdoLCBhbmQgYWxzbyByYXRoZXIgZGlmZmljdWx0IHRvIGRldGVybWluZSBiZWNhdXNlIHRoZSBhdXRob3JzIGRlY2lkZWQgdG8gc2hvdyB0aGUgY3VtdWxhdGl2ZSBleGVjdXRpb24gdGltZS4gQnV0IHdoYXQgZXhhY3RseSBpcyB0aGUgZXhlY3V0aW9uIHRpbWUgb2YgYSBzaW5nbGUgaW5jb21pbmcgdHVwbGUgd2hlbiB0aGVyZSB3ZXJlIDUsIDEwMCwgLi4uLCAzMDAwMDAsIDEwMDAwMDAsIC4uLiBwcmVjZWRpbmcgdHVwbGVzPw08YnIgLz5Nb3Jlb3ZlciwgaXQgaXMgYWxzbyBkaWZmaWN1bHQgdG8gY29tcGFyZSB0aGUgZGlmZmVyZW50IGRpYWdyYW1zIGJlY2F1c2UgZWFjaCBvZiB0aGVtIGhhcyBkaWZmZXJlbnQgc3RlcCBzaXplIGluIHRoZSB5IGF4aXMuDTxiciAvPg08YnIgLz5UaGUgd2VhdGhlciBkYXRhIHNldCBjb25zaXN0cyBvZiA3LjggbWlsbGlvbiByZWNvcmRzLiBCdXQgdGhlIG1heGltdW0gbnVtYmVyIHRoYXQgSSBjYW4gZmluZCBpbiB0aGUgZGlhZ3JhbXMgaXMgODAwLDAwMC4gSG93IGRvZXMgdGhlIGFsZ29yaXRobSBwZXJmb3JtIGZvciB0aGUgY29tcGxldGUgZGF0YSBzZXQ/DTxiciAvPg08YnIgLz5UaGUgcnVudGltZXMgYXJlIHZlcnkgc2xvdyBmb3Igc29tZSBvZiB0aGUgc2V0dXBzLCBydW50aW1lcyBvZiAzMCwwMDAgLSA2MCwwMDAgYXJlIHNob3duLCBpLmUuLCA4LjMgLSAxNi42IGhvdXJzISBBbmQgdGhhdCBvbmx5IHVudGlsIDIwLDAwMCAtIDEwMCwwMDAgdHVwbGVzLiBUaGUgYm90dG9tLXVwIGFwcHJvYWNoIGlzIGZhc3RlciBidXQgZG9lcyBub3Qgc2VlbSB0byBzdXBwb3J0IHRoYXQgbWFueSB0dXBsZXMgYmVjYXVzZSBvZiBtZW1vcnkgY29uc3RyYWludHMuIFNvLCBpdCBzZWVtcyBsaWtlIG5vbmUgb2YgdGhlIHByb3Bvc2VkIHNvbHV0aW9ucyBpcyByZWFsbHkgY29udmluY2luZy4NPGJyIC8+DTxiciAvPg08YnIgLz4oRDUpIE1pbm9yIGRldGFpbHMNPGJyIC8+LSBzb21ldGhpbmcgaXMgd3Jvbmcgd2l0aCB5b3VyIGh5cGhlbmF0aW9uLCBlLmcuLCBzZWUgYWJzdHJhY3QgbGluZSAxMSAoYSBzaW5nbGUgdCBpbiB0aGUgYmVnaW5uaW5nKWQCDQ8PFgIfAGhkZAIIDxUBAGQYAwUfY3RsMDAkY3BoJGd2UmV2aWV3cyRjdGwwMiRjdGwwMA88KwAKAQgCAWQFH2N0bDAwJGNwaCRndlJldmlld3MkY3RsMDEkY3RsMDAPPCsACgEIAgFkBR9jdGwwMCRjcGgkZ3ZSZXZpZXdzJGN0bDAwJGN0bDAwDzwrAAoBCAIBZEj12PvwltMo1+YOnmkeDozKyiGi" />
+</div>
+
+<table id="header">
+<tr>
+<td width="100%"><a href='http&#58;&#47;&#47;vldb.org&#47;pvldb' target='_blank'>VLDB 2014 </a><br /><b>Proceedings of the Very Large Database Endowment, Volume 7</b><br />Hangzhou, China</td>
+</tr>
+<tr class='headerSeparator'>
+    <td style='height:5px'></td>
+</tr>
+</table>
+<table id="content"><tr><td class='contentBorder'>&nbsp;</td><td class="contentContainer">
+<span id="ctl00_cph_Label4" style="font-size:Small;font-weight:bold;">Reviews For Paper</span>
+<span id="ctl00_cph_lblErrorMessage" class="error" style="font-size:Small;"></span>
+<div id="ctl00_cph_pnlReviews">
+	
+    <span style="font-size:Small;">
+<table class="nicetable2" style="text-align:left; width: 100%;">
+    <tr id="ctl00_cph_infoSubmission_trTrack">
+		<td><b>Track</b></td>
+		<td><span id="ctl00_cph_infoSubmission_lblTrack" style="font-size:Small;">Research -&#62; June 2013</span></td>
+	</tr>
+	
+    <tr>
+        <td width="100px"><b>Paper ID</b></td>
+        <td><span id="ctl00_cph_infoSubmission_lblPaperId" style="font-size:Small;">133</span></td>
+    </tr>
+    <tr>
+        <td><b>Title</b></td>
+        <td><span id="ctl00_cph_infoSubmission_lblPaperTitle" style="font-size:Small;">Incremental Discovery of Prominent Situational Facts</span></td>
+    </tr>
+    
+    
+    
+    
+    
+</table></span>
+    
+    
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label1" style="font-size:Small;">Assigned_Reviewer_3</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Recommendation</td><td style="width:80%;">
+                            Neutral
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Are there specific revisions that could raise your rating in the previous question?</td><td style="width:80%;">
+                            No
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Summary of the paper (what is being proposed and in what context) and a brief justification of your overall recommendation. One paragraph</td><td style="width:80%;">
+                            The paper studies the problem of given a tuple, find out a set of dimension attribute-values (called constraints) and a set of measure attributes (call measures) such that the given tuple is a skyline point among all data satisfying the constraints and under the selected measures. A solution of the problem allows one to discover situational facts under which the given tuple stands out. Although the problem is presented as a "situational-fact-finding" problem, the solution proposed is essentially for extended incremental SkyCube maintenance. The solution framework bears some resemblance to J Pei's TODS paper on SkyCube construction and maintenance. The proposed algorithm should therefore be compared with those proposed in [8] and [11] instead of the more straightforward baselines presented in the paper. Moreover, the proposed algorithms are quite space and time consuming. They take hours to finish (in some large cases) for each tuple inserted into the database. The practicality of the proposed solution is thus yet to be proven. 
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Three (or more) strong points about the paper (Please be precise and explicit; clearly explain the value and nature of the contribution).</td><td style="width:80%;">
+                            S1: The idea of discovering situational facts that make a tuple a skyline point is very interesting.<br />S2: The paper is well written. Ideas are clearly presented. 
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Three (or more) weak points about the paper (Please indicate clearly whether the paper has any mistakes, missing related work, or results that cannot be considered a contribution; write it so that the authors can understand what are seen as negative aspects </td><td style="width:80%;">
+                            W1: The proposed algorithms are essentially for incremental SkyCube maintenance. The authors should therefore compare their solutions against existing incremental skycube maintenance algorithms, such as those presented in [8] and [11].<br />W2: The proposed algorithms are quite time and space expensive.<br />
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Relevant for PVLDB</td><td style="width:80%;">
+                            YES
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Novelty (Please give a high novelty ranking to papers on new topics, opening new fields, or proposing truly new ideas; assign medium ratings for delta papers and papers on well known topics but still with some valuable contribution). </td><td style="width:80%;">
+                            Ideas are not new (say why in Q5 or 12)
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Significance</td><td style="width:80%;">
+                            Improvement over existing work
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Technical Depth and Quality of Content</td><td style="width:80%;">
+                            Syntactically complete but with limited contribution
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Experiments</td><td style="width:80%;">
+                            OK, but certain claims are not covered by the experiments
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Presentation</td><td style="width:80%;">
+                            Excellent: careful, logical, elegant, easy to understand
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Detailed Evaluation (Contribution, Pros/Cons, Errors); please number each point</td><td style="width:80%;">
+                            Basically I have expressed my views in Item 3. Some more elaboration of my points:<br /><br />1. The proposed algorithms are essentially maintaining (extended) SkyCube. This is  because the skyline of every possible constraint-measure combinations is materialized. In the Related Work section, the authors mention about [8] and [11] and claim that the problem studied in this submission is different from those of [8] and [11] because they are finding "queries" (i.e., constraint-measure combinations) rather than "answers" (skyline points). I disagree. It is because incremental SkyCube maintenance (with some simple extension) can be used to solve the problem being studied --- One only has to refresh all the skylines and check which skylines are "updated" as a result of the tuple insertion. Those "updated skylines" constitute the set of situational facts that are being sought. I understand that the original SkyCube forms a lattice over only the measure attributes, which needs to be extended so that the lattice cover contraints as well. But I thought the extension would be simple. Perhaps the authors could argue otherwise. The proposed algorithms, in fact, bear some resemblance of those given in [8]. <br /><br />2. It is not clear to me what postprocessing needs to be done to obtain the situational facts or findings as illustrated by the examples given in the introduction and in the case study. In particular, certain statements made, such as "Play A had the highest score and the highest rebounds since August 2010", look like results of aggregating a number of "constraint-measure" combinations. (E.g., "Since August 2010" is a merge of "September 2010", "October 2010", "November 2010" etc. The problem of merging situations into ones that are more succinct is interesting but isn't much covered in the paper.<br /><br />3. The domain of the dimension attribute seems to have a significant effect on the efficiency of the algorithms. For example, the dimension "date" could be quite big with thousands of values. Some information about datasets' dimension domains would give the readers a better understanding of the performance of the algorithms. <br /><br />Other comments:<br /><br />4. Page 4, Proposition 1: should be "... \not exists t' \in \lambda_M(\sigma_C(R - {t})) ..."<br /><br />5. The graphs are too small to read.<br /><br />6. Curves in Figure 8(a) and Figure 9 don't look linear to me, although the authors commented that those in Figure 8(a) are. <br /><br />
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label1" style="font-size:Small;">Assigned_Reviewer_5</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Recommendation</td><td style="width:80%;">
+                            Weak Reject
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Are there specific revisions that could raise your rating in the previous question?</td><td style="width:80%;">
+                            No
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Summary of the paper (what is being proposed and in what context) and a brief justification of your overall recommendation. One paragraph</td><td style="width:80%;">
+                            This paper discusses the problem of finding subspaces and constraints to push a particular point into the skyline set. The problem is motivated by computational journalism, with applications to identify interesting stories from numbers in sports and economical domains. The authors present two baseline approaches to tackle the problem, by generally iterating almost all possible measure and constraint subspace. Certain improvement methods were then proposed to improve the efficiency, which basically exploits the containment relationship in the lattice space.
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Three (or more) strong points about the paper (Please be precise and explicit; clearly explain the value and nature of the contribution).</td><td style="width:80%;">
+                            1. The motivation is interesting. <br />2. The paper is well organized and written.
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Three (or more) weak points about the paper (Please indicate clearly whether the paper has any mistakes, missing related work, or results that cannot be considered a contribution; write it so that the authors can understand what are seen as negative aspects </td><td style="width:80%;">
+                            1. Problem can be reformulated as an incremental subspace skyline query.<br />2. The strategies used in query optimizations are all well known and thus not novel. 3. The techniques proposed in TODS’06 paper can be applied on the problem.
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Relevant for PVLDB</td><td style="width:80%;">
+                            YES
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Novelty (Please give a high novelty ranking to papers on new topics, opening new fields, or proposing truly new ideas; assign medium ratings for delta papers and papers on well known topics but still with some valuable contribution). </td><td style="width:80%;">
+                            Ideas are too simple (say how in Q5 or 12)
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Significance</td><td style="width:80%;">
+                            Improvement over existing work
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Technical Depth and Quality of Content</td><td style="width:80%;">
+                            Syntactically complete but with limited contribution
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Experiments</td><td style="width:80%;">
+                            OK, but certain claims are not covered by the experiments
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Presentation</td><td style="width:80%;">
+                            Excellent: careful, logical, elegant, easy to understand
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Detailed Evaluation (Contribution, Pros/Cons, Errors); please number each point</td><td style="width:80%;">
+                            The motivation part of the paper looks interesting. Generally speaking, it is a good idea to apply subspace skyline on computational journalism. A slight concern is the curse of dimensionality. With the growth of the dimensionality on constraints and measures, every ordinary point could find a way into the skyline. I thus believe the problem defined in this paper can only be applied on spaces with moderate dimensionality, say within 10.<br /><br />Despite of the interesting motivation, I don’t agree with the authors that this is a new problem. In the following, I will a easy way to transform their problem definition into standard multidimensional subspace skyline query proposed in TODS’06 paper. Given a new tuple t, for each constraint attribute dimension d_i, let us define a customized order, such that t.d_i is better than any other value on the attribute. Therefore, another tuple t’ dominates t on a subspace (C,M), if and only if t’.di = t.di over C and t’ dominates t over M. Therefore, the problem is actually an incremental update problem over multidimensional subspace skyline query. I’m surprised the authors didn’t notice this transformation and tried to solve it as a completely new problem.<br /><br />The transformation implies two points. First, methods proposed, e.g. subspace groups, could be reused in their algorithm, reducing the computation cost by removing redundant subspaces. Second, the constraints space form a lattice space with small cardinality. Techniques proposed in the following paper are also likely to be reused.<br /><br />M. Morse, J. Patel, H. V. Jagadish, Efficient Skyline Computation Over Low-Cardinality Domains, VLDB 2007.<br /><br />Unfortunately, after reading all the technical details in the current draft, I didn’t find any novel methods not known in the literature of skyline query processing. Although I’m impressed by the well done experiments, I’m not convinced the paper has much pushes the frontier of skyline query research.
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label1" style="font-size:Small;">Assigned_Reviewer_6</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Recommendation</td><td style="width:80%;">
+                            Neutral
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Are there specific revisions that could raise your rating in the previous question?</td><td style="width:80%;">
+                            Yes
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Summary of the paper (what is being proposed and in what context) and a brief justification of your overall recommendation. One paragraph</td><td style="width:80%;">
+                            The paper outlines a nice application of skyline queries in the context of computational journalism where the main task is to find interesting facts that stand out from others, e.g, that someone was the first person (with some characteristics) who did something (with some characteristics). In more detail, whenever a new tuple t arrives, situational facts are searched. A situational fact is a combination of constraints and measures for which t is in the skyline.<br />The paper first nicely illustrates the problem and the relevance of such computations (e.g., sports news media), then defines the problem formally, proposes algorithmic solutions, and finally discusses experimental results and related work. The authors propose several variations of algorithms that follow top-down or bottom-up computation and make use of a lattice to find situational facts.<br />However, the experiments allow for the conclusion that the proposed solutions might not be efficient enough for a real-world use case and the fact that the user has to decide a-priori which attributes should be dimensions represents another restriction of applicability.
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Three (or more) strong points about the paper (Please be precise and explicit; clearly explain the value and nature of the contribution).</td><td style="width:80%;">
+                            (S1) The paper considers a very interesting application for which not many solutions have been proposed yet. This is also a nice new application scenario for skylines that goes beyond the standard application scenario of finding cheap hotels that are close to the beach.<br /><br />(S2) The paper is nicely written and has a very good mixture of formal definitions and examples that make it easier for the reader to understand the definitions.<br /><br />(S3) The paper shows the result of several experiments on multiple real-world data and is not restricted to just one.
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Three (or more) weak points about the paper (Please indicate clearly whether the paper has any mistakes, missing related work, or results that cannot be considered a contribution; write it so that the authors can understand what are seen as negative aspects </td><td style="width:80%;">
+                            (W1) The introduced terminology is not aligned with the standard terminology that other research papers on skylines have introduced. This causes some confusion when reading the paper.<br /><br />(W2) It seems that the proposed solutions are not scalable enough to cope with arbitrary data sets.<br /><br />(W3) The fact that the user has to decide beforehand which attributes should be considered dimensions reduces the general applicability of the proposed algorithms.
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Relevant for PVLDB</td><td style="width:80%;">
+                            YES
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Novelty (Please give a high novelty ranking to papers on new topics, opening new fields, or proposing truly new ideas; assign medium ratings for delta papers and papers on well known topics but still with some valuable contribution). </td><td style="width:80%;">
+                            With some new ideas
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Significance</td><td style="width:80%;">
+                            Improvement over existing work
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Technical Depth and Quality of Content</td><td style="width:80%;">
+                            Solid work
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Experiments</td><td style="width:80%;">
+                            OK, but certain claims are not covered by the experiments
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Presentation</td><td style="width:80%;">
+                            Reasonable: improvements needed
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Detailed Evaluation (Contribution, Pros/Cons, Errors); please number each point</td><td style="width:80%;">
+                            (D1) There is a wide variety of literature regarding skyline computation. This paper, however, mostly ignores commonly accepted terminology regarding particular types of skylines:<br />- a skyline defined on only a subset of attribute dimensions is referred to as "subspace skyline"<br />- a skyline that considers constraints on some of the attribute dimensions is referred to as "constrained skyline" (which usually considers a range instead of a single attribute value)	<br />- the problem of determining the subspaces for which a given tuple would be part of the skyline is generally referred to as "reverse skyline computation" <br /><br />All these concepts are well-known in the literature and can be combined. I suggest to adjust the terminology in the paper accordingly<br /><br />In general, skylines can be computed directly on the attributes (each attribute represents a dimension) or on measures (derived based on a formula that might involve multiple attributes, this is then also referred to as dimension).  Thus, a skyline is commonly defined on a set of dimensions, these dimensions can either correspond directly to attributes or involve computations on multiple attributes of the input data. <br /><br />Regarding the use case of a news reporter who is interested in interesting facts that he could share with his audience, he needs to decide when setting up the system which attributes will be considered as constraints (dimensions) and which not (measures). This is a difficult decision to make and he might miss some interesting facts just because he chose the wrong attributes as dimensions.<br /><br /><br />(D2) Since a read-only scenario is considered, the application is restricted to incremental in the sense that only after a game has finished, new facts can be discovered. Incrementally in a sense that discovering new facts while the game is still running and scores are still being made, is not possible then. However, it would be nice to consider such an extension. <br /><br /><br />(D3) There has been work on efficiently computing skycubes (as also cited in this paper). This paper makes use of similar considerations for pruning certain subspaces and constraints. This paper also makes use of a lattice. However, in a different way. <br /><br />For each distinct value that occurs in a dimensional attribute, all combinations with values of all other dimensional attributes have to be built and added to the lattice. This might cause severe problems that should be discussed in the paper and considered in the experiments.<br /><br /><br />(D4) The description of the data sets does not involve the number of distinct values for each dimension. Neither does it discuss and evaluate this important aspect that has a great influence on performance and applicability.<br /><br />The execution times seem to be rather high, and also rather difficult to determine because the authors decided to show the cumulative execution time. But what exactly is the execution time of a single incoming tuple when there were 5, 100, ..., 300000, 1000000, ... preceding tuples?<br />Moreover, it is also difficult to compare the different diagrams because each of them has different step size in the y axis.<br /><br />The weather data set consists of 7.8 million records. But the maximum number that I can find in the diagrams is 800,000. How does the algorithm perform for the complete data set?<br /><br />The runtimes are very slow for some of the setups, runtimes of 30,000 - 60,000 are shown, i.e., 8.3 - 16.6 hours! And that only until 20,000 - 100,000 tuples. The bottom-up approach is faster but does not seem to support that many tuples because of memory constraints. So, it seems like none of the proposed solutions is really convincing.<br /><br /><br />(D5) Minor details<br />- something is wrong with your hyphenation, e.g., see abstract line 11 (a single t in the beginning)
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+    <br />
+    <br />
+
+</div>
+</td><td class='contentBorder'>&nbsp;</td></tr></table>
+</form>
+</body>
+</html>

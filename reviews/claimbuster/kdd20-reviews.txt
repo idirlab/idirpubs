@@ -1,0 +1,176 @@
+----------------------- REVIEW 1 ---------------------
+SUBMISSION: 1472
+TITLE: Gradient-Based Adversarial Training on Transformer Networks for Detecting Check-Worthy Factual Claims
+AUTHORS: Kevin Meng, Damian Jimenez, Fatma Arslan, Jacob Daniel Devasier, Daniel Obembe and Chengkai Li
+
+----------- Does the paper belong to one of the two categories: Deployed or Evidential? -----------
+SCORE: 1 (yes)
+----------- Category DEPLOYED. -----------
+SELECTION: yes
+----------- Category EVIDENTIAL. -----------
+SELECTION: no
+----------- Please justify your answer for the category you chose -----------
+The false information or misinformation is a major issue in nowadays. The paper presents the method of the implementation of the claim spotting component in ClaimBust, an existing fact-checking system.
+----------- Is there a clearly defined audience / group of users that will benefit from the solution presented in the paper? -----------
+SCORE: 1 (Yes)
+----------- Please justify your answer on the paper's anticipated audience -----------
+The possible audience of the paper is the fact-checking agency or company. It may also interest the researchers in this area.
+----------- Originality/Novelty -----------
+SCORE: 4 (Novel approach, using mature components in a novel way)
+----------- Please justify your score for Originality/Novelty -----------
+As claimed by the authors, this paper is the first work that applies gradient-based adversarial training in transformer networks in claim-spotting tasks.
+----------- Technical Quality -----------
+SCORE: 4 (Good technical work, properly evaluated)
+----------- Please justify your score for Technical Quality -----------
+The proposed method is technically sound and validation is well-designed.
+----------- Impact/Outreach -----------
+SCORE: 4 (A good solution to a rather narrowly defined problem for a small target group of users)
+----------- Please justify your score for Impact/Outreach -----------
+The proposed idea, i.e., combining adversarial training with transformer network, shows an obvious improvement of the performance over the state-of-the-art methods in claim-spotting tasks. It could potentially be used in other NLP tasks.
+----------- Clarity of Presentation -----------
+SCORE: 4 (Paper is understandable but minor changes would make it accessible to a broader audience)
+----------- Reproducibility -----------
+SCORE: 4 (Yes - Good. It provides reasonably complete information that will help reproduce the results.)
+----------- Please justify your answer regarding Reproducibility -----------
+The codebase, dataset and API are provided to reproduce the experiments.
+----------- Three positive aspects of the paper -----------
+1. The proposed method innovatively introduces gradient-based adversarial training with transformer network to solve the check-worthy claims spotting tasks.
+2. The paper is excellently organized. It is enjoyable to read the paper.
+3. The experiments are well-designed and show the validation of the proposed method.
+----------- Three negative aspects of the paper -----------
+I could not spot the obvious negative aspects of the paper.
+----------- Overall Review -----------
+Overall, this is a very good paper. The idea is simple but innovative. The experiments support its validation. And the paper is well-write and easy to follow.
+----------- Overall Evaluation -----------
+SCORE: 2 (A good paper (accept). I believe this paper is in the top 30% of papers in KDD and can argue for acceptance.)
+----------- Overall Score -----------
+SCORE: 2 (Accept)
+----------- Social Impact Relevance -----------
+SELECTION: no
+----------- Responsible Data Science -----------
+SELECTION: no
+
+
+
+----------------------- REVIEW 2 ---------------------
+SUBMISSION: 1472
+TITLE: Gradient-Based Adversarial Training on Transformer Networks for Detecting Check-Worthy Factual Claims
+AUTHORS: Kevin Meng, Damian Jimenez, Fatma Arslan, Jacob Daniel Devasier, Daniel Obembe and Chengkai Li
+
+----------- Does the paper belong to one of the two categories: Deployed or Evidential? -----------
+SCORE: 1 (yes)
+----------- Category DEPLOYED. -----------
+SELECTION: yes
+----------- Category EVIDENTIAL. -----------
+SELECTION: no
+----------- Please justify your answer for the category you chose -----------
+Reading the paper I undersdood that the framework presented is deployed however the authors do not discuss clearly the
+ deployment choise challenges that in a paper like this one are considered important. Moreover, my expetation was to find in the paper also some statistics derived from the use of the framework that are able to provide an idea abou the performance and the quality of the framework.
+----------- Is there a clearly defined audience / group of users that will benefit from the solution presented in the paper? -----------
+SCORE: 1 (Yes)
+----------- Please justify your answer on the paper's anticipated audience -----------
+The paper cleary state the audience even if there is no deep discussion on that.
+----------- Originality/Novelty -----------
+SCORE: 4 (Novel approach, using mature components in a novel way)
+----------- Please justify your score for Originality/Novelty -----------
+The novelty is provided by the fact that no existing work proposed the applicantion of  transformers to the claim-spotting task. Authors propose that solution that works and allows for good results.
+----------- Technical Quality -----------
+SCORE: 4 (Good technical work, properly evaluated)
+----------- Please justify your score for Technical Quality -----------
+The proposed solution seems technically sound and the onceptual approach is well described and justified.
+----------- Impact/Outreach -----------
+SCORE: 5 (A good solution to an important problem for a large target group of users)
+----------- Please justify your score for Impact/Outreach -----------
+The solution proposed is useful to solve the  claim-spotting task that is really usefull for fact-checkers but the impact of having a tool like this is beneficial for many users one misinformation is avoided.
+----------- Clarity of Presentation -----------
+SCORE: 4 (Paper is understandable but minor changes would make it accessible to a broader audience)
+----------- Reproducibility -----------
+SCORE: 4 (Yes - Good. It provides reasonably complete information that will help reproduce the results.)
+----------- Please justify your answer regarding Reproducibility -----------
+I appreciated the additional pages well used by the authors for reproducibility goal.
+----------- Three positive aspects of the paper -----------
+- the paper addresses an interesting and important problem: the claim-checking task helping to contrast the misinformation.
+- The presentation of the approach is clear
+- Reproducibility aspects clear
+----------- Three negative aspects of the paper -----------
+- related work section does non discuss well the literature highlithing differences witht he proposed systems
+- the deployment challenges and choices are not deeply discussed
+- discussion on limits and weakness are not discussed
+----------- Overall Review -----------
+This paper addresses an interesting and important problem, i.e.,  the claim-checking task helping to contrast the misinformation.
+The presentation of the approach is clear and also the paper is in general well presented. However,  considering the fact that the paper is presenting a deployed system my expectation was to see a deep discussion on the deployments addressing and explaining possible challenges and choices. Also a good discussion on drawbacks and limitations is missing.
+I instead appreciated the effort of authors in providing the additional material on the "Reproducibility aspects".
+Finally, I suggest to improve the discussion onthe literature because is missing a comparision and a discussion highlighting the differnce with the proposed system.
+----------- Overall Evaluation -----------
+SCORE: 1 (An OK paper, good enough for KDD (weak accept). Accept if possible, although I would not be upset if it were rejected.)
+----------- Overall Score -----------
+SCORE: 1 (Weak Accept)
+----------- Social Impact Relevance -----------
+SELECTION: yes
+----------- Responsible Data Science -----------
+SELECTION: no
+
+
+
+----------------------- REVIEW 3 ---------------------
+SUBMISSION: 1472
+TITLE: Gradient-Based Adversarial Training on Transformer Networks for Detecting Check-Worthy Factual Claims
+AUTHORS: Kevin Meng, Damian Jimenez, Fatma Arslan, Jacob Daniel Devasier, Daniel Obembe and Chengkai Li
+
+----------- Does the paper belong to one of the two categories: Deployed or Evidential? -----------
+SCORE: 1 (yes)
+----------- Category DEPLOYED. -----------
+SELECTION: no
+----------- Category EVIDENTIAL. -----------
+SELECTION: yes
+----------- Please justify your answer for the category you chose -----------
+The reviewer kindly disagrees with the authors that this work is deployed. The solution is made available online (https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fidir.uta.edu%2Fclaimbuster%2Fapi%2Fdocs%2F&amp;data=02%7C01%7Cdamian.jimenez%40mavs.uta.edu%7C010573521eb24c0faffb08d7f941f278%7C5cdc5b43d7be4caa8173729e3b0a62d9%7C0%7C0%7C637251933953737399&amp;sdata=pWaOHdq6tnm3zg45JxeGvyiaZgzm3DE9zQcAESjEUaE%3D&amp;reserved=0) however,the reviwer didn't observe any real-life impact with consequences in the paper. For example, what is "the cost" if detection results are "bad" or starts performing "bad"? What happens if Claimbuster returns wrong answers, such as the user searches for "the world is flat" and the system returns true, which it did when the reviewer tried? One such "cost" could be the number of users decreasing for example and the impact could be reported. And no such evaluation is reported in the paper.
+----------- Is there a clearly defined audience / group of users that will benefit from the solution presented in the paper? -----------
+SCORE: 1 (Yes)
+----------- Please justify your answer on the paper's anticipated audience -----------
+People working with text classification, especially the ones working on detecting check-worthy factual claims, would benefit from the work.
+----------- Originality/Novelty -----------
+SCORE: 3 (Incremental)
+----------- Please justify your score for Originality/Novelty -----------
+The solution combines BERT and adversarial training to improve detecting check-worthy factual claims.
+----------- Technical Quality -----------
+SCORE: 3 (Fair technical work, with some flaws in design and/or validation)
+----------- Please justify your score for Technical Quality -----------
+The first set of evaluations determine which BERT-based configuration works best, results presented in Table 2. After one configuration is selected, the rest of the results compare the performance with a previous version of the same tool and other BERT-based solutions, in Tables 3-4. Finally, Table 5 compares old and new CB solution to competition results.
+
+While there are so many different text classification solutions, it isn't clear why the paper focused on BERT-based ones only. If the goal is to improve CB quality, it would be interesting to try different text classification methods. If the goal is to show a BERT and adversarial training solution, then it should be tested on different problems as well. So, as it is, evaluation results mostly compare authors' SVM based solution to BERT-based solution. Table 5 doesn't have enough information to compare with Copenhagen's and TheEarthIsFlat's solutions since precision@k (or mean average precision) by itself may not be enough to evaluate how good a classification solution is.
+
+Writing which dataset was used for Table 2 results would make the paper easier to read, Section 4.3 doesn't mention which dataset. The reviewer guesses that it is ClaimBusterDataset.
+
+Section 4.3 claims that recall is important to make a selection, Table 5 compares models in terms of precision@k.
+
+In production, usually the training and scoring costs impact model selection. Thus, it would be nice to have computation cost analysis.
+----------- Impact/Outreach -----------
+SCORE: 3 (Fair solution to an important problem, but there are alternatives around)
+----------- Please justify your score for Impact/Outreach -----------
+Detecting check-worthy factual claims may be an important step for different real-world problems like misinformation detection. Thus, the paper is about an important problem. Solution approach utilizes recent advancements in text mining and deep learning. It isn't clear of the cost of deep learning is absolutely required.
+----------- Clarity of Presentation -----------
+SCORE: 4 (Paper is understandable but minor changes would make it accessible to a broader audience)
+----------- Reproducibility -----------
+SCORE: 4 (Yes - Good. It provides reasonably complete information that will help reproduce the results.)
+----------- Please justify your answer regarding Reproducibility -----------
+There is a github link for the code and dataset. Some cleaning or documentation would help readers. For example, the reviewer couldn't find the 4-fold cross validation dataset at https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fidirlab%2Fclaimspotter%2Ftree%2Fmaster%2Fdata&amp;data=02%7C01%7Cdamian.jimenez%40mavs.uta.edu%7C010573521eb24c0faffb08d7f941f278%7C5cdc5b43d7be4caa8173729e3b0a62d9%7C0%7C0%7C637251933953737399&amp;sdata=DC4ye44vAkModemi6B5pifTwnspU8TzytTK2bOTUxgI%3D&amp;reserved=0 . There are multiple files and it isn't clear which one is what.
+----------- Three positive aspects of the paper -----------
+The solution showcases the workings of recent advancements like BERT and adversarial training.
+The code and datasets are publicly available, at least in theory.
+The solution may improve misinformation detection applications.
+----------- Three negative aspects of the paper -----------
+It isn't clear if the presented solution(s) are ideal, if they are, why they are ideal.
+Some modifications in the evaluations and evaluation documentation may make the paper stronger, as detailed above.
+Comparing this work to existing text classification problems would make the paper more beneficial for readers.
+In Section 4.1.1, it is mentioned that speaker information isn't used because "it may introduce unwanted bias based on the name of speaker". There are techniques to remove bias, one such method can be using a guid instead of the name. Thus, reason one isn't convincing for not using speaker information.
+----------- Overall Review -----------
+The paper is about using recent deep learning advancements, like BERT and adversarial learning to improve check-worthy factual claims detection. Overall it is an interesting and promising work with improvement opportunities.
+----------- Overall Evaluation -----------
+SCORE: 1 (An OK paper, good enough for KDD (weak accept). Accept if possible, although I would not be upset if it were rejected.)
+----------- Overall Score -----------
+SCORE: 1 (Weak Accept)
+----------- Social Impact Relevance -----------
+SELECTION: yes
+----------- Responsible Data Science -----------
+SELECTION: no

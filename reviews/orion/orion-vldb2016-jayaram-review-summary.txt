@@ -1,0 +1,11 @@
+* Comparison with known machine learning methods:   R1 believes we should compare with methods for handling imbalanced classes; R3 considers RDP as an approach of tackling of enormous training labels, for which there are many existing methods.  I am not sure if they are due to misunderstanding. Need to investigate the literature more thoroughly.  R3 also believes RDP can't effectively solve the problem of enormous training labels. 
+
+* Novelty and venue: R1 and R3 believe the main contribution of the paper is on a machine learning algorithm. R1 says the novelty of the work is hard to gauge. R3 believes we should send the paper to a machine learning venue. 
+
+* user scenario: R2 believes that no one uses a visual query builder. That basically rejects all previous papers on visual query builders. It will be helpful if we can find convincing evidence of use cases. 
+
+* query log:  R2 believes we should not mention query log. Instead, we should say we are using data statistics. That seems to be a good suggestion, to avoid similar concerns in the future. 
+
+* video/demo: P1 suggests that a video of Orion will be extremely helpful.
+
+Regarding these comments, my opinion is:  We should stick with database venues (unless we can really make this a strong ML contribution); emphasize the usability challenge we are tackling; go deeper on db-related components; provide strong evidence of user scenario; and strive for a strong demo/video. 
