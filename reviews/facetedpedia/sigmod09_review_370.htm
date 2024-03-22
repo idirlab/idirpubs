@@ -1,346 +1,0 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head><title>
-	Reviews For Paper
-</title>
-<style>
-#header
-{
-    width: 100%;
-    font-size: small;
-    background-color:#F7F7F7;
-}
-.printThemeText
-{
-    font-size:small;
-}
-.printThemeTable td
-{
-    vertical-align:top;
-}
-.printThemeGrid th
-{
-    color:white;
-    background:#5D7B9D;
-    font-weight:bold;
-}
-.printThemeGrid
-{
-    border-collapse:collapse;
-}
-.printThemeGrid td, .printThemeGrid th
-{
-    border:solid 1px #D6D3CE;
-    padding:4px 4px 4px 4px;
-}
-.printThemeGrid .row
-{ 
-    background-color:#F7F6F3;
-    color:#333333;
-    vertical-align:top;
-}
-.printThemeGrid .altrow
-{ 
-    background-color:White;
-    color:#284775;
-    vertical-align:top;
-}
-</style>
-</head>
-<body>
-<form name="aspnetForm" method="post" action="ViewReviewsForPaper.aspx?paperId=370" id="aspnetForm">
-<div>
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTAxNDM4ODU3Ng9kFgJmD2QWAgIDD2QWAmYPZBYCAgUPDxYCHgdWaXNpYmxlZ2QWBgIBD2QWAmYPZBYGAgEPFgIfAGcWAgIBD2QWAmYPDxYCHgRUZXh0BQhSZXNlYXJjaGRkAgMPDxYCHwEFAzM3MGRkAgUPDxYCHwEFEUZhY2V0ZWQgV2lraXBlZGlhZGQCAw8PFgIfAGhkZAIFDxYCHgtfIUl0ZW1Db3VudAIDFgZmD2QWBgIDD2QWAmYPFQEKUmV2aWV3ZXIgMWQCBw88KwANAQAPFgQeC18hRGF0YUJvdW5kZx8CAg5kFgJmD2QWHgIBD2QWBGYPDxYCHwEFNVN1bW1hcnkgb2YgdGhlIHBhcGVyJ3MgbWFpbiBjb250cmlidXRpb25zIGFuZCBpbXBhY3QgZGQCAQ9kFgJmDxUBoAFUaGUgcGFwZXIgcHJlc2VudHMgYSBuZXcgd2F5IG9mIG5hdmlnYXRpbmcgV2lraXBlZGlhLiBJIGxpa2UgdGhlIGlkZWEgcHJlc2VudGVkIGluIHRoZSBwYXBlciB2ZXJ5IG11Y2gsIGhvd2V2ZXIsIEkgZG8gbm90IGxpa2UgdGhlIGV4ZWN1dGlvbiBvZiB0aGUgaWRlYSBhdCBhbGwuZAICD2QWBGYPDxYCHwEFPlRocmVlIHN0cm9uZyBwb2ludHMgb2YgdGhlIHBhcGVyIChwbGVhc2UgbnVtYmVyIHRoZW0gUzEsUzIsUzMpZGQCAQ9kFgJmDxUBgwFTMSBJbXBvcnRhbnQgcHJvYmxlbSwgaGFzIHBvdGVudGlhbGx5IHJlYWwgaW1wYWN0IHRvIGltcHJvdmUgbmF2aWdhdGlvbiBpbiBXaWtpcGVkaWEgYW5kIG90aGVyIHRleHQgZG9jdW1lbnRzLg08YnIgLz4NPGJyIC8+DTxiciAvPmQCAw9kFgRmDw8WAh8BBTxUaHJlZSB3ZWFrIHBvaW50cyBvZiB0aGUgcGFwZXIgKHBsZWFzZSBudW1iZXIgdGhlbSBXMSxXMixXMylkZAIBD2QWAmYPFQH/A1cxIFRoZSBleHBlcmltZW50YWwgZXZhbHVhdGlvbiBpcyB0b28gd2Vhaw08YnIgLz4NPGJyIC8+VzI6IFRoZSBhcHByb2FjaCBzZWVtcyB2ZXJ5IGFkLWhvYywgYW5kIHRoZXJlIGlzIG5vIGV4cGxvcmF0aW9uIG9mIHRoZSAic2NpZW5jZSIgb2YgdGhlIGFwcHJvYWNoLg08YnIgLz4NPGJyIC8+VzM6IFRoZSB3cml0aW5nIGlzIHZlcnkgYmFkLiBUaGUgcGFwZXIgdGhyb3dzIG91dCBhIGJ1bmNoIG9mIGFsZ29yaXRobXMgd2l0aG91dCBnaXZpbmcgbXVjaCBpbnR1aXRpb24gd2h5IHRoZXNlIGFyZSB0aGUgcmlnaHQgYWxnb3JpdGhtcyBhbmQgd2hhdCBpcyB0aGUgZGVzaWduIHNwYWNlIGV0Yy4NPGJyIC8+DTxiciAvPlc0OiBUaGUgcHJlc2VudGF0aW9uIGlzIHZlcnkgYmFkLiAoSSBkaWQgbm90IGRpc2NvdW50IG15IHJhdGluZyBiZWNhdXNlIG9mIHRoaXMsIGJlY2F1c2UgSSB0aGluayB5b3Ugd2lsbCBiZSBhYmxlIHRvIGltcHJvdmUgdGhpcyBmb3IgdGhlIGNhbWVyYS1yZWFkeSB2ZXJzaW9uKS5kAgQPZBYEZg8PFgIfAQULT3JpZ2luYWxpdHlkZAIBD2QWAmYPFQEESGlnaGQCBQ9kFgRmDw8WAh8BBRdRdWFsaXR5IG9mIFByZXNlbnRhdGlvbmRkAgEPZBYCZg8VAQNMb3dkAgYPZBYEZg8PFgIfAQUMU2lnbmlmaWNhbmNlZGQCAQ9kFgJmDxUBBk1lZGl1bWQCBw9kFgRmDw8WAh8BBT5Ib3cgbWFueSBhdHRlbmRlZXMgd2lsbCBiZSBpbnRlcmVzdGVkIGluIGEgdGFsayBvbiB0aGlzIHBhcGVyP2RkAgEPZBYCZg8VARBhdmVyYWdlIGludGVyZXN0ZAIID2QWBGYPDxYCHwEFD1RlY2huaWNhbCBEZXB0aGRkAgEPZBYCZg8VAQNMb3dkAgkPZBYEZg8PFgIfAQUlUXVhbGl0eSBvZiBFeHBlcmltZW50cywgUmVwZWF0YWJpbGl0eWRkAgEPZBYCZg8VAQNMb3dkAgoPZBYEZg8PFgIfAQVaRG8gdGhlIGV4cGVyaW1lbnRzIHN1cHBvcnQgdGhlIGNsYWltcyBtYWRlIGluIHRoZSBwYXBlciBhbmQgbWF0Y2ggdGhlIG1vdGl2YXRpbmcgZXhhbXBsZXM/ZGQCAQ9kFgJmDxUBAm5vZAILD2QWBGYPDxYCHwEFFk92ZXJhbGwgUmVjb21tZW5kYXRpb25kZAIBD2QWAmYPFQELV2VhayBSZWplY3RkAgwPZBYEZg8PFgIfAQV2U3VtbWFyeSBvZiBEaXNjdXNzaW9uIGFuZCBBdXRob3IgRmVlZGJhY2sgKHRvIGJlIGZpbGxlZCBpbiBieSBtb2RlcmF0b3Igb2YgZGlzY3Vzc2lvbiBvbmx5IGFmdGVyIGRpc2N1c3Npb24gY29uY2x1ZGVkKWRkAgEPZBYCZg8VAQJOb2QCDQ9kFgRmDw8WAh8BBSxEZXRhaWxlZCBjb21tZW50cyAocGxlYXNlIG51bWJlciBlYWNoIHBvaW50KWRkAgEPZBYCZg8VAbgDMSBUaGVyZSBhcmUgKmEgbG90KiBvZiBpc3N1ZXMgaW4gdGhlIHdyaXRpbmcsIHNvIG1hbnkgdGhhdCBJIHN0b3BwZWQgaW4gdGhlIG1pZGRsZSB3aXRoIG1hcmtpbmcgdGhlbSwgYW5kIEkgd29uJ3QgbGlzdCB0aGVtIGhlcmUuIA08YnIgLz4NPGJyIC8+MiBFc3BlY2lhbGx5IFNlY3Rpb24gNCBnaXZlcyBhIGxvdCBvZiBkZWZpbml0aW9ucyB0aGF0IGNsZWFybHkgc2VlbSB0byBhZGRyZXNzIHNvbWUgb2YgdGhlIHF1ZXN0aW9ucywgYnV0IHRoZXJlIGlzIG5vIGRpc2N1c3Npb24gd2h5IHRoZXNlIG1ldHJpY3MgYW5kIHdoeSBub3Qgb3RoZXJzIGFuZCB3aGV0aGVyIG90aGVycyB3b3VsZCBoYXZlIHdvcmtlZCBzaW1pbGFybHkuDTxiciAvPg08YnIgLz4zIFNlY3Rpb24gNSBiYXNpY2FsbHkganVzdCB0aHJvd3MgYWxnb3JpdGhtIHBzZXVkb2NvZGUgYXQgdGhlIHJlYWRlci5kAg4PZBYEZg8PFgIfAQVaV291bGQgYXV0aG9yIGZlZWRiYWNrIGJlIHVzZWZ1bCBmb3IgdGhpcyBSZXZpZXc/IChpZiAmcXVvdDtZZXMmcXVvdDssIHBsZWFzZSBhbnN3ZXIgUS4gMTYpZGQCAQ9kFgJmDxUBAk5vZAIPDw8WAh8AaGRkAggPFQEAZAIBD2QWBgIDD2QWAmYPFQEKUmV2aWV3ZXIgMmQCBw88KwANAQAPFgQfA2cfAgIOZBYCZg9kFh4CAQ9kFgRmDw8WAh8BBTVTdW1tYXJ5IG9mIHRoZSBwYXBlcidzIG1haW4gY29udHJpYnV0aW9ucyBhbmQgaW1wYWN0IGRkAgEPZBYCZg8VAaYEVGhlIHBhcGVyIHByb3Bvc2VzIGFsZ29yaXRobXMgZm9yIGF1dG9tYXRpY2FsbHkgcHJvZHVjaW5nIGhpZXJhcmNoaWVzIG9mIGNhdGVnb3JpZXMgY2hhcmFjdGVyaXppbmcgYSBnaXZlbiBzZXQgb2YgV2lraXBlZGlhIGFydGljbGVzIC0gbW9yZSBzcGVjaWZpY2FsbHksIHRoZSByZXN1bHQgb2YgYSBnaXZlbiBxdWVyeSwgYnV0IHRoZSBhbGdvcml0aG1zIGNvbnNpZGVyICJBIHNldCBvZiBhcnRpY2xlcyIsIHJlZ2FyZGxlc3Mgb2YgaG93IHRoZXkgYXJlIG9idGFpbmVkLiANPGJyIC8+VGhlIHNwZWNpYWwgY2hhcmFjdGVyaXN0aWMgb2YgdGhpcyB3b3JrIGlzIHRvIGlkZW50aWZ5IHRoZXNlIGhpZXJhcmNoaWVzIGR5bmFtaWNhbGx5IChhdCBxdWVyeSB0aW1lcykuDTxiciAvPlRoZSB3b3JrIHJlbGllcyBpcyBiYXNlZCBvbiBhbiBhc3N1bXB0aW9uIHdoaWNoIG1heSBiZSB3cm9uZzsgaG93ZXZlciwgdGhlIGF1dGhvcnMgZG8gbm90IGNvbnNpZGVyIHRoZSByaXNrIHRoYXQgZmFsc2lmeWluZyB0aGlzIGFzc3VtcHRpb24gYnJpbmdzIHRvIHRoZWlyIGFwcHJvYWNoLmQCAg9kFgRmDw8WAh8BBT5UaHJlZSBzdHJvbmcgcG9pbnRzIG9mIHRoZSBwYXBlciAocGxlYXNlIG51bWJlciB0aGVtIFMxLFMyLFMzKWRkAgEPZBYCZg8VAZcBUzEuIFRoZSBwYXBlciB0YWNrbGVzIGFuIGludGVyZXN0aW5nIHByb2JsZW0gLSBob3cgdG8gYXV0b21hdGljYWxseSBkZXJpdmUgY2F0ZWdvcmllcyB0aGF0IGhlbHAgdGhlIHVzZXIgc2V0IGluIGNvbnRleHQgYSBnaXZlbiBzZXQgb2YgYXJ0aWNsZXMuDTxiciAvPmQCAw9kFgRmDw8WAh8BBTxUaHJlZSB3ZWFrIHBvaW50cyBvZiB0aGUgcGFwZXIgKHBsZWFzZSBudW1iZXIgdGhlbSBXMSxXMixXMylkZAIBD2QWAmYPFQGABlcxLiBUaGUgcGFwZXIncyBhbGdvcml0aG1zIHJlbHkgb24gYSBjcnVjaWFsIGh5cG90aGVzaXM6IHRoYXQgdGhlIGxpbmtzIGNvbXByaXNlZCBpbiBhbiBhcnRpY2xlIHJlZmVyIHRvIGNhdGVnb3JpZXMgKGF0dHJpYnV0ZXMpIGNoYXJhY3Rlcml6aW5nIHRoZSBhcnRpY2xlLiBUaGlzIG1heSBvciBtYXkgbm90IGJlIHRydWUuIEZvciBpbnN0YW5jZSx0aGUgbGlua3Mgb2YgYW4gYXJ0aWNsZSBtYXkgcmVmZXIgdG8gc2ltaWxhciBlbnRpdGllcy4gVGhlIHdob2xlIGNvbnN0cnVjdGlvbiBvZiB0aGUgcGFwZXIgcmVsaWVzIG9uIHRoaXMgYXNzdW1wdGlvbiwgeWV0IG5vIGNvbnNpZGVyYXRpb24gaXMgZ2l2ZW4gdG8gdGhlIGRlZ3JlZSB0byB3aGljaCByZXN1bHRzIG1heSBiZSBjb3JydXB0ZWQsIHNob3VsZCB0aGlzIGFzc3VtcHRpb24gdHVybiBvdXQgdG8gYmUgZmFsc2UuDTxiciAvPlcyLiBUaGUgcGFwZXIgc2VlbXMgaW1tYXR1cmU7IGl0IGhhcyBhIGZlZWxpbmcgb2YgIndlIHRyaWVkIHRoaXMsIHdlIHRyaWVkIHRoYXQiLiBUcnlpbmcgaXMgZXhjZWxsZW50LCBidXQgdGhlIHJlYWRlciB3b3VsZCBkZXNlcnZlIG1vcmUgdGhvdWdodHMgb2Ygd2hhdCBoYXBwZW5lZCwgaG93IGFuZCB3aHkuIFRoaXMgbWF5IGNvbWUgYnkgbWF0dXJpbmcgdGhlIHdvcmsgYSBiaXQgbW9yZS4NPGJyIC8+VzMuIFRoZSBwYXBlcidzIHdyaXRpbmcgZGVncmFkZXMgZnJvbSB0aGUgYmVnaW5uaW5nIHRvd2FyZHMgdGhlIGVuZCwgaW4gc3R5bGUgYW5kIGNsYXJpdHkuIGQCBA9kFgRmDw8WAh8BBQtPcmlnaW5hbGl0eWRkAgEPZBYCZg8VAQRIaWdoZAIFD2QWBGYPDxYCHwEFF1F1YWxpdHkgb2YgUHJlc2VudGF0aW9uZGQCAQ9kFgJmDxUBA0xvd2QCBg9kFgRmDw8WAh8BBQxTaWduaWZpY2FuY2VkZAIBD2QWAmYPFQEGTWVkaXVtZAIHD2QWBGYPDxYCHwEFPkhvdyBtYW55IGF0dGVuZGVlcyB3aWxsIGJlIGludGVyZXN0ZWQgaW4gYSB0YWxrIG9uIHRoaXMgcGFwZXI/ZGQCAQ9kFgJmDxUBEGF2ZXJhZ2UgaW50ZXJlc3RkAggPZBYEZg8PFgIfAQUPVGVjaG5pY2FsIERlcHRoZGQCAQ9kFgJmDxUBBk1lZGl1bWQCCQ9kFgRmDw8WAh8BBSVRdWFsaXR5IG9mIEV4cGVyaW1lbnRzLCBSZXBlYXRhYmlsaXR5ZGQCAQ9kFgJmDxUBA0xvd2QCCg9kFgRmDw8WAh8BBVpEbyB0aGUgZXhwZXJpbWVudHMgc3VwcG9ydCB0aGUgY2xhaW1zIG1hZGUgaW4gdGhlIHBhcGVyIGFuZCBtYXRjaCB0aGUgbW90aXZhdGluZyBleGFtcGxlcz9kZAIBD2QWAmYPFQEDeWVzZAILD2QWBGYPDxYCHwEFFk92ZXJhbGwgUmVjb21tZW5kYXRpb25kZAIBD2QWAmYPFQELV2VhayBSZWplY3RkAgwPZBYEZg8PFgIfAQV2U3VtbWFyeSBvZiBEaXNjdXNzaW9uIGFuZCBBdXRob3IgRmVlZGJhY2sgKHRvIGJlIGZpbGxlZCBpbiBieSBtb2RlcmF0b3Igb2YgZGlzY3Vzc2lvbiBvbmx5IGFmdGVyIGRpc2N1c3Npb24gY29uY2x1ZGVkKWRkAgEPZBYCZg8VAQJOb2QCDQ9kFgRmDw8WAh8BBSxEZXRhaWxlZCBjb21tZW50cyAocGxlYXNlIG51bWJlciBlYWNoIHBvaW50KWRkAgEPZBYCZg8VAdcWRDEuIEFueSBjaGFuY2UgdGhpcyBhcHByb2FjaCBtYXkgc2VydmUgb3RoZXIgc2l0ZXMgdGhhbiBXaWtpcGVkaWE/IFBlcmhhcHMgRmFjdGJhc2UsIEN5Yz8uLi4gY29ubmVjdGlvbnMgdG8gYW55IFNlbWFudGljIFdlYiBkYXRhIHNldD8NPGJyIC8+DTxiciAvPkQyLiBJbiB0aGUgZXhwZXJpbWVudGFsIGV2YWx1YXRpb24sIGl0IGlzIG5vdCBjbGVhciB3aGV0aGVyIGVhY2ggcG9pbnQgKGV2YWx1YXRpb24sIGNvbXBhcmlzb24pIHRoYXQgeW91IGRvIGlzIG9idGFpbiBieSBleGFjdGx5IG9uZSBNZWNoYW5pY2FsIFR1cmsgSHVtYW4gSW50ZWxsaWdlbmNlIFRhc2suIEluIG90aGVyIHdvcmRzLCBkb2VzIHRoYXQgY29ycmVzcG9uZCB0byBvbmUgc2luZ2xlIGNsaWNrPyBJZiB5ZXMsIHRoZW4gdGhlIGV2YWx1YXRpb24gaXMgcXVpdGUgYnJpdHRsZSAtIHBlcmhhcHMgYSBkaWZmZXJlbnQgdXNlciB3b3VsZCBoYXZlIHJlc3BvbmRlZCBkaWZmZXJlbnRseS4NPGJyIC8+DTxiciAvPkQzLiBJbiB0aGUgZXhwZXJpbWVudGFsIHNlY3Rpb24sIHRleHQgc2VlbXMgdG8gaGF2ZSBiZWVuIHN0dWZmZWQgdXNpbmcgbmVnYXRpdmUgc3BhY2VzLg08YnIgLz4NPGJyIC8+RDQuIFRoZSB3cml0aW5nIGNvdWxkIGJlIGltcHJvdmVkIGFuZCBjbGFyaWZpZWQgaW4gbWFueSBwbGFjZXMuIEhlcmUgYXJlIHNvbWUgY29tbWVudHMgdGhhdCBjYW1lIHRvIG15IG1pbmQgYXMgSSByZWFkLg08YnIgLz4NPGJyIC8+U2VjdGlvbiAxLCAiQ2hhbGxlbmdlIDEiOiB5b3Ugc2F5ICJ0aGUgdXNlciBjb3VsZCB0aGVuIG5hdmlnYXRlIHRvIFBhdWwgRXJkb3MiIC0gY291bGQgdGhlbiBuYXZpZ2F0ZSwgZnJvbSB3aGVyZT8gd2UgYXJlIGFscmVhZHkgaW4gUGF1bCBFcmRvcycgcGFnZS4NPGJyIC8+ImJ5IGZvcm0gb2YgYW4gZ292ZXJubWVudCIgLT4gImJ5IGZvcm0gb2YgZ292ZXJubWVudCINPGJyIC8+DTxiciAvPlNlY3Rpb24gMiwgdW5kZXIgIihBKSBCeSBUeXBlcy4uLiI6IHRoZSBwYXJhZ3JhcGggIk91ciBzY2VuYXJpbyBhbmQgYXBwcm9hY2ggYXJlIHVuaXF1ZS4uLiBkaXNjb3ZlcnkiIGlzIHVuY2xlYXIuIEluc3RlYWQgb2YgcG9zaXRpb25pbmcgeW91ciBhcHByb2FjaCBpbiB0aGUgc3BlY3RydW0gZGVmaW5lZCBieSB0aGUgdHdvIGV4dHJlbWVzIHlvdSBtZW50aW9uLCB5b3UgZXhwbGFpbiB0aGF0IGl0IGlzIGJ1aWx0IG9uIHRvcCBvZiBoeXBlcnRleHQgLSB3aGljaCBpcyB0cnVlLCBidXQgdG8gbWUgc2VlbXMgdG8gcG9zaXRpb24gaXQgb24gYW5vdGhlciBheGlzIHRoYW4gdGhlIG9uZSBwcmV2aW91c2x5IGRlZmluZWQuIChQZXJoYXBzIGluZGVlZCB0aGVyZSBpcyBhIHNwYWNlIG9mIHNvbHV0aW9ucywgbm90IGEgc2luZ2xlIGF4aXMuKQ08YnIgLz4NPGJyIC8+RGVmaW5pdGlvbiAzOiBhIGZhY2V0IGlzIGRlZmluZWQgd2l0aG91dCBhbnkgcmVmZXJlbmNlIHRvIGEgcXVlcnkgb3IgdG8gYSBzZXQgb2YgdGFyZ2V0IGFydGljbGVzLiBIb3dldmVyLCB1bmRlciBEZWZpbml0aW9uIDMgeW91IHN0YXRlIHRoYXQgInRoZSBjYXRlZ29yaWVzIGluIHRoZSBmYWNldCBjYW4gcmVhY2ggdGhlIHRhcmdldCBhcnRpY2xlcyI6IHdoaWNoIHRhcmdldCBhcnRpY2xlcz8NPGJyIC8+DTxiciAvPlNlY3Rpb24gNC4xLCB0aGUgcGFyYWdyYXBoICJUaGUgdmFsdWUgb2YgcGVuYWx0eS4uLiBzeXN0ZW0gZXZhbHVhdGlvbiIgc3VmZmVycyBmcm9tIHNvbWUgc21hbGwgRW5nbGlzaCBlcnJvcnMgKGFydGljbGVzIG5lZWRlZCkgYnV0IG1vcmUgc2VyaW91c2x5LCBpcyB2ZXJ5IHVuY2xlYXIsIGFzIGlzIEZpZ3VyZSA0LiBIb3cgZGlkIHlvdSBvYnRhaW4gdGhlIHBvaW50cyB3aGljaCBhcmUgdXNlZCBpbiB0aGUgRmlndXJlPyBNYW51YWxseSBwaWNrZWQgYXJ0aWNsZXMvcXVlcmllcz8gb3RoZXI/IHdoYXQgaXMgdGhlIHJlbGV2YW5jZSBvZiB0aGUgNyBudW1iZXIgb2J0YWluZWQ/DTxiciAvPg08YnIgLz5TZWN0aW9uIDQuMiAoYnV0IGFsc28gYmVmb3JlKTogSSBkbyBub3QgdW5kZXJzdGFuZCAic2ltdWx0YW5lb3VzIG5hdmlnYXRpb24iLiBMb2dpY2FsbHkgYSB1c2VyIGdvZXMgZG93biBvciB1cCBpbiBhIGhpZXJhcmNoeSBieSByZWZpbmluZy9lbmxhcmdpbmcgdGhlIGZvY3VzLiBIb3cgY2FuIG9uZSAic2ltdWx0YW5lb3VzbHkgbmF2aWdhdGUiPw08YnIgLz4NPGJyIC8+U2VjdGlvbiA1LjEsIHRoZSBSQ0ggZGVmaW5pdGlvbiBjb3VsZCBiZSBzaGFycGVuZWQgYW5kIGZvcm1hbGl6ZWQgd2l0aCB0aGUgbWluaW11bSBudW1iZXIgb2Ygd29yZHMgYW5kIHdpdGggcHJvcGVyIG1hdGhlbWF0aWNhbCBjb25jZXB0cyAoYW55IHRyZWUgd2hvc2Ugbm9kZXMgYXJlIGFuY2VzdG9ycyBvciBkZXNjZW5kYW50cyBvZiAuLi4gZXRjLikNPGJyIC8+VW5jbGVhcjogIndoaWNoIG11Y2ggbGFyZ2UgbnVtYmVyIG9mIGNhdGVnb3J5LXN1YmNhdGVnb3J5IHJlbGF0aW9uc2hpcHMuIg08YnIgLz4NPGJyIC8+U2VjdGlvbiA1LjIgc2VlbXMgdG8gaGF2ZSBpdHMgZW5kIG1pc3NpbmcuDTxiciAvPg08YnIgLz5TZWN0aW9uIDUuMzogImlzIHRyaWVkIHRvIGJlIHJlcGxhY2VkIiBjb3VsZCBiZSByZXBocmFzZWQNPGJyIC8+DTxiciAvPlNlY3Rpb24gNjogZXJyYXRpYyB0eXBpbmcsIHVuZGVjaWRlZCB3aGV0aGVyIHRvIGxlYXZlIGEgd2hpdGUgc3BhY2UgYWZ0ZXIgYSBwYXJlbnRoZXNpcyAoeW91IHNob3VsZCkgb3Igbm90IChTZWN0aW9uIDYuMiBkb2Vzbid0KS4NPGJyIC8+DTxiciAvPlNlY3Rpb24gNi40LjI6IGZvciBsYWNrIG9mIGNvbW1lbnRzLCB0aGUgcmVzdWx0IGlzIGhhcmQgdG8gaW50ZXJwcmV0LiBJcyB0aGlzIGhpZXJhcmNoeSBPSz8gaW5jbHVkaW5nIHRoZSBKdXN0aWNlIFNvY2lldHkgZm9yIEFtZXJpY2E/IA08YnIgLz4gDTxiciAvPg08YnIgLz5kAg4PZBYEZg8PFgIfAQVaV291bGQgYXV0aG9yIGZlZWRiYWNrIGJlIHVzZWZ1bCBmb3IgdGhpcyBSZXZpZXc/IChpZiAmcXVvdDtZZXMmcXVvdDssIHBsZWFzZSBhbnN3ZXIgUS4gMTYpZGQCAQ9kFgJmDxUBAk5vZAIPDw8WAh8AaGRkAggPFQEAZAICD2QWBgIDD2QWAmYPFQEKUmV2aWV3ZXIgM2QCBw88KwANAQAPFgQfA2cfAgIPZBYCZg9kFiACAQ9kFgRmDw8WAh8BBTVTdW1tYXJ5IG9mIHRoZSBwYXBlcidzIG1haW4gY29udHJpYnV0aW9ucyBhbmQgaW1wYWN0IGRkAgEPZBYCZg8VAaQEVGhlIHBhcGVyIHByZXNlbnRzIGFuIGFwcHJvYWNoIHRvIGdlbmVyYXRlIGZhY2V0cyBmb3IgbmF2aWdhdGluZyBpbiBXaWtpcGVkaWEgYXJ0aWNsZXMuIFRoZSBhdXRob3JzIG9ic2VydmUgYSBodW1hbiBzdHJhdGVneSB0byBicm93c2UgYWxvbmcgZmFjZXRzIHN0YXJ0aW5nIHdpdGggYSBzaW1wbGUga2V5d29yZCBxdWVyeSBpbiBXaWtpcGVkaWEuIEJhc2VkIGluIHRoZWlyIGZpbmRpbmdzIHRoZXkgY3JlYXRlIGEgY29zdCBtb2RlbCB0byBzZWxlY3QgYW5kIHJhbmsgZmFjZXRzIGFuZCB0byBncm91cCBmYWNldHMgaW50byBzdWItZ3JhcGhzLiBUaGV5IHByb3ZlIHRoZSBlZmZpY2llbmN5IGFuZCBlZmZlY3RpdmVuZXNzIG9mIHRoZWlyIHByb3RvdHlwZSBzeXN0ZW0gaW4gYSBodW1hbiBzdHVkeSBhbmQgaW4gYSBmZXcgcGVyZm9ybWFuY2UgZXhwZXJpbWVudHMuIEFzIGEgcmVzdWx0IHRoZXkgY2xhaW0gdG8gc2VsZWN0IGZhY2V0cyB3aXRoIGEgaGlnaGVyIHByZWNpc2lvbiB0aGFuIGEgY29tcGV0aW5nIGFwcHJvYWNoIGNhbGxlZCDigJxDQVNUQU5FVOKAnS5kAgIPZBYEZg8PFgIfAQU+VGhyZWUgc3Ryb25nIHBvaW50cyBvZiB0aGUgcGFwZXIgKHBsZWFzZSBudW1iZXIgdGhlbSBTMSxTMixTMylkZAIBD2QWAmYPFQGNAjEuIFRoZSBwYXBlciBpbmNsdWRlcyBhIGZvcm1hbCBkZWZpbml0aW9uIG9mIHRoZSBwcm9ibGVtLCBvZiB0aGUgY29zdCBtZXRyaWNzLCByYW5raW5nIGFuZCBzZWFyY2ggYWxnb3JpdGhtcy4NPGJyIC8+Mi4gRmluZGluZ3MgYXJlIHByb3ZlbiBieSBleHBlcmltZW50cyBvbiBhIHJlYWwgZGF0YSBzZXQgZnJvbSBXaWtpcGVkaWEuIA08YnIgLz4zLiBUaGUgYXV0aG9ycyBuYW1lIGEgYnJvYWQgc2VsZWN0aW9uIG9mIHJlbGF0ZWQgd29yayBhY3Rpdml0aWVzLiANPGJyIC8+ZAIDD2QWBGYPDxYCHwEFPFRocmVlIHdlYWsgcG9pbnRzIG9mIHRoZSBwYXBlciAocGxlYXNlIG51bWJlciB0aGVtIFcxLFcyLFczKWRkAgEPZBYCZg8VAacDMS4gVGhlIGV4cGVyaW1lbnRzIChlc3BlY2lhbGx5IGZvciBzZWxlY3RpbmcgbXVsdGktZmFjZXRzKSBsYWNrIGEgc3RhdGlzdGljYWxseSBzaWduaWZpY2FudCBxdWVyeSBzZXQuIFJlc3VsdHMgb2YgZXhwZXJpbWVudHMgYXJlIHNob3duIGJ1dCBub3QgZXhwbGFpbmVkIChFLmcuLCBGaWd1cmUgNSw4LCAxNC0xNikuIA08YnIgLz4yLiBUaGUgc3RhdGVtZW50L2NvbnRlbnQgb2YgU2VjdGlvbiA1LjIuIGlzIHVuY2xlYXIgYW5kIGluY29tcGxldGUuDTxiciAvPjMuIFRoZSB3b3JrIGRvZXMgbm90IGV4cGxhaW4sIHdoeSB0aGUgY29tYmluZWQgaGlsbC1jbGltYmluZy0gYW5kIGdyZWVkeS1zdHJhdGVneSBzb2x2ZXMgdGhlIGNvbW1vbiBwcm9ibGVtIG9mIHJhbmtpbmcgbXVsdGktZmFjZXRzIGUuZy4sIHNlZSBTZWN0aW9uIDQuMi4NPGJyIC8+ZAIED2QWBGYPDxYCHwEFC09yaWdpbmFsaXR5ZGQCAQ9kFgJmDxUBBk1lZGl1bWQCBQ9kFgRmDw8WAh8BBRdRdWFsaXR5IG9mIFByZXNlbnRhdGlvbmRkAgEPZBYCZg8VAQZNZWRpdW1kAgYPZBYEZg8PFgIfAQUMU2lnbmlmaWNhbmNlZGQCAQ9kFgJmDxUBBk1lZGl1bWQCBw9kFgRmDw8WAh8BBT5Ib3cgbWFueSBhdHRlbmRlZXMgd2lsbCBiZSBpbnRlcmVzdGVkIGluIGEgdGFsayBvbiB0aGlzIHBhcGVyP2RkAgEPZBYCZg8VARBhdmVyYWdlIGludGVyZXN0ZAIID2QWBGYPDxYCHwEFD1RlY2huaWNhbCBEZXB0aGRkAgEPZBYCZg8VAQZNZWRpdW1kAgkPZBYEZg8PFgIfAQUlUXVhbGl0eSBvZiBFeHBlcmltZW50cywgUmVwZWF0YWJpbGl0eWRkAgEPZBYCZg8VAQZNZWRpdW1kAgoPZBYEZg8PFgIfAQVaRG8gdGhlIGV4cGVyaW1lbnRzIHN1cHBvcnQgdGhlIGNsYWltcyBtYWRlIGluIHRoZSBwYXBlciBhbmQgbWF0Y2ggdGhlIG1vdGl2YXRpbmcgZXhhbXBsZXM/ZGQCAQ9kFgJmDxUBA3llc2QCCw9kFgRmDw8WAh8BBRZPdmVyYWxsIFJlY29tbWVuZGF0aW9uZGQCAQ9kFgJmDxUBC1dlYWsgUmVqZWN0ZAIMD2QWBGYPDxYCHwEFdlN1bW1hcnkgb2YgRGlzY3Vzc2lvbiBhbmQgQXV0aG9yIEZlZWRiYWNrICh0byBiZSBmaWxsZWQgaW4gYnkgbW9kZXJhdG9yIG9mIGRpc2N1c3Npb24gb25seSBhZnRlciBkaXNjdXNzaW9uIGNvbmNsdWRlZClkZAIBD2QWAmYPFQECTm9kAg0PZBYEZg8PFgIfAQUsRGV0YWlsZWQgY29tbWVudHMgKHBsZWFzZSBudW1iZXIgZWFjaCBwb2ludClkZAIBD2QWAmYPFQHhEuKAoiBGaWd1cmUgMSBpcyBub3QgcmVhZGFibGUuIA08YnIgLz4NPGJyIC8+4oCiIFlvdXIgYXJlYSBvZiByZWxhdGVkIHdvcmsgaXMgYnJvYWQgYnV0IG5vdCBkZWVwLiBQbGVhc2UgZXhwbGFpbiB3aHkgcmFua2luZyBmYWNldHMgb3ZlciBzdHJ1Y3R1cmVkIGRhdGEgaXMgc28gbXVjaCBkaWZmZXJlbnQgZnJvbSByYW5raW5nIGZhY2V0cyBvdmVyIGV4dHJhY3RlZCBkYXRhIGZyb20gV2lraXBlZGlhPyBEbyB5b3UgaW5jb3Jwb3JhdGUgdW5jZXJ0YWludHkgaW5mb3JtYXRpb24gaW4geW91ciBhbGdvcml0aG0gb3VyIGNvbXBsZXggTkxQIG9wZXJhdGlvbnM/DTxiciAvPg08YnIgLz7igKIgTWlzc2luZyBSZWxhdGVkIFdvcms6IFBsZWFzZSBoYXZlIGEgbG9vayBhdCBhIHNpbWlsYXIgc29sdXRpb24gZm9yIG1lYXN1cmluZyBpbnRlcmVzdGluZ25lc3Mgb2YgZmFjZXRzIGluIHRoZSBkb21haW4gb2YgZ2VvIHRhZ2dpbmcgb2Ygd2ViIHBhZ2VzIFsxXSBbMl0sIGluIHBhcnRpY3VsYXIgd2hlbiBkaXNjdXNzaW9uIHlvdXIgd29yayBvbiByYW5raW5nIGZhY2V0cyBpbiBzZWN0aW9uIDQuDTxiciAvPuKAoiBUaGUgZGVmaW5pdGlvbiBvZiB0aGUgcGVuYWx0eSBwYXJhbWV0ZXIgaW4gc2VjdGlvbiA0LjEgcmVtYWlucyB1bmNsZWFyLiBXaGF0IGFyZSBiZXN0L2dvb2QgZmFjZXRzIHdoYXQgYXJlIHBvb3Igd29yc3QgZmFjZXRzPw08YnIgLz4NPGJyIC8+4oCiIFNlY3Rpb24gNC4yIHdoYXQgaXMgeW91ciBub3Rpb24vaW50dWl0aW9uIGZvciB1c2luZyB0aGUgSmFjY2FyZCBkaXN0YW5jZSB0byBtZWFzdXJlIHRoZSBzaW1pbGFyaXR5IG9mIHR3byBwYXRocyB3aXRoaW4gdGF4b25vbXk/IFdoeSBkaWQgeW91IG5vdCBpbnZlc3RpZ2F0ZSBvdGhlciBwcm9iYWJseSBiZXR0ZXIgc3VpdGVkIHNpbWlsYXJpdHkgbWV0cmljcyBlLmcuLCBbM10NPGJyIC8+DTxiciAvPuKAoiBTZWN0aW9uIDUuMi4gaXMgaW5jb21wbGV0ZS4NPGJyIC8+DTxiciAvPuKAoiBTZWN0aW9uIDUuMzogSG93IGdvb2QgZG9lcyB5b3UgYWxnb3JpdGhtIHNjYWxlIHRvIG1vcmUgdGhhbiAyMDAgbm9kZXM/IFdoYXQgaXMgdGhlIGNvbXBsZXhpdHk/DTxiciAvPg08YnIgLz7igKIgU2VjdGlvbiA1LjM6IE1pbm9yIGVycm9yOiAg4oCmaXMgY2hvc2VuIGJ5IGdyZWVkaWx5IGJ5IGxvb2tpbmcgaW50byAg4oCmDTxiciAvPg08YnIgLz7igKIgU2VjdGlvbiA2OiBQbGVhc2UgdXNlIGNvbW1vbiBtZXRyaWNzIHRvIG1lYXN1cmUgeW91ciByZXN1bHRzIGUuZy4sIHRoZSBNUlIgb3IgU3VjY2Vzc0BYLiBGaXZlIHF1ZXJpZXMgYXJlIG5vdCByZXByZXNlbnRhdGl2ZS4gUGxlYXNlIHVzZSBtb3JlIHF1ZXJpZXMgaW4geW91ciBzdHVkeS4gUGxlYXNlIGV4cGxhaW4gaW4gZGV0YWlsIHdoeSBhIHF1ZXJ5IHJlc3VsdCB3YXMgdm90ZWQgYXMgbm90IHJlbGV2YW50LCByZWxldmFudCBvciB2ZXJ5IHJlbGV2YW50LiBQbGVhc2UgZ2l2ZSBleGFtcGxlcy4gUGxlYXNlIHNob3cgYWxzbyBleHBlcmltZW50cyByZWdhcmRpbmcgdGhlIHNjYWxhYmlsaXR5IG9mIHlvdXIgYXBwcm9hY2g/IEZpZ3VyZSAxMiBhbmQgMTMgYXJlIG9idmlvdXMgYW5kIHByZWRpY3RhYmxlIGZyb20geW91ciBjbGFzcyBvZiBzZWFyY2ggYWxnb3JpdGhtcy4gIEhvdyBtYW55IHVzZXJzIGRpZCB0YWtlIHBsYWNlIGluIHRoZSBldmFsdWF0aW9uPw08YnIgLz4NPGJyIC8+DTxiciAvPlsxXSBFaW5hdCBBbWl0YXkgLCBOYWRhdiBIYXInRWwgLCBSb24gU2l2YW4gLCBBeWEgU29mZmVyLCBXZWItYS13aGVyZTogZ2VvdGFnZ2luZyB3ZWIgY29udGVudCwgUHJvY2VlZGluZ3Mgb2YgdGhlIDI3dGggYW5udWFsIGludGVybmF0aW9uYWwgQUNNIFNJR0lSIGNvbmZlcmVuY2Ugb24gUmVzZWFyY2ggYW5kIGRldmVsb3BtZW50IGluIGluZm9ybWF0aW9uIHJldHJpZXZhbCwgSnVseSAyNS0yOSwgMjAwNCwgU2hlZmZpZWxkLCBVbml0ZWQgS2luZ2RvbSANPGJyIC8+DTxiciAvPlsyXSBKdW55YW4gRGluZyAsIEx1aXMgR3JhdmFubyAsIE5hcmF5YW5hbiBTaGl2YWt1bWFyLCBDb21wdXRpbmcgR2VvZ3JhcGhpY2FsIFNjb3BlcyBvZiBXZWIgUmVzb3VyY2VzLCBQcm9jZWVkaW5ncyBvZiB0aGUgMjZ0aCBJbnRlcm5hdGlvbmFsIENvbmZlcmVuY2Ugb24gVmVyeSBMYXJnZSBEYXRhIEJhc2VzLCBwLjU0NS01NTYsIFNlcHRlbWJlciAxMC0xNCwgMjAwMCANPGJyIC8+DTxiciAvPlszXSBBbiBBcHByb2FjaCBmb3IgbWVzc3VyaW5nIHNlbWFudGljIHNpbWlsYXJpdHkgYmV0d2VlbiB3b3JkcyB1c2luZyBzZW1hbnRpYyBtdWx0aXBsZSBpbmZvcm1hdGlvbiBzb3VyY2VzIGJ5IFkgTGksIFogQmFuZGFyLCBEIE1jTGVhbi4gSW4gSUVFRSBUcmFuc2FjdGlvbnMgb24gS25vd2xlZGdlIGFuZCBEYXRhIEVuZ2luZWVyaW5nIA08YnIgLz5kAg4PZBYEZg8PFgIfAQVaV291bGQgYXV0aG9yIGZlZWRiYWNrIGJlIHVzZWZ1bCBmb3IgdGhpcyBSZXZpZXc/IChpZiAmcXVvdDtZZXMmcXVvdDssIHBsZWFzZSBhbnN3ZXIgUS4gMTYpZGQCAQ9kFgJmDxUBA1llc2QCDw9kFgRmDw8WAh8BBWZMaXN0IHNwZWNpZmljIGNsYXJpZmljYXRpb25zIHlvdSBzZWVrIGZyb20gdGhlIEF1dGhvcnMgKGlmIHlvdSBoYXZlIGFuc3dlcmVkICZxdW90O1llcyZxdW90OyB0byBRLiAxNSlkZAIBD2QWAmYPFQHHAlNlZSBjb21tZW50cyBvbiBTZWN0aW9uIDUuMi4gYW5kIFNlY3Rpb24gNi4NPGJyIC8+DTxiciAvPjEuKSBQbGVhc2UgYWRkIGRpYWdyYW1zIGZvciBTVUNDRVNTIG9yIE1SUiBpZiBwb3NzaWJsZS4gDTxiciAvPjIuKSBQbGVhc2UgYWRkIFNlY3Rpb24gNS4yLg08YnIgLz4zLikgUGxlYXNlIGFkZCBmb3IgeW91ciBleHBlcmltZW50cyBleHBsYWluYXRpb25zIG9mIHRoZSByZXN1bHRzIGluIGRldGFpbC4gIA08YnIgLz40LikgUGxlYXNlIGFuc3dlciB0aGUgcXVlc3Rpb24gcmVnYXJkaW5nIHRoZSBzdWl0YWJsaWxpdHkgb2YgdGhlIEpBQ0NBUkQgZGlzdGFuY2UuDTxiciAvPmQCEA8PFgIfAGhkZAIIDxUBAGQYAwUfY3RsMDAkY3BoJGd2UmV2aWV3cyRjdGwwMiRjdGwwMA88KwAJAQgCAWQFH2N0bDAwJGNwaCRndlJldmlld3MkY3RsMDEkY3RsMDAPPCsACQEIAgFkBR9jdGwwMCRjcGgkZ3ZSZXZpZXdzJGN0bDAwJGN0bDAwDzwrAAkBCAIBZMGHUFikPuVYsKx23IPOoiM7USQM" />
-</div>
-
-<table id="header">
-<tr>
-<td><img src='/SIGMOD2009/Images/conferencelogo.gif' /></td>
-<td width="100%"><a href='http%3a%2f%2fwww.sigmod09.org%2findex.shtml'>SIGMOD 2009</a><br /><b>2009 ACM SIGMOD International Conference on Management of Data</b><br />June 29 - July 02, 2009<br />Providence, Rhode Island<br />USA</td>
-</tr>
-</table>
-<table id="content"><tr><td class='contentBorder'>&nbsp;</td><td class="contentContainer">
-<span id="ctl00_cph_Label4" style="font-size:Small;font-weight:bold;">Reviews For Paper</span>
-<span id="ctl00_cph_lblErrorMessage" class="error" style="font-size:Small;"></span>
-<div id="ctl00_cph_pnlReviews">
-	
-    <span style="font-size:Small;">
-<table class="nicetable2" style="text-align:left; width: 100%;">
-    <tr id="ctl00_cph_infoSubmission_trTrack">
-		<td><b>Track</b></td>
-		<td><span id="ctl00_cph_infoSubmission_lblTrack" style="font-size:Small;">Research</span></td>
-	</tr>
-	
-    <tr>
-        <td width="100px"><b>Paper ID</b></td>
-        <td><span id="ctl00_cph_infoSubmission_lblPaperId" style="font-size:Small;">370</span></td>
-    </tr>
-    <tr>
-        <td><b>Title</b></td>
-        <td><span id="ctl00_cph_infoSubmission_lblPaperTitle" style="font-size:Small;">Faceted Wikipedia</span></td>
-    </tr>
-</table></span>
-    
-    
-            <hr />
-            <table>
-                <tr>
-                    <td>
-                        <span id="ctl00_cph_gvReviews_ctl00_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
-                    </td>
-                    <td>
-                        <span id="ctl00_cph_gvReviews_ctl00_Label1" style="font-size:Small;">Reviewer 1</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span id="ctl00_cph_gvReviews_ctl00_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-            </table>
-            <div>
-		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
-			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
-				<th scope="col">Question</th><th scope="col">&nbsp;</th>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Summary of the paper's main contributions and impact </td><td style="width:80%;">
-                            The paper presents a new way of navigating Wikipedia. I like the idea presented in the paper very much, however, I do not like the execution of the idea at all.
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Three strong points of the paper (please number them S1,S2,S3)</td><td style="width:80%;">
-                            S1 Important problem, has potentially real impact to improve navigation in Wikipedia and other text documents.<br /><br /><br />
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Three weak points of the paper (please number them W1,W2,W3)</td><td style="width:80%;">
-                            W1 The experimental evaluation is too weak<br /><br />W2: The approach seems very ad-hoc, and there is no exploration of the "science" of the approach.<br /><br />W3: The writing is very bad. The paper throws out a bunch of algorithms without giving much intuition why these are the right algorithms and what is the design space etc.<br /><br />W4: The presentation is very bad. (I did not discount my rating because of this, because I think you will be able to improve this for the camera-ready version).
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Originality</td><td style="width:80%;">
-                            High
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Quality of Presentation</td><td style="width:80%;">
-                            Low
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Significance</td><td style="width:80%;">
-                            Medium
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">How many attendees will be interested in a talk on this paper?</td><td style="width:80%;">
-                            average interest
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Technical Depth</td><td style="width:80%;">
-                            Low
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Quality of Experiments, Repeatability</td><td style="width:80%;">
-                            Low
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Do the experiments support the claims made in the paper and match the motivating examples?</td><td style="width:80%;">
-                            no
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Overall Recommendation</td><td style="width:80%;">
-                            Weak Reject
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Summary of Discussion and Author Feedback (to be filled in by moderator of discussion only after discussion concluded)</td><td style="width:80%;">
-                            No
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Detailed comments (please number each point)</td><td style="width:80%;">
-                            1 There are *a lot* of issues in the writing, so many that I stopped in the middle with marking them, and I won't list them here. <br /><br />2 Especially Section 4 gives a lot of definitions that clearly seem to address some of the questions, but there is no discussion why these metrics and why not others and whether others would have worked similarly.<br /><br />3 Section 5 basically just throws algorithm pseudocode at the reader.
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Would author feedback be useful for this Review? (if &quot;Yes&quot;, please answer Q. 16)</td><td style="width:80%;">
-                            No
-                        </td>
-			</tr>
-		</table>
-	</div>
-            
-        
-            <hr />
-            <table>
-                <tr>
-                    <td>
-                        <span id="ctl00_cph_gvReviews_ctl01_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
-                    </td>
-                    <td>
-                        <span id="ctl00_cph_gvReviews_ctl01_Label1" style="font-size:Small;">Reviewer 2</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span id="ctl00_cph_gvReviews_ctl01_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-            </table>
-            <div>
-		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
-			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
-				<th scope="col">Question</th><th scope="col">&nbsp;</th>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Summary of the paper's main contributions and impact </td><td style="width:80%;">
-                            The paper proposes algorithms for automatically producing hierarchies of categories characterizing a given set of Wikipedia articles - more specifically, the result of a given query, but the algorithms consider "A set of articles", regardless of how they are obtained. <br />The special characteristic of this work is to identify these hierarchies dynamically (at query times).<br />The work relies is based on an assumption which may be wrong; however, the authors do not consider the risk that falsifying this assumption brings to their approach.
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Three strong points of the paper (please number them S1,S2,S3)</td><td style="width:80%;">
-                            S1. The paper tackles an interesting problem - how to automatically derive categories that help the user set in context a given set of articles.<br />
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Three weak points of the paper (please number them W1,W2,W3)</td><td style="width:80%;">
-                            W1. The paper's algorithms rely on a crucial hypothesis: that the links comprised in an article refer to categories (attributes) characterizing the article. This may or may not be true. For instance,the links of an article may refer to similar entities. The whole construction of the paper relies on this assumption, yet no consideration is given to the degree to which results may be corrupted, should this assumption turn out to be false.<br />W2. The paper seems immature; it has a feeling of "we tried this, we tried that". Trying is excellent, but the reader would deserve more thoughts of what happened, how and why. This may come by maturing the work a bit more.<br />W3. The paper's writing degrades from the beginning towards the end, in style and clarity. 
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Originality</td><td style="width:80%;">
-                            High
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Quality of Presentation</td><td style="width:80%;">
-                            Low
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Significance</td><td style="width:80%;">
-                            Medium
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">How many attendees will be interested in a talk on this paper?</td><td style="width:80%;">
-                            average interest
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Technical Depth</td><td style="width:80%;">
-                            Medium
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Quality of Experiments, Repeatability</td><td style="width:80%;">
-                            Low
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Do the experiments support the claims made in the paper and match the motivating examples?</td><td style="width:80%;">
-                            yes
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Overall Recommendation</td><td style="width:80%;">
-                            Weak Reject
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Summary of Discussion and Author Feedback (to be filled in by moderator of discussion only after discussion concluded)</td><td style="width:80%;">
-                            No
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Detailed comments (please number each point)</td><td style="width:80%;">
-                            D1. Any chance this approach may serve other sites than Wikipedia? Perhaps Factbase, Cyc?... connections to any Semantic Web data set?<br /><br />D2. In the experimental evaluation, it is not clear whether each point (evaluation, comparison) that you do is obtain by exactly one Mechanical Turk Human Intelligence Task. In other words, does that correspond to one single click? If yes, then the evaluation is quite brittle - perhaps a different user would have responded differently.<br /><br />D3. In the experimental section, text seems to have been stuffed using negative spaces.<br /><br />D4. The writing could be improved and clarified in many places. Here are some comments that came to my mind as I read.<br /><br />Section 1, "Challenge 1": you say "the user could then navigate to Paul Erdos" - could then navigate, from where? we are already in Paul Erdos' page.<br />"by form of an government" -> "by form of government"<br /><br />Section 2, under "(A) By Types...": the paragraph "Our scenario and approach are unique... discovery" is unclear. Instead of positioning your approach in the spectrum defined by the two extremes you mention, you explain that it is built on top of hypertext - which is true, but to me seems to position it on another axis than the one previously defined. (Perhaps indeed there is a space of solutions, not a single axis.)<br /><br />Definition 3: a facet is defined without any reference to a query or to a set of target articles. However, under Definition 3 you state that "the categories in the facet can reach the target articles": which target articles?<br /><br />Section 4.1, the paragraph "The value of penalty... system evaluation" suffers from some small English errors (articles needed) but more seriously, is very unclear, as is Figure 4. How did you obtain the points which are used in the Figure? Manually picked articles/queries? other? what is the relevance of the 7 number obtained?<br /><br />Section 4.2 (but also before): I do not understand "simultaneous navigation". Logically a user goes down or up in a hierarchy by refining/enlarging the focus. How can one "simultaneously navigate"?<br /><br />Section 5.1, the RCH definition could be sharpened and formalized with the minimum number of words and with proper mathematical concepts (any tree whose nodes are ancestors or descendants of ... etc.)<br />Unclear: "which much large number of category-subcategory relationships."<br /><br />Section 5.2 seems to have its end missing.<br /><br />Section 5.3: "is tried to be replaced" could be rephrased<br /><br />Section 6: erratic typing, undecided whether to leave a white space after a parenthesis (you should) or not (Section 6.2 doesn't).<br /><br />Section 6.4.2: for lack of comments, the result is hard to interpret. Is this hierarchy OK? including the Justice Society for America? <br /> <br /><br />
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Would author feedback be useful for this Review? (if &quot;Yes&quot;, please answer Q. 16)</td><td style="width:80%;">
-                            No
-                        </td>
-			</tr>
-		</table>
-	</div>
-            
-        
-            <hr />
-            <table>
-                <tr>
-                    <td>
-                        <span id="ctl00_cph_gvReviews_ctl02_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
-                    </td>
-                    <td>
-                        <span id="ctl00_cph_gvReviews_ctl02_Label1" style="font-size:Small;">Reviewer 3</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span id="ctl00_cph_gvReviews_ctl02_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-            </table>
-            <div>
-		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
-			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
-				<th scope="col">Question</th><th scope="col">&nbsp;</th>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Summary of the paper's main contributions and impact </td><td style="width:80%;">
-                            The paper presents an approach to generate facets for navigating in Wikipedia articles. The authors observe a human strategy to browse along facets starting with a simple keyword query in Wikipedia. Based in their findings they create a cost model to select and rank facets and to group facets into sub-graphs. They prove the efficiency and effectiveness of their prototype system in a human study and in a few performance experiments. As a result they claim to select facets with a higher precision than a competing approach called “CASTANET”.
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Three strong points of the paper (please number them S1,S2,S3)</td><td style="width:80%;">
-                            1. The paper includes a formal definition of the problem, of the cost metrics, ranking and search algorithms.<br />2. Findings are proven by experiments on a real data set from Wikipedia. <br />3. The authors name a broad selection of related work activities. <br />
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Three weak points of the paper (please number them W1,W2,W3)</td><td style="width:80%;">
-                            1. The experiments (especially for selecting multi-facets) lack a statistically significant query set. Results of experiments are shown but not explained (E.g., Figure 5,8, 14-16). <br />2. The statement/content of Section 5.2. is unclear and incomplete.<br />3. The work does not explain, why the combined hill-climbing- and greedy-strategy solves the common problem of ranking multi-facets e.g., see Section 4.2.<br />
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Originality</td><td style="width:80%;">
-                            Medium
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Quality of Presentation</td><td style="width:80%;">
-                            Medium
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Significance</td><td style="width:80%;">
-                            Medium
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">How many attendees will be interested in a talk on this paper?</td><td style="width:80%;">
-                            average interest
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Technical Depth</td><td style="width:80%;">
-                            Medium
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Quality of Experiments, Repeatability</td><td style="width:80%;">
-                            Medium
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Do the experiments support the claims made in the paper and match the motivating examples?</td><td style="width:80%;">
-                            yes
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Overall Recommendation</td><td style="width:80%;">
-                            Weak Reject
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Summary of Discussion and Author Feedback (to be filled in by moderator of discussion only after discussion concluded)</td><td style="width:80%;">
-                            No
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">Detailed comments (please number each point)</td><td style="width:80%;">
-                            • Figure 1 is not readable. <br /><br />• Your area of related work is broad but not deep. Please explain why ranking facets over structured data is so much different from ranking facets over extracted data from Wikipedia? Do you incorporate uncertainty information in your algorithm our complex NLP operations?<br /><br />• Missing Related Work: Please have a look at a similar solution for measuring interestingness of facets in the domain of geo tagging of web pages [1] [2], in particular when discussion your work on ranking facets in section 4.<br />• The definition of the penalty parameter in section 4.1 remains unclear. What are best/good facets what are poor worst facets?<br /><br />• Section 4.2 what is your notion/intuition for using the Jaccard distance to measure the similarity of two paths within taxonomy? Why did you not investigate other probably better suited similarity metrics e.g., [3]<br /><br />• Section 5.2. is incomplete.<br /><br />• Section 5.3: How good does you algorithm scale to more than 200 nodes? What is the complexity?<br /><br />• Section 5.3: Minor error:  …is chosen by greedily by looking into  …<br /><br />• Section 6: Please use common metrics to measure your results e.g., the MRR or Success@X. Five queries are not representative. Please use more queries in your study. Please explain in detail why a query result was voted as not relevant, relevant or very relevant. Please give examples. Please show also experiments regarding the scalability of your approach? Figure 12 and 13 are obvious and predictable from your class of search algorithms.  How many users did take place in the evaluation?<br /><br /><br />[1] Einat Amitay , Nadav Har'El , Ron Sivan , Aya Soffer, Web-a-where: geotagging web content, Proceedings of the 27th annual international ACM SIGIR conference on Research and development in information retrieval, July 25-29, 2004, Sheffield, United Kingdom <br /><br />[2] Junyan Ding , Luis Gravano , Narayanan Shivakumar, Computing Geographical Scopes of Web Resources, Proceedings of the 26th International Conference on Very Large Data Bases, p.545-556, September 10-14, 2000 <br /><br />[3] An Approach for messuring semantic similarity between words using semantic multiple information sources by Y Li, Z Bandar, D McLean. In IEEE Transactions on Knowledge and Data Engineering <br />
-                        </td>
-			</tr><tr style="color:#284775;background-color:White;">
-				<td style="width:20%;">Would author feedback be useful for this Review? (if &quot;Yes&quot;, please answer Q. 16)</td><td style="width:80%;">
-                            Yes
-                        </td>
-			</tr><tr style="color:#333333;background-color:#F7F6F3;">
-				<td style="width:20%;">List specific clarifications you seek from the Authors (if you have answered &quot;Yes&quot; to Q. 15)</td><td style="width:80%;">
-                            See comments on Section 5.2. and Section 6.<br /><br />1.) Please add diagrams for SUCCESS or MRR if possible. <br />2.) Please add Section 5.2.<br />3.) Please add for your experiments explainations of the results in detail.  <br />4.) Please answer the question regarding the suitablility of the JACCARD distance.<br />
-                        </td>
-			</tr>
-		</table>
-	</div>
-            
-        
-    <br />
-    <br />
-
-</div>
-</td><td class='contentBorder'>&nbsp;</td></tr></table>
-</form>
-</body>
-</html>
